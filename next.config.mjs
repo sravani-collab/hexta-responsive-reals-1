@@ -32,7 +32,7 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 's3.rdpdatacenter.in',
+        hostname: 'cdn.hextasphere.com',
         pathname: '/**',
       },
       {
