@@ -133,7 +133,7 @@ export default function ClientsPage() {
                 <div className="mr-4">
                   <div className="relative h-16 w-16 rounded-full overflow-hidden">
                     <BlurImage
-                      src="https://s3.rdpdatacenter.in/api/v1/buckets/hexta-dev/objects/download?preview=true&prefix=clients%2Fclient-temp.png&version_id=null"
+                      src="https://cdn.hextasphere.com/clients/client-temp.png"
                       alt="Testimonial author"
                       fill
                       className="object-cover"
@@ -156,7 +156,7 @@ export default function ClientsPage() {
                 <div className="mr-4">
                   <div className="relative h-16 w-16 rounded-full overflow-hidden">
                     <BlurImage
-                      src="https://s3.rdpdatacenter.in/api/v1/buckets/hexta-dev/objects/download?preview=true&prefix=clients%2Fclient-temp.png&version_id=null"
+                      src="https://cdn.hextasphere.com/clients/client-temp.png"
                       alt="Testimonial author"
                       fill
                       className="object-cover"
@@ -179,7 +179,7 @@ export default function ClientsPage() {
                 <div className="mr-4">
                   <div className="relative h-16 w-16 rounded-full overflow-hidden">
                     <BlurImage
-                      src="https://s3.rdpdatacenter.in/api/v1/buckets/hexta-dev/objects/download?preview=true&prefix=clients%2Fclient-temp.png&version_id=null"
+                      src="https://cdn.hextasphere.com/clients/client-temp.png"
                       alt="Testimonial author"
                       fill
                       className="object-cover"
