@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { getServiceImageUrl } from '@/lib/minio'
+import { getServiceImageUrl } from '@/lib/s3'
 
 const services = [
   {

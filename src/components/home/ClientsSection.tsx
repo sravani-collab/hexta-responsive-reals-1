@@ -43,11 +43,6 @@ export default function ClientsSection() {
         </div>
       </div>
       
-      {/* Horizontal lines for design element */}
-      <div className="container mx-auto px-4 mt-8">
-        <div className="h-px w-full bg-gray-200"></div>
-        <div className="h-px w-full bg-gray-200 mt-4"></div>
-      </div>
     </section>
   )
 }

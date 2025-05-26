@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import { useEffect, useRef, useState } from 'react';
 import { 
@@ -15,8 +14,11 @@ import {
   Microchip, 
   GitMerge, 
   Wrench, 
-  Gauge 
+  Gauge,
+  Phone 
 } from 'lucide-react';
+import { Button } from '@heroui/react';
+import Link from 'next/link';
 
 // Import Lottie dynamically to avoid SSR issues
 const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
@@ -177,12 +179,11 @@ export default function ServicesPage() {
             <p className="text-dark mb-6 max-w-2xl mx-auto">
               Contact us today to discuss your project requirements and learn how our services can help you achieve your business goals.
             </p>
-            <Link 
-              href="/contact"
-              className="inline-block px-8 py-3 bg-primary text-black dark:text-white rounded font-semibold hover:bg-opacity-90 transition"
+            <Button variant="bordered" as={Link} href="/contact"
+              className="inline-flex items-center justify-center px-8 py-3 text-base font-medium rounded-md"
             >
-              Get in Touch
-            </Link>
+              Get in Touch <Phone className="w-5 h-5 ml-2" />
+            </Button>
           </div>
         </div>
       </section>

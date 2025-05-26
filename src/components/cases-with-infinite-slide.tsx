@@ -7,7 +7,7 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
-import { getClientImageUrl } from "@/lib/minio";
+import { getClientImageUrl } from "@/lib/s3";
 import Image from "next/image";
 
 // Client categories and data with light/dark variants

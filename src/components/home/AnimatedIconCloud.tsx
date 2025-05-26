@@ -12,7 +12,7 @@
 //      'logo-cloud': 'logo-cloud 30s linear infinite', // Adjust duration and timing as needed for your design.
 //    }
 
-import { getClientImageUrl } from "@/lib/minio";
+import { getClientImageUrl } from "@/lib/s3";
 // import Image from "next/image";
 import BlurImage from "../blur-image";
 

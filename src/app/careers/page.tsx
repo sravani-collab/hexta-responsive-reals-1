@@ -1,11 +1,10 @@
-'use client'
-
-import BlurImage from '@/components/blur-image'
-import { getCareerImageUrl } from '@/lib/minio'
+import Image from 'next/image'
+import { getCareerImageUrl } from '@/lib/s3'
 // import { useState } from 'react'
 // import Image from 'next/image'
 // import Link from 'next/link'
-// import { ChevronDown, ChevronUp, MapPin, Clock, Tag } from 'lucide-react'
+import { Button } from '@heroui/react'
+import { Mail} from 'lucide-react'
 
 // Benefits data
 const benefits = [
@@ -94,7 +93,7 @@ export default function CareersPage() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="relative h-64 rounded-md overflow-hidden">
-                <BlurImage
+                <Image
                   src={getCareerImageUrl("hexta-office.webp")}
                   alt="HextaSphere team collaboration"
                   fill
@@ -102,7 +101,7 @@ export default function CareersPage() {
                 />
               </div>
               <div className="relative h-64 rounded-md overflow-hidden">
-                <BlurImage
+                <Image
                   src={getCareerImageUrl("big-3-hexta.webp")}
                   alt="HextaSphere workspace"
                   fill
@@ -110,7 +109,7 @@ export default function CareersPage() {
                 />
               </div>
               <div className="relative h-64 rounded-md overflow-hidden">
-                <BlurImage
+                <Image
                   src={getCareerImageUrl("hexta-x-mm.jpg")}
                   alt="HextaSphere team event"
                   fill
@@ -118,7 +117,7 @@ export default function CareersPage() {
                 />
               </div>
               <div className="relative h-64 rounded-md overflow-hidden">
-                <BlurImage
+                <Image
                   src={getCareerImageUrl("divya-hexta.jpg")}
                   alt="HextaSphere office environment"
                   fill
@@ -298,12 +297,11 @@ export default function CareersPage() {
           <p className="text-black dark:text-white text-lg max-w-2xl mx-auto mb-8">
             Even though we&apos;re not currently hiring, we&apos;re always interested in connecting with talented individuals who could be a great fit for our team.
           </p>
-          <a 
-            href="mailto:career@hextasphere.com" 
-            className="inline-block px-8 py-3 bg-white text-primary rounded font-semibold hover:bg-gray-100 hover:text-black transition"
-          >
-            Send Your Resume
-          </a>
+          <Button variant="bordered" as="a" href="mailto:career@hextasphere.com"
+          className="inline-flex items-center justify-center px-8 py-3 text-base font-medium rounded-md"
+        >
+            Send Your Resume <Mail className="w-5 h-5 ml-2" />
+          </Button>
         </div>
       </section>
     </>

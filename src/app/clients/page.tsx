@@ -1,5 +1,8 @@
 import Image from 'next/image'
 import { Case } from '@/components/cases-with-infinite-slide'
+import Link from 'next/link'
+import { Button } from '@heroui/react'
+import { Phone } from 'lucide-react'
 
 export const metadata = {
   title: 'Our Clients | HextaSphere',
@@ -205,12 +208,11 @@ export default function ClientsPage() {
           <p className="text-black dark:text-white text-lg max-w-2xl mx-auto mb-8">
             Join our growing list of satisfied clients and discover how HextaSphere can help you achieve your technology goals.
           </p>
-          <a 
-            href="/contact" 
-            className="inline-block px-8 py-3 bg-white text-primary rounded font-semibold hover:bg-gray-100 transition"
-          >
-            Contact Us Today
-          </a>
+          <Button variant="bordered" as={Link} href="/contact"
+              className="inline-flex items-center justify-center px-8 py-3 text-base font-medium rounded-md"
+            >
+              Get in Touch <Phone className="w-5 h-5 ml-2" />
+            </Button>
         </div>
       </section>
     </>

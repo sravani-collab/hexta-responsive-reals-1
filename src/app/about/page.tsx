@@ -3,9 +3,11 @@
 import BlurImage from "@/components/blur-image";
 import { MagicCard } from "@/components/magicui/magic-card";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { getTeamImageUrl } from "@/lib/minio";
-import { Briefcase, Target, Eye, Users, Zap, Award, Lightbulb, Rocket, Handshake, ShieldCheck, UserCheck, BarChart3 } from "lucide-react";
+import { getTeamImageUrl } from "@/lib/s3";
+import { Phone, Target, Eye, Users, Zap, Award, Lightbulb, Rocket, Handshake, ShieldCheck, UserCheck, BarChart3 } from "lucide-react";
 import  {motion} from "framer-motion" 
+import Link from "next/link";
+import { Button } from "@heroui/react"
 
 // export const metadata = {
 //   title: "About Us | HextaSphere",
@@ -223,12 +225,11 @@ export default function AboutPage() {
             Let HextaSphere be your trusted partner in navigating the complexities of technology and engineering.
           </motion.p>
           <motion.div {...fadeIn} transition={{ ...fadeIn.transition, delay: 0.4 }}>
-            <a
-              href="/contact"
-              className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-primary-foreground bg-primary hover:bg-primary/90"
+          <Button variant="bordered" as={Link} href="/contact"
+              className="inline-flex items-center justify-center px-8 py-3 text-base font-medium rounded-md"
             >
-              Get in Touch <Briefcase className="w-5 h-5 ml-2" />
-            </a>
+              Get in Touch <Phone className="w-5 h-5 ml-2" />
+            </Button>
           </motion.div>
         </div>
       </section>

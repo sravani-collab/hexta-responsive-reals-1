@@ -1,7 +1,7 @@
 import Link from 'next/link'
 // import Image from 'next/image'
 import ProjectCard from '@/components/projects/ProjectCard'
-import { getProjectImageUrl } from '@/lib/minio'
+import { getProjectImageUrl } from '@/lib/s3'
 
 // Featured projects from the Figma file
 const featuredProjects = [

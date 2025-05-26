@@ -1,7 +1,9 @@
 import Link from 'next/link'
 import BlurImage from '@/components/blur-image'
-import { getProjectImageUrl } from '@/lib/minio'
+import { getProjectImageUrl } from '@/lib/s3'
 import { ExpandableCards } from '@/components/projects/ExpandableCards'
+import { Button } from '@heroui/react'
+import { MessageCircle } from 'lucide-react'
 
 export const metadata = {
   title: 'Our Projects | HextaSphere',
@@ -226,12 +228,11 @@ export default function ProjectsPage() {
           <p className="text-xl text-white/90 max-w-2xl mx-auto mb-8">
             Let&apos;s discuss how we can bring your vision to life with our innovative solutions and expert team.
           </p>
-          <Link 
-            href="/contact"
-            className="inline-block px-8 py-4 bg-white text-primary font-semibold rounded-lg hover:bg-gray-100 transition-colors"
-          >
-            Start a Conversation
-          </Link>
+          <Button variant="bordered" as={Link} href="/contact"
+              className="inline-flex items-center justify-center px-8 py-3 text-base font-medium rounded-md"
+            >
+              Start a Conversation <MessageCircle className="w-5 h-5 ml-2" />
+            </Button>
         </div>
       </section>
     </div>

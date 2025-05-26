@@ -4,10 +4,13 @@ import { useState, useEffect } from 'react'
 import BlurImage from '@/components/blur-image'
 // import { itDivisionTeam, engineeringDivisionTeam } from '@/lib/team'
 import { Skeleton } from "@heroui/react"
-import { getCareerImageUrl } from '@/lib/minio'
+import { getCareerImageUrl } from '@/lib/s3'
 // import { TeamMember } from '@/types/team'
 import ITGrid from '@/components/ITGrid'
 import EnggGrid from '@/components/EnggGrid'
+import Link from 'next/link'
+import { Button } from '@heroui/react'
+import { Briefcase } from 'lucide-react'
 
 export const metadata = {
   title: 'Our Team | HextaSphere',
@@ -164,12 +167,11 @@ export default function TeamPage() {
             We&apos;re always looking for talented individuals who are passionate about technology and engineering innovation. 
             Check out our open positions in both IT and Engineering divisions and become part of our journey.
           </p>
-          <a 
-            href="/careers" 
-            className="inline-block px-8 py-3 bg-white text-primary rounded font-semibold hover:bg-gray-100 hover:text-black transition"
-          >
-            View Open Positions
-          </a>
+          <Button variant="bordered" as={Link} href="/careers"
+              className="inline-flex items-center justify-center px-8 py-3 text-base font-medium rounded-md"
+            >
+            View Open Positions <Briefcase className="w-5 h-5 ml-2" />
+          </Button>
         </div>
       </section>
     </>

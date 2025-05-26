@@ -1,4 +1,4 @@
-import { getTeamImageUrl } from "@/lib/minio";
+import { getTeamImageUrl } from "@/lib/s3";
 
 // IT Division team members
 export const itDivisionTeam = [

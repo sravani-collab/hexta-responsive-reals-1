@@ -1,4 +1,4 @@
-import { getProjectImageUrl } from './minio'
+import { getProjectImageUrl } from './s3'
 
 export interface ProjectMetadata {
   id: string
