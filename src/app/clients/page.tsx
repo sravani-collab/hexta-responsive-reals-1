@@ -1,5 +1,4 @@
-import BlurImage from '@/components/blur-image'
-// import { getClientImageUrl } from '@/lib/minio'
+import Image from 'next/image'
 import { Case } from '@/components/cases-with-infinite-slide'
 
 export const metadata = {
@@ -79,7 +78,7 @@ export default function ClientsPage() {
             {caseStudies.map((study, index) => (
               <div key={index} className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-sm">
                 <div className="relative h-48">
-                  <BlurImage
+                  <Image
                     src={study.image}
                     alt={study.title}
                     fill
@@ -132,7 +131,7 @@ export default function ClientsPage() {
               <div className="flex items-center mb-4">
                 <div className="mr-4">
                   <div className="relative h-16 w-16 rounded-full overflow-hidden">
-                    <BlurImage
+                    <Image
                       src="https://cdn.hextasphere.com/clients/client-temp.png"
                       alt="Testimonial author"
                       fill
@@ -155,7 +154,7 @@ export default function ClientsPage() {
               <div className="flex items-center mb-4">
                 <div className="mr-4">
                   <div className="relative h-16 w-16 rounded-full overflow-hidden">
-                    <BlurImage
+                    <Image
                       src="https://cdn.hextasphere.com/clients/client-temp.png"
                       alt="Testimonial author"
                       fill
@@ -178,7 +177,7 @@ export default function ClientsPage() {
               <div className="flex items-center mb-4">
                 <div className="mr-4">
                   <div className="relative h-16 w-16 rounded-full overflow-hidden">
-                    <BlurImage
+                    <Image
                       src="https://cdn.hextasphere.com/clients/client-temp.png"
                       alt="Testimonial author"
                       fill

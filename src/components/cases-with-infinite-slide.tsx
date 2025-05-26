@@ -8,7 +8,7 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import { getClientImageUrl } from "@/lib/minio";
-import BlurImage from "./blur-image";
+import Image from "next/image";
 
 // Client categories and data with light/dark variants
 const clientCategories = [
@@ -228,7 +228,7 @@ function Case() {
                   >
                     {/* Light mode image - hidden in dark mode */}
                     <div className="relative h-full w-full block dark:hidden">
-                      <BlurImage
+                      <Image
                         src={client.logoLight}
                         alt={`${client.name} logo`}
                         fill
@@ -237,7 +237,7 @@ function Case() {
                     </div>
                     {/* Dark mode image - hidden in light mode */}
                     <div className="relative h-full w-full hidden dark:block">
-                      <BlurImage
+                      <Image
                         src={client.logoDark}
                         alt={`${client.name} logo`}
                         fill
