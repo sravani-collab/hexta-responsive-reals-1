@@ -174,7 +174,7 @@ export default function ServicesPage() {
           </div>
           
           {/* CTA Section */}
-          <div className="bg-light rounded-lg p-8 text-center">
+          <div className="bg-secondary-50 dark:bg-secondary rounded-lg p-8 text-center">
             <h3 className="text-2xl font-semibold text-dark mb-4">Ready to Transform Your Business?</h3>
             <p className="text-dark mb-6 max-w-2xl mx-auto">
               Contact us today to discuss your project requirements and learn how our services can help you achieve your business goals.

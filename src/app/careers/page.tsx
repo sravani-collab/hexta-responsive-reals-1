@@ -73,19 +73,19 @@ export default function CareersPage() {
               </p>
               
               <div className="grid grid-cols-2 gap-4">
-                <div className="bg-light rounded-md p-4">
+                <div className="bg-secondary rounded-md p-4">
                   <h3 className="font-semibold text-primary mb-2">Innovation</h3>
                   <p className="text-sm text-dark">Work on cutting-edge technologies and challenging projects</p>
                 </div>
-                <div className="bg-light rounded-md p-4">
+                <div className="bg-secondary rounded-md p-4">
                   <h3 className="font-semibold text-primary mb-2">Growth</h3>
                   <p className="text-sm text-dark">Continuous learning and career development opportunities</p>
                 </div>
-                <div className="bg-light rounded-md p-4">
+                <div className="bg-secondary rounded-md p-4">
                   <h3 className="font-semibold text-primary mb-2">Impact</h3>
                   <p className="text-sm text-dark">Create solutions that solve real-world problems</p>
                 </div>
-                <div className="bg-light rounded-md p-4">
+                <div className="bg-secondary rounded-md p-4">
                   <h3 className="font-semibold text-primary mb-2">Balance</h3>
                   <p className="text-sm text-dark">Flexible work arrangements that respect your life outside work</p>
                 </div>
@@ -130,7 +130,7 @@ export default function CareersPage() {
       </section>
       
       {/* Benefits Section */}
-      <section className="py-16 bg-light">
+      <section className="py-16 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-semibold text-dark mb-4">Employee Benefits</h2>
@@ -141,7 +141,7 @@ export default function CareersPage() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {benefits.map((benefit, index) => (
-              <div key={index} className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm">
+              <div key={index} className="bg-white rounded-lg p-6 shadow-sm">
                 <h3 className="text-lg font-semibold text-primary mb-4">{benefit.title}</h3>
                 <ul className="space-y-2">
                   {benefit.items.map((item, itemIndex) => (
@@ -164,7 +164,7 @@ export default function CareersPage() {
             <h2 className="text-2xl md:text-3xl font-semibold text-dark mb-4">Join Our Team</h2>
           </div>
           
-          <div className="max-w-4xl mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-sm p-8">
+          <div className="max-w-4xl mx-auto bg-secondary rounded-lg shadow-sm p-8">
             <p className="text-dark text-lg leading-relaxed mb-6">
               At <strong>Hextasphere</strong>, we strive to build innovative and scalable solutions. Right now, we are <strong>not hiring</strong> for any positions.
             </p>
@@ -178,7 +178,7 @@ export default function CareersPage() {
               </a>
             </p>
             
-            <div className="bg-light rounded-lg p-6 mt-8">
+            <div className="rounded-lg p-6 mt-8">
               <h3 className="text-lg font-semibold text-dark mb-4">Please note:</h3>
               <ul className="space-y-3">
                 <li className="flex items-start">
@@ -204,7 +204,7 @@ export default function CareersPage() {
       </section>
       
       {/* Application Process Section */}
-      <section className="py-16 bg-light">
+      <section className="py-16 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-semibold text-dark mb-4">Our Application Process</h2>
@@ -225,7 +225,7 @@ export default function CareersPage() {
                   <div className="md:w-16 flex-shrink-0 flex items-center justify-center">
                     <div className="w-8 h-8 bg-primary text-black dark:text-white rounded-full flex items-center justify-center font-bold text-sm z-10">1</div>
                   </div>
-                  <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm md:ml-4 mt-4 md:mt-0">
+                  <div className="bg-white  rounded-lg p-6 shadow-sm md:ml-4 mt-4 md:mt-0">
                     <h3 className="text-lg font-semibold text-primary mb-2">Application Review</h3>
                     <p className="text-dark">
                       Our recruiting team carefully reviews your application, resume, and any additional materials you submit to assess your qualifications for the role.
@@ -238,7 +238,7 @@ export default function CareersPage() {
                   <div className="md:w-16 flex-shrink-0 flex items-center justify-center">
                     <div className="w-8 h-8 bg-primary text-black dark:text-white rounded-full flex items-center justify-center font-bold text-sm z-10">2</div>
                   </div>
-                  <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm md:ml-4 mt-4 md:mt-0">
+                  <div className="bg-white rounded-lg p-6 shadow-sm md:ml-4 mt-4 md:mt-0">
                     <h3 className="text-lg font-semibold text-primary mb-2">Initial Interview</h3>
                     <p className="text-dark">
                       If your background aligns with our needs, we&apos;ll schedule an initial interview to discuss your experience, skills, and interest in the role and HextaSphere.
@@ -251,7 +251,7 @@ export default function CareersPage() {
                   <div className="md:w-16 flex-shrink-0 flex items-center justify-center">
                     <div className="w-8 h-8 bg-primary text-black dark:text-white rounded-full flex items-center justify-center font-bold text-sm z-10">3</div>
                   </div>
-                  <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm md:ml-4 mt-4 md:mt-0">
+                  <div className="bg-white rounded-lg p-6 shadow-sm md:ml-4 mt-4 md:mt-0">
                     <h3 className="text-lg font-semibold text-primary mb-2">Technical Assessment</h3>
                     <p className="text-dark">
                       Depending on the role, you may be asked to complete a technical assessment, coding challenge, case study, or design exercise to demonstrate your skills.
@@ -264,7 +264,7 @@ export default function CareersPage() {
                   <div className="md:w-16 flex-shrink-0 flex items-center justify-center">
                     <div className="w-8 h-8 bg-primary text-black dark:text-white rounded-full flex items-center justify-center font-bold text-sm z-10">4</div>
                   </div>
-                  <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm md:ml-4 mt-4 md:mt-0">
+                  <div className="bg-white rounded-lg p-6 shadow-sm md:ml-4 mt-4 md:mt-0">
                     <h3 className="text-lg font-semibold text-primary mb-2">Team Interviews</h3>
                     <p className="text-dark">
                       Meet with potential team members and stakeholders to dive deeper into your expertise and assess team fit. This may include a panel interview or multiple one-on-one sessions.
@@ -277,7 +277,7 @@ export default function CareersPage() {
                   <div className="md:w-16 flex-shrink-0 flex items-center justify-center">
                     <div className="w-8 h-8 bg-primary text-black dark:text-white rounded-full flex items-center justify-center font-bold text-sm z-10">5</div>
                   </div>
-                  <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm md:ml-4 mt-4 md:mt-0">
+                  <div className="bg-white rounded-lg p-6 shadow-sm md:ml-4 mt-4 md:mt-0">
                     <h3 className="text-lg font-semibold text-primary mb-2">Final Decision & Offer</h3>
                     <p className="text-dark">
                       After completing all interviews, we&apos;ll make a decision and extend an offer to the selected candidate, including details about compensation, benefits, and start date.

@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Button } from '@/components/ui/button'
+import { Button } from '@heroui/react'
 import { ArrowLeft, Home, Search } from 'lucide-react'
 import { headers } from 'next/headers'
 import dynamic from 'next/dynamic'
@@ -8,10 +8,10 @@ import { Metadata } from 'next'
 import { siteConfig } from '@/config/site'
 
 export const metadata: Metadata = {
-    title: `404 Not Found | ${siteConfig.name}`,
+    title: `Page Not Found | ${siteConfig.name}`,
     description: 'The page you are looking for does not exist.',
     openGraph: {
-        title: `404 Not Found | ${siteConfig.name}`,
+        title: `Page Not Found | ${siteConfig.name}`,
         description: 'The page you are looking for does not exist.',
     },
 }
@@ -72,7 +72,6 @@ const AnimatedContent = dynamic(() => import('@/components/AnimatedContent'), {
           </Link>
           
           <Button
-            variant="outline"
             size="lg"
             className="min-w-[200px] group border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 hover:border-gray-400 dark:hover:border-gray-500 transition-all duration-300"
           >
@@ -80,7 +79,7 @@ const AnimatedContent = dynamic(() => import('@/components/AnimatedContent'), {
             Go Back
           </Button>
         </div>
-        <div className="mt-16 pt-8 border-t border-gray-200/20 dark:border-gray-700/20">
+        <div className="border-t border-gray-200/20 dark:border-gray-700/20">
           <p className="text-sm text-gray-500 dark:text-gray-400 italic">
             Don&apos;t worry, even the best explorers get lost sometimes. Let&apos;s get you back on track.
           </p>

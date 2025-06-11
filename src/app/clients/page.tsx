@@ -130,7 +130,7 @@ export default function ClientsPage() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Testimonial 1 */}
-            <div className="bg-light dark:bg-gray-800 rounded-lg p-6 shadow-sm">
+            <div className="bg-secondary-50 dark:bg-secondary rounded-lg p-6 shadow-sm">
               <div className="flex items-center mb-4">
                 <div className="mr-4">
                   <div className="relative h-16 w-16 rounded-full overflow-hidden">
@@ -153,7 +153,7 @@ export default function ClientsPage() {
             </div>
             
             {/* Testimonial 2 */}
-            <div className="bg-light dark:bg-gray-800 rounded-lg p-6 shadow-sm">
+            <div className="bg-secondary-50 dark:bg-secondary rounded-lg p-6 shadow-sm">
               <div className="flex items-center mb-4">
                 <div className="mr-4">
                   <div className="relative h-16 w-16 rounded-full overflow-hidden">
@@ -176,7 +176,7 @@ export default function ClientsPage() {
             </div>
             
             {/* Testimonial 3 */}
-            <div className="bg-light dark:bg-gray-800 rounded-lg p-6 shadow-sm">
+            <div className="bg-secondary-50 dark:bg-secondary rounded-lg p-6 shadow-sm">
               <div className="flex items-center mb-4">
                 <div className="mr-4">
                   <div className="relative h-16 w-16 rounded-full overflow-hidden">
