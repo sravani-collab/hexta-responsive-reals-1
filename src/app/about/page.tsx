@@ -65,7 +65,7 @@ export default function AboutPage() {
                 Our Story
               </h2>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                Founded in 2018, HextaSphere began with a simple goal: to help
+                Founded in 2024, HextaSphere began with a simple goal: to help
                 businesses leverage technology to achieve their full potential.
                 What started as a small team of passionate engineers has grown
                 into a comprehensive technology solutions provider serving

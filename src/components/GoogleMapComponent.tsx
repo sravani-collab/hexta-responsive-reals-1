@@ -1,18 +1,18 @@
 "use client";
 
-import { useMemo } from 'react';
-import { GoogleMap, useLoadScript, Marker } from '@react-google-maps/api';
+import { useMemo } from "react";
+import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
 
 const mapContainerStyle = {
-  width: '100%',
-  height: '100%',
+  width: "100%",
+  height: "100%",
 };
 
 // HextaSphere office coordinates based on the address
 // TF2, VUDA Complex, Seethammadara, Visakhapatnam
 const center = {
-  lat: 17.7231,
-  lng: 83.3248,
+  lat: 17.7401233,
+  lng: 83.3124458,
 };
 
 export default function GoogleMapComponent() {
@@ -22,7 +22,7 @@ export default function GoogleMapComponent() {
 
   const mapOptions = useMemo(
     () => ({
-      zoom: 16,
+      zoom: 17,
       center: center,
       mapTypeControl: false,
       streetViewControl: false,
@@ -61,10 +61,7 @@ export default function GoogleMapComponent() {
       zoom={16}
       options={mapOptions}
     >
-      <Marker
-        position={center}
-        title="HextaSphere Technologies"
-      />
+      <Marker position={center} title="HextaSphere Technologies" />
     </GoogleMap>
   );
 }
