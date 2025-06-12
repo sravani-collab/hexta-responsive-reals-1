@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils"
 import Image from "next/image"
 
-export default function DroneTest() {
+export default function DroneSection() {
   return (
     <section className="relative mx-auto w-full max-w-6xl overflow-hidden rounded-xl shadow-2xl shadow-[#366A79]/70">
       <div className="absolute inset-0 object-cover">

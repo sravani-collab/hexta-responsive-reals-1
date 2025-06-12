@@ -12,23 +12,23 @@ interface WorkflowItem {
 const data: WorkflowItem[] = [
   {
     id: 1,
-    title: 'Set disbursement Instructions',
-    text: 'Get your blood tests delivered at home collect a sample from the your blood tests.',
+    title: 'Discovery & Consultation',
+    text: 'We begin by understanding your unique business challenges, technical requirements, and project goals through comprehensive consultation and analysis.',
   },
   {
     id: 2,
-    title: 'Assembly retrieves funds from your account',
-    text: 'Get your blood tests delivered at home collect a sample from the your blood tests.',
+    title: 'Solution Design & Planning',
+    text: 'Our expert team creates detailed project plans, technical architecture, and implementation roadmaps tailored to your specific needs.',
   },
   {
     id: 3,
-    title: 'Assembly initiates disbursement',
-    text: 'Get your blood tests delivered at home collect a sample from the your blood tests.',
+    title: 'Development & Implementation',
+    text: 'We execute the project using agile methodologies, ensuring quality delivery with regular updates and milestone reviews throughout the process.',
   },
   {
     id: 4,
-    title: 'Customer receives funds payment',
-    text: 'Get your blood tests delivered at home collect a sample from the your blood tests.',
+    title: 'Deployment & Ongoing Support',
+    text: 'After successful deployment, we provide comprehensive support, maintenance, and optimization to ensure your solution continues to deliver value.',
   },
 ];
 
@@ -51,8 +51,8 @@ export default function WorkProcess() {
       <div className="relative z-10 py-16 md:py-20 lg:py-24 pb-24 md:pb-28 lg:pb-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
-            slogan="Whats the function"
-            title="Let's see how it works"
+            slogan="Our Process"
+            title="How We Deliver Excellence"
             isWhite={true}
           />
 
