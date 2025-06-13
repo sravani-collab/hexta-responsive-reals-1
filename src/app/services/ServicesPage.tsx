@@ -23,7 +23,7 @@ const services = [
     id: 'it-services',
     title: 'IT Services',
     description: 'Comprehensive IT solutions tailored to your business needs.',
-    svgImage: 'https://cdn.hextasphere.com/svg/IT-Services.svg',
+    svgImage: 'https://cdn.hextasphere.com/svg/ITServices.svg',
     icon: 'it',
     slug: 'it',
     offerings: [
