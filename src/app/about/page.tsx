@@ -5,14 +5,10 @@ import { MagicCard } from "@/components/magicui/magic-card";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { getTeamImageUrl } from "@/lib/s3";
 import { Phone, Target, Eye, Users, Zap, Award, Lightbulb, Rocket, Handshake, ShieldCheck, UserCheck, BarChart3 } from "lucide-react";
-import  {motion} from "framer-motion" 
+import { motion } from "framer-motion" 
 import Link from "next/link";
 import { Button } from "@heroui/react"
-
-// export const metadata = {
-//   title: "About Us | HextaSphere",
-//   description: "Learn more about HextaSphere, our mission, vision, values, and leadership team.",
-// };
+import AdaptiveHLSPlayer from "@/components/adaptive-hls-player";
 
 export default function AboutPage() {
   const coreValues = [
@@ -85,19 +81,20 @@ export default function AboutPage() {
               </p>
             </motion.div>
             <motion.div 
-              className="relative h-80 md:h-96 rounded-xl overflow-hidden shadow-2xl"
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              {/* <BlurImage
-                src="/images/about-us/hexta-about-1.webp"
-                alt="HextaSphere team at work"
-                fill
-                className="object-cover"
-              /> */}
-              <video src="https://cdn.hextasphere.com/videos/about-us.mp4" className="object-cover" autoPlay muted loop />
+              {/* Updated to use HLS adaptive streaming */}
+              <AdaptiveHLSPlayer
+                src="https://cdn.hextasphere.com/hls/master2.m3u8"
+                poster="https://cdn.hextasphere.com/images/about-us-poster.jpg"
+                autoplay={true}
+                muted={true}
+                loop={true}
+                controls={false}
+              />
             </motion.div>
           </div>
         </div>
