@@ -1,22 +1,13 @@
 "use client"
 
 import dynamic from 'next/dynamic'
-import { Skeleton } from '@heroui/react'
 import type { VideoJSPlayerWithHLS } from '@/types/videojs-hls'
 
 // Dynamically import the HLS player to avoid SSR issues
 const HLSVideoPlayer = dynamic(() => import('./hls-video-player'), {
   ssr: false,
   loading: () => (
-    <div className="relative h-80 md:h-96 rounded-xl overflow-hidden bg-muted">
-      <Skeleton className="w-full h-full" />
-      <div className="absolute inset-0 flex items-center justify-center">
-        <div className="flex flex-col items-center space-y-2">
-          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
-          <div className="text-muted-foreground text-sm">Loading video player...</div>
-        </div>
-      </div>
-    </div>
+    <div className="relative h-80 md:h-96 rounded-xl overflow-hidden bg-muted" />
   )
 })
 
