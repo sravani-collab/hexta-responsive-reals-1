@@ -91,12 +91,13 @@ export default function AboutPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <BlurImage
+              {/* <BlurImage
                 src="/images/about-us/hexta-about-1.webp"
                 alt="HextaSphere team at work"
                 fill
                 className="object-cover"
-              />
+              /> */}
+              <video src="https://cdn.hextasphere.com/videos/about-us.mp4" className="object-cover" autoPlay muted loop />
             </motion.div>
           </div>
         </div>
