@@ -2,7 +2,7 @@
 
 import { MagicCard } from "@/components/magicui/magic-card";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Phone, Target, Eye, Users, Zap, Award, Lightbulb, Rocket, Handshake, ShieldCheck, UserCheck, BarChart3 } from "lucide-react";
+import { Phone, Target, Eye, Zap, Award, Lightbulb, Rocket, Handshake, ShieldCheck, UserCheck, BarChart3 } from "lucide-react";
 import { motion } from "framer-motion" 
 import Link from "next/link";
 import { Button } from "@heroui/react"
@@ -163,47 +163,6 @@ export default function AboutPage() {
               </motion.div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Leadership Team Section */}
-      <section className="py-16 md:py-24 bg-secondary">
-        <div className="container mx-auto px-4">
-          <motion.div {...fadeIn} className="text-center mb-12 md:mb-16">
-            <h2 className="text-3xl md:text-4xl font-semibold text-foreground mb-4 flex items-center justify-center">
-              <Users className="w-8 h-8 mr-3 text-primary" />
-              Our Leadership Team
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Meet the experienced professionals who guide our company&apos;s
-              vision and strategy.
-            </p>
-          </motion.div>
-          {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {leadershipTeam.map((member, index) => (
-              <motion.div 
-                key={member.name}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.15 }}
-              >
-                <Card className="bg-card text-card-foreground text-center p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                  <div className="relative h-40 w-40 mx-auto rounded-full overflow-hidden mb-6 border-4 border-primary/50">
-                    <BlurImage
-                      src={member.image}
-                      alt={`${member.name} portrait`}
-                      sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <h3 className="text-xl font-semibold text-foreground mb-1">{member.name}</h3>
-                  <p className="text-primary font-medium">{member.role}</p>
-                </Card>
-              </motion.div>
-            ))}
-          </div> */}
         </div>
       </section>
 
