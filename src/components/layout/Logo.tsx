@@ -23,16 +23,16 @@ export default function HextaLogo() {
   }
 
   const logoSrc = resolvedTheme === 'dark' 
-    ? '/images/logo-dark.svg' 
-    : '/images/logo-light.svg';
+    ? '/images/hexta-dark.svg' 
+    : '/images/hexta-light.svg';
 
   return (
-    <div className="h-14 w-32 relative">
+    <div className="h-24 w-64 relative">
       <Image
         src={logoSrc}
         alt="HextaSphere Logo"
         fill
-        className="object-contain transition-opacity duration-300"
+        className="object-contain transition-opacity duration-300 bg-clip-inherit"
         priority
       />
     </div>
