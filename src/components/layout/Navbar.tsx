@@ -18,7 +18,7 @@ const menuItems = [
   { name: 'About', path: '/about' },
   { name: 'Projects', path: '/projects' },
   { name: 'Services', path: '/services' },
-  { name: 'Team', path: '/team' },
+  // { name: 'Team', path: '/team' },
   { name: 'Clients', path: '/clients' },
   { name: 'Careers', path: '/careers' },
   { name: 'Contact', path: '/contact' },

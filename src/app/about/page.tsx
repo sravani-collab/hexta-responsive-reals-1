@@ -1,9 +1,7 @@
 "use client"
 
-import BlurImage from "@/components/blur-image";
 import { MagicCard } from "@/components/magicui/magic-card";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { getTeamImageUrl } from "@/lib/s3";
 import { Phone, Target, Eye, Users, Zap, Award, Lightbulb, Rocket, Handshake, ShieldCheck, UserCheck, BarChart3 } from "lucide-react";
 import  {motion} from "framer-motion" 
 import Link from "next/link";
@@ -22,12 +20,6 @@ export default function AboutPage() {
     { title: "Collaboration", icon: <Handshake className="w-8 h-8 mb-2 text-primary" />, description: "We work closely with our clients, fostering partnerships built on open communication and shared goals." },
     { title: "Integrity", icon: <UserCheck className="w-8 h-8 mb-2 text-primary" />, description: "We operate with transparency, honesty, and ethical practices in all our business relationships." },
     { title: "Client Success", icon: <BarChart3 className="w-8 h-8 mb-2 text-primary" />, description: "We measure our success by the value we create for our clients and their achievement of business objectives." },
-  ];
-
-  const leadershipTeam = [
-    { name: "Srinivasa Rao Vavilapalli", role: "Managing Director", image: getTeamImageUrl("srinivasa-rao-vavilapalli.jpeg") },
-    { name: "Santosh Kumar Bogela", role: "Business Head", image: getTeamImageUrl("santosh-kumar-bogela.jpeg") },
-    { name: "D. Sudheer Babu", role: "Head - IT Operations", image: getTeamImageUrl("sudheer.jpeg") },
   ];
 
   const fadeIn = {
@@ -189,7 +181,7 @@ export default function AboutPage() {
               vision and strategy.
             </p>
           </motion.div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {leadershipTeam.map((member, index) => (
               <motion.div 
                 key={member.name}
@@ -212,7 +204,7 @@ export default function AboutPage() {
                 </Card>
               </motion.div>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
 
