@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/", "/_next/", "/public/"],
     },
-    sitemap: "https://dev.hextasphere.com/sitemap.xml",
+    sitemap: "https://hextasphere.com/sitemap.xml",
   };
 }

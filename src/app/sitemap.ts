@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 import { projectsDatabase } from '@/lib/projects'
 
-const baseUrl = 'https://dev.hextasphere.com'
+const baseUrl = 'https://hextasphere.com'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   // Static pages with their priorities and change frequencies
@@ -29,12 +29,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: 'weekly' as const,
       priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/team`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
-      priority: 0.7,
     },
     {
       url: `${baseUrl}/clients`,
