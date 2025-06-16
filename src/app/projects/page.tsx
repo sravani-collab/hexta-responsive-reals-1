@@ -36,7 +36,7 @@ const projects = [
     date: "2024-01-15",
     readTime: "8 min",
     featured: true,
-    blogUrl: "/projects/blog/hextavalut-edms",
+    blogUrl: "/projects/blog/hextavault-edms",
   },
   {
     id: "ocr",
