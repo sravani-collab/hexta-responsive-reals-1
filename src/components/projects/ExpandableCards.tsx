@@ -207,24 +207,25 @@ export const CloseIcon = () => {
 
 const cards = [
   {
-    title: "Engineering Data Management System",
-    description: "Gajala from Washington D.C.",
+    title: "Custom ERP solutions",
+    // description: "A customizable, modular ERP solution that integrates core business functions while offering flexibility, real-time analytics, and security features for businesses of all sizes.",
     src: "https://assets.aceternity.com/demos/lana-del-rey.jpeg",
     ctaText: "Read",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
       return (
         <p>
-          Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-          her melancholic and cinematic music style. Born Elizabeth Woolridge
-          Grant in New York City, she has captivated audiences worldwide with
-          her haunting voice and introspective lyrics. <br /> <br /> Her songs
-          often explore themes of tragic romance, glamour, and melancholia,
-          drawing inspiration from both contemporary and vintage pop culture.
-          With a career that has seen numerous critically acclaimed albums, Lana
-          Del Rey has established herself as a unique and influential figure in
-          the music industry, earning a dedicated fan base and numerous
-          accolades.
+          Our Custom ERP Software is a comprehensive and flexible solution
+          designed to streamline and automate key business processes across
+          departments such as inventory, finance, HR, sales, and customer
+          management. Built with a modular architecture, it allows businesses to
+          select and customize only the features they need, ensuring a perfect
+          fit for their operations. The software offers an intuitive user
+          interface, real-time analytics, seamless third-party integrations, and
+          robust security to support both growing startups and established
+          enterprises. Whether you&apos;re looking to enhance productivity, reduce
+          manual work, or gain better control over your data, our ERP system is
+          tailored to adapt to your unique business requirements.
         </p>
       );
     },

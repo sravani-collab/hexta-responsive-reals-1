@@ -92,12 +92,12 @@ export default function ProjectLayout({
       {image && (
         <section className="relative">
           <div className="container mx-auto px-4 -mt-16">
-            <div className="relative h-96 md:h-[500px] rounded-lg overflow-hidden shadow-2xl">
+            <div className="relative h-96 md:h-[60vh] rounded-lg overflow-hidden">
               <BlurImage
                 src={image}
                 alt={title}
                 fill
-                className="object-cover"
+                className="object-contain"
                 priority
               />
             </div>

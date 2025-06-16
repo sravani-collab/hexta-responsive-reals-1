@@ -30,7 +30,7 @@ export default function ServicesSection() {
         
         <div className="grid md:grid-cols-2 gap-8">
           {services.map((service) => (
-            <div key={service.id} className="rounded-md overflow-hidden shadow-md">
+            <div key={service.id} className="rounded-md overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
               <div className="relative h-64">
                 <Image
                   src={service.image}

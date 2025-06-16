@@ -4,36 +4,48 @@ import ProjectCard from '@/components/projects/ProjectCard'
 import { getProjectImageUrl } from '@/lib/s3'
 
 // Featured projects from the Figma file
-const featuredProjects = [
+const projects = [
   {
-    id: 'dms-oil-gas',
-    title: 'DMS tailored for Oil & Gas industry',
-    description: 'Developed a custom e-commerce platform with advanced features like real-time inventory management and secure payment processing.',
-    image: getProjectImageUrl('dms.png'),
-    slug: 'dms-oil-gas'
+    id: "erp",
+    title: "Custom ERP Solutions",
+    description:
+      "Transforming business operations with tailored ERP solutions for enhanced efficiency and productivity.",
+    category: "Enterprise Solutions",
+    image: getProjectImageUrl("custom-erp.jpg"),
+    tags: ["ERP", "Business Solutions", "Automation", "Integration"],
+    date: "2024-01-15",
+    readTime: "8 min",
+    featured: true,
+    slug: "/projects/blog/custom-erp-solutions",
   },
   {
-    id: 'blockchain',
-    title: 'Blockchain - Smart Contracts',
-    description: 'Implemented a blockchain-based voting system for secure and transparent elections, ensuring vote integrity and voter privacy.',
-    image: getProjectImageUrl('blockchain.png'),
-    slug: 'blockchain-smart-contracts'
+    id: "edms",
+    title: "HextaValut EDMS",
+    description:
+      "Transforming document management with HextaValut EDMS for enhanced collaboration and efficiency.",
+    category: "Enterprise Solutions",
+    image: getProjectImageUrl("hextavault-edms.png"),
+    tags: ["EDMS", "Document Management", "Collaboration", "Efficiency"],
+    date: "2024-01-15",
+    readTime: "8 min",
+    featured: true,
+    slug: "/projects/blog/hextavalut-edms",
   },
   {
-    id: 'health-app',
-    title: 'Health & Fitness App',
-    description: 'Created a cross-platform mobile app for tracking workouts, nutrition, and health metrics, integrating with wearable devices.',
-    image: getProjectImageUrl('health.png'),
-    slug: 'health-fitness-app'
-  },
-  {
-    id: 'financial-dashboard',
-    title: 'Financial Dashboard',
-    description: 'Built a responsive web application for visualizing complex financial data in real-time with customizable reports and analytics.',
-    image: getProjectImageUrl('financial-dashboard.png'),
-    slug: 'financial-dashboard'
-  },
-]
+    id: "ocr",
+    title: "OCR Tag Extraction",
+    description:
+      "Leveraging OCR technology to automate tag extraction from documents, enhancing data processing efficiency.",
+    category: "Document Solutions",
+    image: getProjectImageUrl("ocr-tag-extraction.png"),
+    tags: ["OCR", "Document Management", "Automation", "Data Processing"],
+    date: "2024-01-15",
+    readTime: "8 min",
+    featured: true,
+    slug: "/projects/blog/ocr-tag-extraction",
+  }
+];
+
 
 export default function ProjectsSection() {
   return (
@@ -45,7 +57,7 @@ export default function ProjectsSection() {
         </div>
         
         <div className="grid md:grid-cols-2 gap-6">
-          {featuredProjects.map(project => (
+          {projects.map(project => (
             <ProjectCard key={project.id} project={project} />
           ))}
         </div>

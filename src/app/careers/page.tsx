@@ -95,31 +95,31 @@ export default function CareersPage() {
               <div className="relative h-64 rounded-md overflow-hidden">
                 <Image
                   src={getCareerImageUrl("hexta-office.webp")}
-                  alt="HextaSphere team collaboration"
+                  alt="HextaSphere Workspace"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="relative h-64 rounded-md overflow-hidden">
                 <Image
-                  src={getCareerImageUrl("big-3-hexta.webp")}
-                  alt="HextaSphere workspace"
+                  src={getCareerImageUrl("team-mm.png")}
+                  alt="HextaSphere Team"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="relative h-64 rounded-md overflow-hidden">
                 <Image
-                  src={getCareerImageUrl("hexta-x-mm.jpg")}
-                  alt="HextaSphere team event"
+                  src={getCareerImageUrl("rand-pic.png")}
+                  alt="HextaSphere Team Event"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="relative h-64 rounded-md overflow-hidden">
                 <Image
-                  src={getCareerImageUrl("divya-hexta.jpg")}
-                  alt="HextaSphere office environment"
+                  src={getCareerImageUrl("brochure-inaug.png")}
+                  alt="HextaSphere brochure inauguration"
                   fill
                   className="object-cover"
                 />

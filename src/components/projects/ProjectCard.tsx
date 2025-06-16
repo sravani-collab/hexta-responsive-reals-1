@@ -1,46 +1,93 @@
-import * as motion  from 'motion/react-client'
-import BlurImage from '../blur-image'
-import Link from 'next/link'
+import BlurImage from "../blur-image";
+import Link from "next/link";
 
 interface Project {
-  id: string
-  title: string
-  description: string
-  image: string
-  slug: string
+  id: string;
+  title: string;
+  description: string;
+  image: string;
+  slug: string;
+  tags: string[];
+  date: string;
+  readTime: string;
+  category?: string;
 }
 
 interface ProjectCardProps {
-  project: Project
+  project: Project;
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <motion.div initial={{scale: 0}} animate={{scale:1}} whileHover={{scale: 1.05}} className="bg-[#F4F4F4] dark:bg-[#1E1E1E] rounded-md overflow-hidden shadow-sm">
-      <div className="relative h-60 mt-12">
-        <BlurImage
-          src={project.image}
-          alt={project.title}
-          fill
-          className="object-contain"
-        />
-      </div>
-      
-      <div className="p-4">
-        <h3 className="text-base font-semibold text-dark mb-2">{project.title}</h3>
-        <p className="text-sm text-dark mb-4">
-          {project.description.length > 120
-            ? `${project.description.substring(0, 120)}...`
-            : project.description
-          }
-        </p>
-        <Link 
-          href={`/projects/${project.slug}`}
-          className="text-sm text-primary hover:underline"
-        >
-          Read More..
-        </Link>
-      </div>
-    </motion.div>
-  )
+              <article
+                key={project.id}
+                className="group bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+              >
+                <div className="relative overflow-hidden">
+                  <BlurImage
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute top-4 left-4">
+                  </div>
+                </div>
+                <div className="p-6">
+                  <div className="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-3">
+                    <time>
+                      {new Date(project.date).toLocaleDateString("en-US", {
+                        month: "short",
+                        day: "numeric",
+                        year: "numeric",
+                      })}
+                    </time>
+                    <span className="mx-2">•</span>
+                    <span>{project.readTime}</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-dark mb-3 group-hover:text-primary transition-colors">
+                    {project.title}
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
+                    {project.description}
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.tags.slice(0, 3).map((tag) => (
+                      <span
+                        key={tag}
+                        className="px-2 py-1 text-xs font-medium text-gray-600 bg-gray-100 dark:text-gray-300 dark:bg-gray-700 rounded-full"
+                      >
+                        #{tag}
+                      </span>
+                    ))}
+                    {project.tags.length > 3 && (
+                      <span className="px-2 py-1 text-xs font-medium text-gray-400 bg-gray-50 dark:bg-gray-600 rounded-full">
+                        +{project.tags.length - 3} more
+                      </span>
+                    )}
+                  </div>
+                  {project.slug && (
+                    <Link
+                      href={project.slug}
+                      className="inline-flex items-center text-primary font-medium text-sm hover:text-primary/80 transition-colors"
+                    >
+                      Read More
+                      <svg
+                        className="w-4 h-4 ml-1"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </Link>
+                  )}
+                </div>
+              </article>
+  );
 }

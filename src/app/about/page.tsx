@@ -153,13 +153,13 @@ export default function AboutPage() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <MagicCard className="h-full" gradientColor="var(--primary-hsl)" gradientSize={150}>
-                  <Card className="bg-card text-card-foreground h-full p-6 flex flex-col items-center text-center">
+                  <Card className="h-full">
+                <MagicCard className="bg-card text-card-foreground h-full p-6 flex flex-col items-center" gradientColor="var(--primary-hsl)" gradientSize={150}>
                     {value.icon}
                     <h3 className="text-xl font-semibold text-foreground mb-2">{value.title}</h3>
                     <p className="text-muted-foreground text-sm leading-relaxed">{value.description}</p>
-                  </Card>
                 </MagicCard>
+                  </Card>
               </motion.div>
             ))}
           </div>
