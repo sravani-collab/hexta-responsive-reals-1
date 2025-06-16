@@ -44,7 +44,9 @@
     "remark-gfm": "^4.0.1",
     "sharp": "^0.34.1",
     "tailwind-merge": "^3.2.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "video.js": "^8.23.3",
+    "videojs-contrib-hls": "^5.15.0"
   },
   "devDependencies": {
     "@types/mdx": "^2.0.13",
@@ -52,6 +54,7 @@
     "@types/nodemailer": "^6.4.17",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/video.js": "^7.3.58",
     "autoprefixer": "^10.4.21",
     "eslint": "^8",
     "eslint-config-next": "14.2.26",
