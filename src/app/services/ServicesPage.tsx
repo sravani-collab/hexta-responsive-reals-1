@@ -28,8 +28,8 @@ const services = [
     slug: 'it',
     offerings: [
       {
-        title: 'Custom Software Development',
-        description: 'Bespoke software solutions tailored to your specific business requirements, from concept to deployment and maintenance.',
+        title: 'Custom ERP Solutions',
+        description: 'Transforming business operations with tailored ERP solutions for enhanced efficiency and productivity.',
         icon: 'code'
       },
       {
@@ -38,24 +38,14 @@ const services = [
         icon: 'smartphone'
       },
       {
-        title: 'Cloud Services',
-        description: 'Strategic cloud migration, architecture design, and managed services across AWS, Azure, and Google Cloud platforms.',
+        title: 'DevSecOps',
+        description: 'Implementing DevSecOps practices to integrate security into the software development lifecycle, ensuring robust and secure applications.',
         icon: 'cloud'
-      },
-      {
-        title: 'Cybersecurity',
-        description: 'Comprehensive security assessment, implementation, and monitoring to protect your critical business assets and data.',
-        icon: 'shield'
       },
       {
         title: 'Data Analytics & AI',
         description: 'Advanced data analysis, business intelligence solutions, and AI implementations to derive actionable insights from your data.',
         icon: 'chart'
-      },
-      {
-        title: 'IT Consulting',
-        description: 'Strategic technology guidance to help you make informed decisions about your IT infrastructure and digital transformation.',
-        icon: 'users'
       }
     ]
   },
@@ -68,34 +58,24 @@ const services = [
     slug: 'engineering',
     offerings: [
       {
-        title: 'Industrial IoT',
-        description: 'Connected systems for manufacturing, energy, and industrial environments that enable real-time monitoring and control.',
-        icon: 'cpu'
-      },
-      {
-        title: 'Automation Solutions',
-        description: 'Process automation systems that improve efficiency, reduce errors, and free up human resources for higher-value tasks.',
-        icon: 'cog'
-      },
-      {
-        title: 'Embedded Systems',
-        description: 'Custom embedded software and firmware development for specialized hardware and IoT devices.',
+        title: 'Reverse Engineering through FARO Scanning',
+        description: 'High-precision 3D scanning services for accurate measurements and modeling in construction, manufacturing, and engineering projects.',
         icon: 'microchip'
       },
       {
-        title: 'System Integration',
-        description: 'Seamless integration of diverse systems and technologies to create unified, efficient operational environments.',
+        title: 'Asset Health Monitoring',
+        description: 'Utilizing Drone technologies to predict equipment failures and optimize maintenance schedules, reducing downtime and costs.',
+        icon: 'cog'
+      },
+      {
+        title: 'Environmental Solutions for Oil and Gas',
+        description: 'Innovative technologies and strategies to minimize environmental impact and enhance sustainability in oil and gas operations.',
+        icon: 'shield'
+      },
+      {
+        title: 'Marine and Offshore Projects',
+        description: 'Comprehensive engineering services for marine and offshore projects, including design, analysis, and project management.',
         icon: 'merge'
-      },
-      {
-        title: 'Predictive Maintenance',
-        description: 'AI-powered systems that predict equipment failures before they occur, minimizing downtime and maintenance costs.',
-        icon: 'tool'
-      },
-      {
-        title: 'Engineering Consultation',
-        description: 'Expert guidance on complex engineering challenges, technology selection, and implementation strategies.',
-        icon: 'gauge'
       }
     ]
   }

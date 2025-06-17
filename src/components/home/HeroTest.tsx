@@ -1,7 +1,7 @@
 "use client";
 import { ShinyText } from "@/components/magicui/ShinyText";
-import Aurora from "@/components/ui/Aurora";
 import { motion } from "motion/react";
+import { Ripple } from "../magicui/ripple";
 // import { redirect } from "next/navigation";
 
 export function HeroSectionOne() {
@@ -9,12 +9,7 @@ export function HeroSectionOne() {
     <div className="relative w-full min-h-screen">
       {/* Position the Aurora absolutely with a fixed height from the top */}
       <div className="absolute inset-x-0 top-0 h-full z-0 overflow-hidden">
-        <Aurora 
-          colorStops={["#3A29FF", "#FF94B4", "#FF3232"]} 
-          blend={1.0} 
-          amplitude={1.0} 
-          speed={0.5}
-        />
+        <Ripple numCircles={48} mainCircleOpacity={0.6} />
       </div>
       <div className="relative mx-auto flex max-w-7xl flex-col items-center justify-center min-h-screen">
         <div className="px-4">

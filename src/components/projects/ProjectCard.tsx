@@ -1,5 +1,4 @@
 import BlurImage from "../blur-image";
-import Link from "next/link";
 
 interface Project {
   id: string;
@@ -66,27 +65,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                       </span>
                     )}
                   </div>
-                  {project.slug && (
-                    <Link
-                      href={project.slug}
-                      className="inline-flex items-center text-primary font-medium text-sm hover:text-primary/80 transition-colors"
-                    >
-                      Read More
-                      <svg
-                        className="w-4 h-4 ml-1"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M9 5l7 7-7 7"
-                        />
-                      </svg>
-                    </Link>
-                  )}
+                  
                 </div>
               </article>
   );

@@ -6,45 +6,6 @@ import { getCareerImageUrl } from '@/lib/s3'
 import { Button } from '@heroui/react'
 import { Mail} from 'lucide-react'
 
-// Benefits data
-const benefits = [
-  {
-    title: 'Health & Wellness',
-    items: [
-      'Comprehensive health, dental, and vision insurance',
-      'Mental health coverage',
-      'Ergonomic home office stipend'
-    ]
-  },
-  {
-    title: 'Work-Life Balance',
-    items: [
-      'Flexible work schedules',
-      'Generous paid time off',
-      'Paid parental leave',
-      'Company holidays and floating personal days'
-    ]
-  },
-  {
-    title: 'Financial Benefits',
-    items: [
-      'Competitive salary',
-      'Performance bonuses',
-      'Stock options',
-      'Professional development budget'
-    ]
-  },
-  {
-    title: 'Growth & Development',
-    items: [
-      'Continued education opportunities',
-      'Conference attendance',
-      'Certification reimbursement',
-      'Mentorship programs',
-      'Career advancement paths'
-    ]
-  }
-]
 
 export default function CareersPage() {
   return (
@@ -52,8 +13,8 @@ export default function CareersPage() {
       {/* Careers Hero */}
       <section className="relative pt-32 pb-16 bg-primary">
         <div className="container mx-auto px-4">
-          <h1 className="text-3xl md:text-4xl font-bold text-black dark:text-black dark:text-white mb-4">Join Our Team</h1>
-          <p className="text-lg text-black dark:text-black dark:text-white max-w-2xl">
+          <h1 className="text-3xl md:text-4xl font-bold text-black dark:text-white mb-4">Join Our Team</h1>
+          <p className="text-lg text-black dark:text-white max-w-2xl">
             Discover exciting career opportunities at HextaSphere and be part of a team that&apos;s building innovative technology solutions.
           </p>
         </div>
@@ -125,34 +86,6 @@ export default function CareersPage() {
                 />
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-      
-      {/* Benefits Section */}
-      <section className="py-16 bg-secondary">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-3xl font-semibold text-dark mb-4">Employee Benefits</h2>
-            <p className="text-dark max-w-3xl mx-auto">
-              We offer a comprehensive benefits package designed to support your health, wellbeing, and professional growth.
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {benefits.map((benefit, index) => (
-              <div key={index} className="bg-white rounded-lg p-6 shadow-sm">
-                <h3 className="text-lg font-semibold text-primary mb-4">{benefit.title}</h3>
-                <ul className="space-y-2">
-                  {benefit.items.map((item, itemIndex) => (
-                    <li key={itemIndex} className="flex items-start">
-                      <span className="text-primary mr-2">•</span>
-                      <span className="text-dark text-sm">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
           </div>
         </div>
       </section>

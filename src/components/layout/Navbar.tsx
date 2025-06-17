@@ -42,9 +42,7 @@ export function Navbar() {
     <header
       className={cn(
         "fixed top-0 z-40 w-full transition-all duration-200",
-        isScrolled 
-          ? "bg-background/60 backdrop-blur-md" 
-          : "bg-transparent"
+        isScrolled? "bg-background/60 backdrop-blur-md" : "bg-transparent",
       )}
     >
       <div className="container mx-auto px-4">
