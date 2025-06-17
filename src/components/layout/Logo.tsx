@@ -27,7 +27,7 @@ export default function HextaLogo() {
     : '/images/hexta-light.svg';
 
   return (
-    <div className="h-24 w-64 relative">
+    <div className="h-44 w-44 relative">
       <Image
         src={logoSrc}
         alt="HextaSphere Logo"

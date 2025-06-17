@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { MapPin, Phone, Mail } from 'lucide-react'
 import dynamic from 'next/dynamic'
-import { Skeleton } from '@heroui/react'
+import { Button, Skeleton } from '@heroui/react'
 
 // Dynamically import the GoogleMap component to prevent SSR issues
 const GoogleMapComponent = dynamic(() => import('@/components/GoogleMapComponent'), {
@@ -232,13 +232,20 @@ export default function ContactPage() {
                       ></textarea>
                     </div>
                     
-                    <button
+                    <Button
                       type="submit"
                       disabled={isSubmitting}
-                      className="px-6 py-3 bg-primary text-black dark:text-white rounded font-semibold hover:bg-opacity-90 transition disabled:opacity-70"
+                      style={{
+                        backgroundColor: '#4F46E5', // Primary color
+                        color: '#FFFFFF', // Text color
+                        padding: '0.75rem 1.5rem', // Padding
+                        borderRadius: '0.375rem', // Rounded corners
+                        fontSize: '1rem', // Font size
+                        fontWeight: '600' // Font weight
+                      }}
                     >
                       {isSubmitting ? 'Sending...' : 'Send Message'}
-                    </button>
+                    </Button>
                   </form>
                 )}
               </div>

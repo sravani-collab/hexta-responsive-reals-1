@@ -135,7 +135,7 @@ export default function ClientsPage() {
                 <div className="mr-4">
                   <div className="relative h-16 w-16 rounded-full overflow-hidden">
                     <Image
-                      src="https://cdn.hextasphere.com/clients/client-temp.png"
+                      src="https://cdn.hextasphere.com/testimonials/cha-che.png"
                       alt="Testimonial author"
                       fill
                       className="object-cover"
@@ -143,8 +143,8 @@ export default function ClientsPage() {
                   </div>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-dark   dark:text-white">Robert Johnson</h3>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm">CTO, GlobalBank</p>
+                  <h3 className="font-semibold text-dark   dark:text-white">Chandrasekhar Chevvakula</h3>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">CEO, Classique Engineering</p>
                 </div>
               </div>
               <p className="text-dark dark:text-gray-300 italic">
@@ -158,7 +158,7 @@ export default function ClientsPage() {
                 <div className="mr-4">
                   <div className="relative h-16 w-16 rounded-full overflow-hidden">
                     <Image
-                      src="https://cdn.hextasphere.com/clients/client-temp.png"
+                      src="https://cdn.hextasphere.com/testimonials/cha-che.png"
                       alt="Testimonial author"
                       fill
                       className="object-cover"
@@ -181,7 +181,7 @@ export default function ClientsPage() {
                 <div className="mr-4">
                   <div className="relative h-16 w-16 rounded-full overflow-hidden">
                     <Image
-                      src="https://cdn.hextasphere.com/clients/client-temp.png"
+                      src="https://cdn.hextasphere.com/testimonials/cha-che.png"
                       alt="Testimonial author"
                       fill
                       className="object-cover"

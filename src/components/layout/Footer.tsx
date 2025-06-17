@@ -16,7 +16,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between">
           {/* Logo and Info */}
           <div className="mb-8 md:mb-0">
-            <div className="h-14 w-32 relative mb-4">
+            <div className="h-32 w-44 relative mb-4">
               <HextaLogo />
             </div>
             <p className="text-dark text-sm max-w-xs">

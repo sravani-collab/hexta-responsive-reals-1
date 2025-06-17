@@ -97,7 +97,7 @@ export default function ProjectLayout({
                 src={image}
                 alt={title}
                 fill
-                className="object-contain"
+                className="object-contain  shadow-2xl transition-opacity duration-300 bg-clip-inherit"
                 priority
               />
             </div>

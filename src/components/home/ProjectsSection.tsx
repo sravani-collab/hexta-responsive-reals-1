@@ -11,10 +11,10 @@ const projects = [
     description:
       "Transforming business operations with tailored ERP solutions for enhanced efficiency and productivity.",
     category: "Enterprise Solutions",
-    image: getProjectImageUrl("custom-erp.jpg"),
+    image: getProjectImageUrl("custom-erp.png"),
     tags: ["ERP", "Business Solutions", "Automation", "Integration"],
     date: "2024-01-15",
-    readTime: "8 min",
+    readTime: "5 min",
     featured: true,
     slug: "/projects/blog/custom-erp-solutions",
   },
@@ -27,9 +27,9 @@ const projects = [
     image: getProjectImageUrl("hextavault-edms.png"),
     tags: ["EDMS", "Document Management", "Collaboration", "Efficiency"],
     date: "2024-01-15",
-    readTime: "8 min",
+    readTime: "10 min",
     featured: true,
-    slug: "/projects/blog/hextavalut-edms",
+    slug: "/projects/blog/hextavault-edms",
   },
   {
     id: "ocr",
@@ -37,10 +37,10 @@ const projects = [
     description:
       "Leveraging OCR technology to automate tag extraction from documents, enhancing data processing efficiency.",
     category: "Document Solutions",
-    image: getProjectImageUrl("ocr-tag-extraction.png"),
+    image: getProjectImageUrl("ocr-tags.png"),
     tags: ["OCR", "Document Management", "Automation", "Data Processing"],
     date: "2024-01-15",
-    readTime: "8 min",
+    readTime: "5 min",
     featured: true,
     slug: "/projects/blog/ocr-tag-extraction",
   }
