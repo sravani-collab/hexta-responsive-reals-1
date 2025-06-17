@@ -42,6 +42,36 @@ const logos = [
     url: getClientImageUrl("vizag-care-ld.png"),
     logoDark: getClientImageUrl("vizag-care-ld.png"),
   },
+  {
+    name: "ONGC",
+    url: getClientImageUrl("ONGC_Logo.png"),
+    logoDark: getClientImageUrl("ONGC_Logo.png"),
+  },
+  {
+    name: "NACL",
+    url: getClientImageUrl("nacl-light.png"),
+    logoDark: getClientImageUrl("nacl-dark.png"),
+  },
+  {
+    name: "Classique",
+    url: getClientImageUrl("classique_light.svg"),
+    logoDark: getClientImageUrl("classique_dark.svg"),
+  },
+  {
+    name: "Eshani",
+    url: getClientImageUrl("eshani_light.svg"),
+    logoDark: getClientImageUrl("eshani_dark.svg"),
+  },
+  {
+    name: "Mining Mart",
+    url: getClientImageUrl("miningmart_light.svg"),
+    logoDark: getClientImageUrl("miningmart_dark.svg"),
+  },
+  {
+    name: "Continental Coffee",
+    url: getClientImageUrl("coffee.svg"),
+    logoDark: getClientImageUrl("coffee.svg"),
+  }
 ];
   
   const AnimatedLogoCloud = () => {

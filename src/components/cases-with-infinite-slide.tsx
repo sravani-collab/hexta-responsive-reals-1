@@ -38,24 +38,14 @@ const clientCategories = [
     logoDark: getClientImageUrl("vizag-care-ld.png"),
   },
   {
-    name: "Classique",
-    logoLight: getClientImageUrl("classique_light.svg"),
-    logoDark: getClientImageUrl("classique_dark.svg"),
+    name: "ONGC",
+    logoLight: getClientImageUrl("ONGC_Logo.png"),
+    logoDark: getClientImageUrl("ONGC_Logo.png"),
   },
   {
-    name: "Eshani",
-    logoLight: getClientImageUrl("eshani_light.svg"),
-    logoDark: getClientImageUrl("eshani_dark.svg"),
-  },
-  {
-    name: "Mining Mart",
-    logoLight: getClientImageUrl("miningmart_light.svg"),
-    logoDark: getClientImageUrl("miningmart_dark.svg"),
-  },
-  {
-    name: "Continental Coffee",
-    logoLight: getClientImageUrl("coffee.svg"),
-    logoDark: getClientImageUrl("coffee.svg"),
+    name: "NACL",
+    logoLight: getClientImageUrl("nacl-light.png"),
+    logoDark: getClientImageUrl("nacl-dark.png"),
   },
   {
     name: "Classique",
@@ -83,114 +73,14 @@ const clientCategories = [
     logoDark: getClientImageUrl("vizag-care-ld.png"),
   },
   {
-    name: "Classique",
-    logoLight: getClientImageUrl("classique_light.svg"),
-    logoDark: getClientImageUrl("classique_dark.svg"),
+    name: "ONGC",
+    logoLight: getClientImageUrl("ONGC_Logo.png"),
+    logoDark: getClientImageUrl("ONGC_Logo.png"),
   },
   {
-    name: "Eshani",
-    logoLight: getClientImageUrl("eshani_light.svg"),
-    logoDark: getClientImageUrl("eshani_dark.svg"),
-  },
-  {
-    name: "Mining Mart",
-    logoLight: getClientImageUrl("miningmart_light.svg"),
-    logoDark: getClientImageUrl("miningmart_dark.svg"),
-  },
-  {
-    name: "Continental Coffee",
-    logoLight: getClientImageUrl("coffee.svg"),
-    logoDark: getClientImageUrl("coffee.svg"),
-  },
-  {
-    name: "Classique",
-    logoLight: getClientImageUrl("classique_light.svg"),
-    logoDark: getClientImageUrl("classique_dark.svg"),
-  },
-  {
-    name: "Eshani",
-    logoLight: getClientImageUrl("eshani_light.svg"),
-    logoDark: getClientImageUrl("eshani_dark.svg"),
-  },
-  {
-    name: "Mining Mart",
-    logoLight: getClientImageUrl("miningmart_light.svg"),
-    logoDark: getClientImageUrl("miningmart_dark.svg"),
-  },
-  {
-    name: "Continental Coffee",
-    logoLight: getClientImageUrl("coffee.svg"),
-    logoDark: getClientImageUrl("coffee.svg"),
-  },
-  {
-    name: "Vizag Care Ingredients",
-    logoLight: getClientImageUrl("vizag-care-ld.png"),
-    logoDark: getClientImageUrl("vizag-care-ld.png"),
-  },
-  {
-    name: "Classique",
-    logoLight: getClientImageUrl("classique_light.svg"),
-    logoDark: getClientImageUrl("classique_dark.svg"),
-  },
-  {
-    name: "Eshani",
-    logoLight: getClientImageUrl("eshani_light.svg"),
-    logoDark: getClientImageUrl("eshani_dark.svg"),
-  },
-  {
-    name: "Mining Mart",
-    logoLight: getClientImageUrl("miningmart_light.svg"),
-    logoDark: getClientImageUrl("miningmart_dark.svg"),
-  },
-  {
-    name: "Continental Coffee",
-    logoLight: getClientImageUrl("coffee.svg"),
-    logoDark: getClientImageUrl("coffee.svg"),
-  },
-  {
-    name: "Classique",
-    logoLight: getClientImageUrl("classique_light.svg"),
-    logoDark: getClientImageUrl("classique_dark.svg"),
-  },
-  {
-    name: "Eshani",
-    logoLight: getClientImageUrl("eshani_light.svg"),
-    logoDark: getClientImageUrl("eshani_dark.svg"),
-  },
-  {
-    name: "Mining Mart",
-    logoLight: getClientImageUrl("miningmart_light.svg"),
-    logoDark: getClientImageUrl("miningmart_dark.svg"),
-  },
-  {
-    name: "Continental Coffee",
-    logoLight: getClientImageUrl("coffee.svg"),
-    logoDark: getClientImageUrl("coffee.svg"),
-  },
-  {
-    name: "Vizag Care Ingredients",
-    logoLight: getClientImageUrl("vizag-care-ld.png"),
-    logoDark: getClientImageUrl("vizag-care-ld.png"),
-  },
-  {
-    name: "Classique",
-    logoLight: getClientImageUrl("classique_light.svg"),
-    logoDark: getClientImageUrl("classique_dark.svg"),
-  },
-  {
-    name: "Eshani",
-    logoLight: getClientImageUrl("eshani_light.svg"),
-    logoDark: getClientImageUrl("eshani_dark.svg"),
-  },
-  {
-    name: "Mining Mart",
-    logoLight: getClientImageUrl("miningmart_light.svg"),
-    logoDark: getClientImageUrl("miningmart_dark.svg"),
-  },
-  {
-    name: "Continental Coffee",
-    logoLight: getClientImageUrl("coffee.svg"),
-    logoDark: getClientImageUrl("coffee.svg"),
+    name: "NACL",
+    logoLight: getClientImageUrl("nacl-light.png"),
+    logoDark: getClientImageUrl("nacl-dark.png"),
   },
 ];
 

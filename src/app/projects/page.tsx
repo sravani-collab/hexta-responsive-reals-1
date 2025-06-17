@@ -18,7 +18,7 @@ const projects = [
     description:
       "Transforming business operations with tailored ERP solutions for enhanced efficiency and productivity.",
     category: "Enterprise Solutions",
-    image: getProjectImageUrl("ERP.svg"),
+    image: getProjectImageUrl("ERP-updated.svg"),
     tags: ["ERP", "Business Solutions", "Automation", "Integration"],
     date: "2024-01-15",
     readTime: "5 min",
@@ -31,7 +31,7 @@ const projects = [
     description:
       "Transforming document management with HextaValut EDMS for enhanced collaboration and efficiency.",
     category: "Enterprise Solutions",
-    image: getProjectImageUrl("hextavault-edms.png"),
+    image: getProjectImageUrl("dashboard.svg"),
     tags: ["EDMS", "Document Management", "Collaboration", "Efficiency"],
     date: "2024-01-15",
     readTime: "10 min",
@@ -44,7 +44,7 @@ const projects = [
     description:
       "Leveraging OCR technology to automate tag extraction from documents, enhancing data processing efficiency.",
     category: "Document Solutions",
-    image: getProjectImageUrl("ocr-tags.png"),
+    image: getProjectImageUrl("ocr-tags.svg"),
     tags: ["OCR", "Document Management", "Automation", "Data Processing"],
     date: "2024-01-15",
     readTime: "5 min",

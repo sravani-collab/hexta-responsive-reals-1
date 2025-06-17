@@ -7,14 +7,14 @@ const services = [
     id: 'it-services',
     title: 'IT Services',
     description: 'Comprehensive IT solutions tailored to your business needs, including software development, cloud services, and cybersecurity.',
-    image: getServiceImageUrl('it-serv.png'),
+    image: getServiceImageUrl('IT_Services.svg'),
     link: '/services'
   },
   {
     id: 'engineering-services',
     title: 'Engineering Services',
     description: 'Innovative engineering solutions for complex challenges, including system design, automation, and industrial IoT applications.',
-    image: getServiceImageUrl('engg-serv.png'),
+    image: getServiceImageUrl('Eng_services.svg'),
     link: '/services'
   }
 ]

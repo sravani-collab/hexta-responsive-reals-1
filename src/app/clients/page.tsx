@@ -1,8 +1,8 @@
-import Image from 'next/image'
 import { Case } from '@/components/cases-with-infinite-slide'
 import Link from 'next/link'
 import { Button } from '@heroui/react'
 import { Phone } from 'lucide-react'
+import { TypingAnimation } from '@/components/magicui/typing-animation'
 
 export const metadata = {
   title: 'Our Clients | HextaSphere',
@@ -122,80 +122,8 @@ export default function ClientsPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-3xl font-semibold text-dark   dark:text-white mb-4">What Our Clients Say</h2>
-            <p className="text-dark dark:text-gray-300 max-w-3xl mx-auto">
-              Don&apos;t just take our word for it—here&apos;s what our clients have to say about working with HextaSphere.
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Testimonial 1 */}
-            <div className="bg-secondary-50 dark:bg-secondary rounded-lg p-6 shadow-sm">
-              <div className="flex items-center mb-4">
-                <div className="mr-4">
-                  <div className="relative h-16 w-16 rounded-full overflow-hidden">
-                    <Image
-                      src="https://cdn.hextasphere.com/testimonials/cha-che.png"
-                      alt="Testimonial author"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-dark   dark:text-white">Chandrasekhar Chevvakula</h3>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm">CEO, Classique Engineering</p>
-                </div>
-              </div>
-              <p className="text-dark dark:text-gray-300 italic">
-                &quot;HextaSphere delivered a blockchain solution that transformed our cross-border transaction processes. Their expertise and collaborative approach made them an invaluable partner.&quot;
-              </p>
-            </div>
-            
-            {/* Testimonial 2 */}
-            <div className="bg-secondary-50 dark:bg-secondary rounded-lg p-6 shadow-sm">
-              <div className="flex items-center mb-4">
-                <div className="mr-4">
-                  <div className="relative h-16 w-16 rounded-full overflow-hidden">
-                    <Image
-                      src="https://cdn.hextasphere.com/testimonials/cha-che.png"
-                      alt="Testimonial author"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-dark   dark:text-white">Maria Rodriguez</h3>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm">Director of IT, GAIL</p>
-                </div>
-              </div>
-              <p className="text-dark dark:text-gray-300 italic">
-                &quot;The document management system HextaSphere developed has significantly improved our operational efficiency and compliance posture. Their understanding of the energy sector was evident throughout the project.&quot;
-              </p>
-            </div>
-            
-            {/* Testimonial 3 */}
-            <div className="bg-secondary-50 dark:bg-secondary rounded-lg p-6 shadow-sm">
-              <div className="flex items-center mb-4">
-                <div className="mr-4">
-                  <div className="relative h-16 w-16 rounded-full overflow-hidden">
-                    <Image
-                      src="https://cdn.hextasphere.com/testimonials/cha-che.png"
-                      alt="Testimonial author"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-dark   dark:text-white">David Chang</h3>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm">CEO, HealthInnovate</p>
-                </div>
-              </div>
-              <p className="text-dark dark:text-gray-300 italic">
-                &quot;Working with HextaSphere on our AI patient monitoring system was a game-changer. Their technical expertise, combined with a genuine understanding of healthcare challenges, resulted in a solution that&apos;s saving lives.&quot;
-              </p>
+            <div className="text-dark dark:text-gray-300 max-w-7xl mx-auto text-xl pt-8">
+              <TypingAnimation>Your story could be next. Check back soon for stories from our clients.</TypingAnimation>
             </div>
           </div>
         </div>

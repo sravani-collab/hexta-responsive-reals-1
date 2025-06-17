@@ -24,25 +24,12 @@ const projects = [
     description:
       "Transforming document management with HextaValut EDMS for enhanced collaboration and efficiency.",
     category: "Enterprise Solutions",
-    image: getProjectImageUrl("hextavault-edms.png"),
+    image: getProjectImageUrl("dashboard.svg"),
     tags: ["EDMS", "Document Management", "Collaboration", "Efficiency"],
     date: "2024-01-15",
     readTime: "10 min",
     featured: true,
     slug: "/projects/blog/hextavault-edms",
-  },
-  {
-    id: "ocr",
-    title: "OCR Tag Extraction",
-    description:
-      "Leveraging OCR technology to automate tag extraction from documents, enhancing data processing efficiency.",
-    category: "Document Solutions",
-    image: getProjectImageUrl("ocr-tags.png"),
-    tags: ["OCR", "Document Management", "Automation", "Data Processing"],
-    date: "2024-01-15",
-    readTime: "5 min",
-    featured: true,
-    slug: "/projects/blog/ocr-tag-extraction",
   }
 ];
 
