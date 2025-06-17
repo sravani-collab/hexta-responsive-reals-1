@@ -1,17 +1,7 @@
 "use client"
 
 import { useEffect, useRef } from 'react'
-import videojs from 'video.js'
-import 'video.js/dist/video-js.css'
-import 'videojs-contrib-hls'
-
-import type { 
-  VideoJSPlayerWithHLS, 
-  VideoJSOptions, 
-  VideoJSError,
-  VideoJSTechWithHLS,
-  HLSLevel
-} from '@/types/videojs-hls'
+import Hls from 'hls.js'
 
 interface HLSVideoPlayerProps {
   src: string
@@ -21,9 +11,7 @@ interface HLSVideoPlayerProps {
   muted?: boolean
   loop?: boolean
   controls?: boolean
-  fluid?: boolean
-  aspectRatio?: string
-  onReady?: (player: VideoJSPlayerWithHLS) => void
+  onReady?: () => void
 }
 
 export default function HLSVideoPlayer({
@@ -34,183 +22,146 @@ export default function HLSVideoPlayer({
   muted = true,
   loop = false,
   controls = true,
-  fluid = true,
-  aspectRatio = "16:9",
   onReady
 }: HLSVideoPlayerProps) {
-  const videoRef = useRef<HTMLDivElement>(null)
-  const playerRef = useRef<VideoJSPlayerWithHLS | null>(null)
+  const videoRef = useRef<HTMLVideoElement>(null)
+  const hlsRef = useRef<Hls | null>(null)
 
   useEffect(() => {
-    // Make sure Video.js player is only initialized once
-    if (!playerRef.current && videoRef.current) {
-      const videoElement = document.createElement("video-js")
-      videoElement.classList.add('vjs-big-play-centered')
-      
-      videoRef.current.appendChild(videoElement)
+    const video = videoRef.current
+    if (!video) return
 
-      const options: VideoJSOptions = {
-        autoplay: autoplay,
-        controls: controls,
-        muted: muted,
-        loop: loop,
-        fluid: fluid,
-        aspectRatio: aspectRatio,
-        poster: poster,
-        playbackRates: [0.5, 1, 1.25, 1.5, 2],
-        responsive: true,
-        sources: [{
-          src: src,
-          type: 'application/x-mpegURL'
-        }],
-        html5: {
-          hls: {
-            enableLowInitialPlaylist: true,
-            smoothQualityChange: true,
-            overrideNative: true
-          }
-        }
-      }
-
-      const player = playerRef.current = videojs(videoElement, options) as VideoJSPlayerWithHLS
-
-      // Player ready callback
-      player.ready(() => {
-        console.log('VideoJS HLS player is ready')
+    // Check if HLS is supported
+    if (Hls.isSupported()) {
+      const hls = new Hls({
+        // Enable automatic quality switching
+        enableWorker: true,
+        lowLatencyMode: false,
+        backBufferLength: 90,
         
-        // Enable adaptive bitrate streaming
-        const tech: VideoJSTechWithHLS | null = player.tech()
-        if (tech?.hls) {
-          tech.hls.bandwidth = 0 // Let HLS.js auto-select initial bandwidth
-          
-          // Handle quality level changes
-          const handleLoadedMetadata = (): void => {
-            const levels: HLSLevel[] | undefined = tech.hls?.levels
-            if (levels && levels.length > 1) {
-              console.log(`HLS: ${levels.length} quality levels available`)
-              levels.forEach((level: HLSLevel, index: number) => {
-                console.log(`Quality ${index}: ${level.width}x${level.height} @ ${level.bitrate}bps`)
-              })
-            }
-          }
-          
-          tech.hls.on('loadedmetadata', handleLoadedMetadata)
-        }
+        // Adaptive bitrate settings
+        abrEwmaFastLive: 3.0,
+        abrEwmaSlowLive: 9.0,
+        abrEwmaFastVoD: 3.0,
+        abrEwmaSlowVoD: 9.0,
+        abrEwmaDefaultEstimate: 500000,
+        abrBandWidthFactor: 0.95,
+        abrBandWidthUpFactor: 0.7,
+        abrMaxWithRealBitrate: false,
+        
+        // Fragment loading settings
+        maxLoadingDelay: 4,
+        maxBufferLength: 30,
+        maxBufferSize: 60 * 1000 * 1000,
+        maxBufferHole: 0.5,
+      })
 
+      hlsRef.current = hls
+
+      // Load the HLS stream
+      hls.loadSource(src)
+      hls.attachMedia(video)
+
+      // Event listeners
+      hls.on(Hls.Events.MANIFEST_PARSED, () => {
+        console.log('HLS manifest loaded')
         if (onReady) {
-          onReady(player)
+          onReady()
         }
       })
 
-      // Handle errors with proper typing
-      const handleError = (): void => {
-        const error: VideoJSError | null = player.error()
-        if (error) {
-          console.error('VideoJS Error:', {
-            code: error.code,
-            message: error.message,
-            status: error.status
-          })
+      hls.on(Hls.Events.LEVEL_SWITCHED, (event, data) => {
+        const level = hls.levels[data.level]
+        console.log(`Quality: ${level.height}p`)
+      })
+
+      hls.on(Hls.Events.ERROR, (event, data) => {
+        if (data.fatal) {
+          switch (data.type) {
+            case Hls.ErrorTypes.NETWORK_ERROR:
+              console.error('Network error, recovering...')
+              hls.startLoad()
+              break
+            case Hls.ErrorTypes.MEDIA_ERROR:
+              console.error('Media error, recovering...')
+              hls.recoverMediaError()
+              break
+            default:
+              console.error('Fatal error:', data.type)
+              hls.destroy()
+              break
+          }
         }
+      })
+
+      // Available quality levels loaded
+      hls.on(Hls.Events.MANIFEST_LOADED, (event, data) => {
+        console.log(`${data.levels.length} quality levels available`)
+      })
+
+    } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+      // Fallback for Safari (native HLS support)
+      video.src = src
+      console.log('Using native HLS support')
+      if (onReady) {
+        video.addEventListener('loadedmetadata', onReady)
       }
-
-      player.on('error', handleError)
-
-      // Handle other events
-      const handleLoadedMetadata = (): void => {
-        console.log('Video metadata loaded')
-      }
-
-      const handleLoadStart = (): void => {
-        console.log('Video load started')
-      }
-
-      const handleCanPlay = (): void => {
-        console.log('Video can start playing')
-      }
-
-      player.on('loadedmetadata', handleLoadedMetadata)
-      player.on('loadstart', handleLoadStart)
-      player.on('canplay', handleCanPlay)
+    } else {
+      console.error('HLS not supported by browser')
     }
+
+    // Video event listeners
+    const handleLoadStart = () => {}
+    const handleCanPlay = () => {}
+    const handlePlay = () => {}
+    const handlePause = () => {}
+    const handleEnded = () => {}
+    const handleError = () => {
+      if (video.error) {
+        console.error('Video error:', video.error.code)
+      }
+    }
+
+    video.addEventListener('loadstart', handleLoadStart)
+    video.addEventListener('canplay', handleCanPlay)
+    video.addEventListener('play', handlePlay)
+    video.addEventListener('pause', handlePause)
+    video.addEventListener('ended', handleEnded)
+    video.addEventListener('error', handleError)
 
     // Cleanup function
     return () => {
-      const player = playerRef.current
-      if (player && !player.isDisposed()) {
-        player.dispose()
-        playerRef.current = null
+      if (hlsRef.current) {
+        hlsRef.current.destroy()
+        hlsRef.current = null
       }
+      
+      video.removeEventListener('loadstart', handleLoadStart)
+      video.removeEventListener('canplay', handleCanPlay)
+      video.removeEventListener('play', handlePlay)
+      video.removeEventListener('pause', handlePause)
+      video.removeEventListener('ended', handleEnded)
+      video.removeEventListener('error', handleError)
+      video.removeEventListener('loadedmetadata', onReady || (() => {}))
     }
-  }, [src, autoplay, controls, muted, loop, fluid, aspectRatio, poster, onReady])
+  }, [src, onReady])
 
   return (
-    <div data-vjs-player className={className}>
-      <div ref={videoRef} />
-    </div>
+    <video
+      ref={videoRef}
+      className={className}
+      poster={poster}
+      autoPlay={autoplay}
+      muted={muted}
+      loop={loop}
+      controls={controls}
+      playsInline
+      style={{
+        width: '100%',
+        height: '100%',
+        borderRadius: '0.75rem',
+        objectFit: 'cover'
+      }}
+    />
   )
-}
-
-// Custom CSS styles
-const customStyles = `
-  .video-js {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .video-js .vjs-big-play-button {
-    font-size: 2.5em;
-    line-height: 2.3;
-    height: 2.5em;
-    width: 2.5em;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.7);
-    border: 0.15em solid #fff;
-    margin-left: -1.25em;
-    margin-top: -1.25em;
-    transition: all 0.3s ease;
-  }
-  
-  .video-js:hover .vjs-big-play-button,
-  .video-js .vjs-big-play-button:focus {
-    background-color: rgba(0, 0, 0, 0.9);
-    transform: scale(1.1);
-  }
-  
-  .video-js .vjs-control-bar {
-    background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.7));
-    transition: opacity 0.3s ease;
-  }
-  
-  .video-js .vjs-progress-control .vjs-progress-holder {
-    height: 0.5em;
-  }
-  
-  .video-js .vjs-progress-control .vjs-progress-holder .vjs-load-progress,
-  .video-js .vjs-progress-control .vjs-progress-holder .vjs-play-progress {
-    height: 0.5em;
-  }
-  
-  .video-js .vjs-play-progress {
-    background: linear-gradient(90deg, #3b82f6, #1d4ed8);
-  }
-  
-  .video-js .vjs-volume-panel {
-    transition: width 0.3s ease;
-  }
-  
-  .video-js:hover .vjs-control-bar {
-    opacity: 1;
-  }
-`
-
-// Inject custom styles only once
-if (typeof document !== 'undefined') {
-  const existingStyle = document.getElementById('hls-player-styles')
-  if (!existingStyle) {
-    const styleElement = document.createElement('style')
-    styleElement.id = 'hls-player-styles'
-    styleElement.textContent = customStyles
-    document.head.appendChild(styleElement)
-  }
 }
