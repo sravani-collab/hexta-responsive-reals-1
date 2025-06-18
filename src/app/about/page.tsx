@@ -86,6 +86,7 @@ export default function AboutPage() {
                 muted={true}
                 loop={true}
                 controls={false}
+                className="aspect-video"
                 
               />
             </motion.div>
