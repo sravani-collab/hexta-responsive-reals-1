@@ -42,7 +42,7 @@ const cabinetGrotesk = localFont({
 export const metadata: Metadata = {
   title: "HextaSphere - IT & Engineering Services",
   description:
-    "HextaSphere provides specialized IT and Engineering services including custom software development, blockchain solutions, and IoT systems.",
+    "HextaSphere provides specialized IT and Engineering services.",
   manifest: "/manifest.json",
   icons: {
     icon: "/favicon.ico",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     siteName: "HextaSphere - IT & Engineering Services",
     title: "HextaSphere - IT & Engineering Services",
     description:
-      "HextaSphere provides specialized IT and Engineering services including custom software development, blockchain solutions, and IoT systems.",
+      "HextaSphere provides specialized IT and Engineering services.",
       images: [
       {
         url: "https://cdn.hextasphere.com/og.png",
