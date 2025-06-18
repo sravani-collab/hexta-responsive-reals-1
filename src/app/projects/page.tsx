@@ -122,17 +122,7 @@ export default function ProjectsPage() {
                   </div>
                 </div>
                 <div className="p-6">
-                  <div className="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-3">
-                    <time>
-                      {new Date(project.date).toLocaleDateString("en-US", {
-                        month: "short",
-                        day: "numeric",
-                        year: "numeric",
-                      })}
-                    </time>
-                    <span className="mx-2">•</span>
-                    <span>{project.readTime}</span>
-                  </div>
+
                   <h3 className="text-xl font-bold text-dark mb-3 group-hover:text-primary transition-colors">
                     {project.title}
                   </h3>

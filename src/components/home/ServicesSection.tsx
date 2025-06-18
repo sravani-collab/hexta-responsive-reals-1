@@ -41,7 +41,7 @@ export default function ServicesSection() {
               </div>
               
               <div className="p-6">
-                <div className="bg-primary text-black dark:text-white py-2 px-4 inline-block mb-4 rounded">
+                <div className="bg-primary text-black dark:text-white py-2 inline-block mb-4 rounded">
                   <h3 className="font-semibold">{service.title}</h3>
                 </div>
                 <p className="text-dark mb-4">{service.description}</p>
