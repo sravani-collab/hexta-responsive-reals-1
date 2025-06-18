@@ -58,6 +58,31 @@ const services = [
     slug: 'engineering',
     offerings: [
       {
+        title: "3D Engineering Solutions for Oil and Gas",
+        description: "Advanced 3D modelling of complex pipeline systems, analysis of steel structures, ensuring accuracy and efficiency in design and installation.",
+        icon: "microchip"
+      },
+      {
+        title: 'Marine and Offshore Projects',
+        description: 'Comprehensive engineering services for marine and offshore projects, including design, analysis, and project management.',
+        icon: 'merge'
+      },
+      {
+        title: 'Process Simulation, Sustainability and Quantitative Risk Analysis',
+        description: 'Designing energy efficient systems that meet regulatory standards, and providing QRA services for LPG terminals and refineries.',
+        icon: 'merge'
+      },
+      {
+        title: 'Project Management',
+        description: 'End-to-end project management solutions ensuring timely delivery, cost control, and quality assurance for engineering projects.',
+        icon: 'microchip'
+      },
+      {
+        title: 'Environmental Solutions for Oil and Gas',
+        description: 'Innovative technologies and strategies to minimize environmental impact and enhance sustainability in oil and gas operations.',
+        icon: 'shield'
+      },
+      {
         title: 'Reverse Engineering through FARO Scanning',
         description: 'High-precision 3D scanning services for accurate measurements and modeling in construction, manufacturing, and engineering projects.',
         icon: 'microchip'
@@ -67,16 +92,6 @@ const services = [
         description: 'Utilizing Drone technologies to predict equipment failures and optimize maintenance schedules, reducing downtime and costs.',
         icon: 'cog'
       },
-      {
-        title: 'Environmental Solutions for Oil and Gas',
-        description: 'Innovative technologies and strategies to minimize environmental impact and enhance sustainability in oil and gas operations.',
-        icon: 'shield'
-      },
-      {
-        title: 'Marine and Offshore Projects',
-        description: 'Comprehensive engineering services for marine and offshore projects, including design, analysis, and project management.',
-        icon: 'merge'
-      }
     ]
   }
 ];
