@@ -63,6 +63,7 @@ export const metadata: Metadata = {
       },
     ],
     type: "website",
+    
   },
   twitter: {
     card: "summary_large_image",
@@ -73,6 +74,9 @@ export const metadata: Metadata = {
       "https://cdn.hextasphere.com/og.png",
     ],
   },
+  alternates: {
+    canonical: "https://hextasphere.com"
+  }
 };
 
 export default function RootLayout({
