@@ -14,12 +14,22 @@ const config: Config = {
     extend: {
       animation: {
         shimmer: "shimmer 2s linear infinite",
+        "ripple": "ripple var(--duration, 2s) ease calc(var(--i, 0) * 0.2s) infinite",
         "shiny-text": "shiny-text 8s infinite",
         "text-gradient": "textGradient 3s linear infinite",
         hover: "hover 4s cubic-bezier(0.45, 0, 0.55, 1) infinite;",
         "logo-cloud": "logo-cloud 30s linear infinite", // Adjust duration and timing as needed for your design.
       },
       keyframes: {
+        ripple: {
+          "50%" : {
+            transform: "translate(-50%, -50%) scale(0.9)"
+          },
+          "100%": {
+            transform: "translate(-50%, -50%) scale(1);"
+          }
+
+        },
         shimmer: {
           from: {
             backgroundPosition: "0 0",
