@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { Button } from "@heroui/react"
 // import Image from 'next/image'
 import ProjectCard from '@/components/projects/ProjectCard'
 import { getProjectImageUrl } from '@/lib/s3'
@@ -40,7 +41,7 @@ export default function ProjectsSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-semibold text-dark mb-2">OUR PROJECTS</h2>
-          <div className="h-px w-28 bg-dark mx-auto"></div>
+          <div className="h-px w-28 bg-secondary mx-auto"></div>
         </div>
         
         <div className="grid md:grid-cols-2 gap-6">
@@ -50,15 +51,14 @@ export default function ProjectsSection() {
         </div>
         
         <div className="mt-12 text-center">
-          <Link 
-            href="/projects"
-            className="inline-flex items-center px-6 py-2 bg-primary text-black dark:text-white rounded text-sm"
+          <Button variant="bordered" as={Link} href="/projects"
+            className="inline-flex items-center justify-center px-8 py-3 text-base font-medium rounded-md"
           >
             View All
             <svg className="ml-2 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
-          </Link>
+          </Button>
         </div>
       </div>
     </section>

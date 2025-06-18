@@ -20,7 +20,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   return (
               <article
                 key={project.id}
-                className="group bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+                className="group bg-transparent dark:bg-secondary rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
               >
                 <div className="relative overflow-hidden">
                   <BlurImage

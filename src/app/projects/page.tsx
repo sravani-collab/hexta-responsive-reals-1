@@ -57,7 +57,7 @@ const projects = [
 export default function ProjectsPage() {
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900">
+    <div className="min-h-screen bg-primary">
       {/* Hero Section */}
       <section className="relative pt-32 pb-16 bg-gradient-to-r from-primary/10 to-primary/5">
         <div className="container mx-auto px-4">
@@ -109,7 +109,7 @@ export default function ProjectsPage() {
             {projects.map((project) => (
               <article
                 key={project.id}
-                className="group bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+                className="group bg-secondary-50 dark:bg-secondary rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
               >
                 <div className="relative h-48 overflow-hidden">
                   <BlurImage
@@ -154,10 +154,10 @@ export default function ProjectsPage() {
       {/* Call to Action */}
       <section className="py-16 bg-primary">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Start Your Project?
           </h2>
-          <p className="text-xl text-white/90 max-w-2xl mx-auto mb-8">
+          <p className="text-xl max-w-2xl mx-auto mb-8">
             Let&apos;s discuss how we can bring your vision to life with our
             innovative solutions and expert team.
           </p>
