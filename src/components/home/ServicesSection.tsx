@@ -44,7 +44,7 @@ export default function ServicesSection() {
                   src={service.image}
                   alt={service.title}
                   fill
-                  className="object-cover"
+                  className="object-cover rounded-lg"
                 />
               </div>
 
