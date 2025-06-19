@@ -16,6 +16,7 @@ import {
 } from 'lucide-react';
 import { Button } from '@heroui/react';
 import Link from 'next/link';
+import { getServiceImageUrl } from '@/lib/s3';
 
 // Service data - updated to use SVG images instead of Lottie
 const services = [
@@ -23,7 +24,7 @@ const services = [
     id: 'it-services',
     title: 'IT Services',
     description: 'Comprehensive IT solutions tailored to your business needs.',
-    svgImage: 'https://cdn.hextasphere.com/svg/ITServices.svg',
+    svgImage: getServiceImageUrl('it-serv-inside.jpg'),
     icon: 'it',
     slug: 'it',
     offerings: [
@@ -53,7 +54,8 @@ const services = [
     id: 'engineering-services',
     title: 'Engineering Services',
     description: 'Innovative engineering solutions for complex challenges.',
-    svgImage: 'https://cdn.hextasphere.com/svg/EnggServices.svg',
+        svgImage: getServiceImageUrl('engg-serv-inside.jpg'),
+
     icon: 'engineering',
     slug: 'engineering',
     offerings: [
