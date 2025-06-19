@@ -87,16 +87,15 @@ const logos = [
             // }}
           >
             {Array(5)
-              .fill(null)
-              .map((index) => (
+              .fill(0)
+              .map((_, arrayIndex) => (
                 <div
-                  key={index}
+                  key={`logo-group-${arrayIndex}`}
                   className="flex shrink-0 animate-logo-cloud flex-row justify-around gap-6"
                 >
-                  {logos.map((logo, key) => (
-                    <>
+                  {logos.map((logo, logoIndex) => (
+                  <div key={`${arrayIndex}-${logoIndex}-${logo.name}`} className="flex-shrink-0">
                     <BlurImage
-                      key={key}
                       src={logo.url}
                       width={100}
                       height={100}
@@ -104,14 +103,13 @@ const logos = [
                       alt={`${logo.name}`}
                       />
                     <BlurImage
-                      key={key}
                       src={logo.logoDark}
                       width={100}
                       height={100}
                       className="h-12 w-64 px-2 hidden dark:block object-contain"
                       alt={`${logo.name}`}
                       />
-                      </>
+                  </div>
                   ))}
                 </div>
               ))}
