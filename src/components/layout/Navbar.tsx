@@ -48,7 +48,7 @@ export function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex h-[10vh] items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
+          <Link href="/" className="flex items-center z-50 relative">
             <Logo />
           </Link>
 
@@ -63,7 +63,7 @@ export function Navbar() {
                     "text-sm font-medium transition-colors",
                     pathname === item.path
                       ? "text-primary border-b-2 border-primary"
-                      : "text-foreground hover:text-primary"
+                      : "text-gray-900 dark:text-gray-100 hover:text-primary"
                   )}
                 >
                   {item.name}
@@ -88,7 +88,7 @@ export function Navbar() {
                         variant: "ghost",
                         size: "icon",
                       }),
-                      "md:hidden"
+                      "md:hidden text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800"
                     )}
                     aria-label="Toggle menu"
                   >
@@ -125,7 +125,10 @@ export function Navbar() {
                   </button>
                 </SheetTrigger>
                 
-                <SheetContent side="left" className="w-[300px] sm:w-[400px]">
+                <SheetContent 
+                  side="left" 
+                  className="w-[300px] sm:w-[400px] bg-white/80 dark:bg-black/80 backdrop-blur-sm"
+                >
                   <div className="flex flex-col h-full">
                     <div className="flex items-center mb-6">
                       <Link
@@ -154,7 +157,7 @@ export function Navbar() {
                     </nav>
                     
                     {/* Mobile Status Link */}
-                    <div className="mt-6 pt-6 border-t border-border">
+                    <div className="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
                       <div className="flex items-center justify-end">
                         <a 
                           href="https://status.hextasphere.com" 
@@ -174,10 +177,12 @@ export function Navbar() {
           </div>
         </div>
       </div>
+      
+      {/* Enhanced separator line with better visibility */}
       <hr className={cn(
         "m-0 h-px w-full border-none transition-opacity duration-200",
         isScrolled 
-          ? "opacity-100 bg-gradient-to-r from-neutral-200/0 via-neutral-200/30 to-neutral-200/0" 
+          ? "opacity-100 bg-gradient-to-r from-transparent via-gray-300 dark:via-gray-600 to-transparent" 
           : "opacity-0"
       )} />
     </header>
