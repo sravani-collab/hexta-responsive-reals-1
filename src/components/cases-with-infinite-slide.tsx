@@ -123,6 +123,7 @@ function Case() {
                         alt={`${client.name} logo`}
                         fill
                         className="object-contain"
+                        sizes="(max-width: 1024px) 50vw, 16.67vw"
                       />
                     </div>
                     {/* Dark mode image - hidden in light mode */}
@@ -132,6 +133,7 @@ function Case() {
                         alt={`${client.name} logo`}
                         fill
                         className="object-contain"
+                        sizes="(max-width: 1024px) 50vw, 16.67vw"
                       />
                     </div>
                   </div>

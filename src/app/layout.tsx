@@ -6,8 +6,8 @@ import { Navbar } from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { HeroUIProvider } from "@heroui/react";
 import { ThemeProvider } from "@/components/theme-provider";
-import NextTopLoader from "nextjs-toploader";
-import { PostHogProvider } from "@/components/PostHogProvider";
+import TopLoader from "@/components/TopLoaderWrapper";
+import { Analytics } from "@vercel/analytics/next"
 import LenisProvider from "@/components/LenisProvider";
 import ScrollToTop from "@/components/ScrollToTop";
 
@@ -85,27 +85,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${jakartaSans.variable} ${cabinetGrotesk.variable} font-sans`}
       >
-        <PostHogProvider>
           <HeroUIProvider>
             <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
               <LenisProvider>
-                <NextTopLoader
-                  color="#007BFF"
-                  showSpinner={false}
-                  initialPosition={0.2}
-                />
-                <Navbar />
-                <main className="flex-1">{children}</main>
-                <ScrollToTop />
-                <Footer />
+                <TopLoader>
+                  <Navbar />
+                  <main className="flex-1">{children}</main>
+                  <ScrollToTop />
+                  <Footer />
+                </TopLoader>
               </LenisProvider>
             </ThemeProvider>
           </HeroUIProvider>
-        </PostHogProvider>
+          <Analytics />
       </body>
     </html>
   );

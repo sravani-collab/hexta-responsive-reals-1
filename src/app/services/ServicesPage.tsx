@@ -24,7 +24,7 @@ const services = [
     id: 'it-services',
     title: 'IT Services',
     description: 'Comprehensive IT solutions tailored to your business needs.',
-    svgImage: getServiceImageUrl('it-serv-inside.jpg'),
+    svgImage: getServiceImageUrl('it-serv-inside-min.jpg'),
     icon: 'it',
     slug: 'it',
     offerings: [
@@ -54,7 +54,7 @@ const services = [
     id: 'engineering-services',
     title: 'Engineering Services',
     description: 'Innovative engineering solutions for complex challenges.',
-        svgImage: getServiceImageUrl('engg-serv-inside.jpg'),
+        svgImage: getServiceImageUrl('engg-serv-inside-min.jpg'),
 
     icon: 'engineering',
     slug: 'engineering',
@@ -192,7 +192,7 @@ interface SvgImageContainerProps {
   title: string;
 }
 
-const SvgImageContainer = ({ imagePath, title }: SvgImageContainerProps) => {
+const SvgImageContainer = ({ imagePath, title, isFirst = false }: SvgImageContainerProps & { isFirst?: boolean }) => {
   return (
     <div className="w-full py-6">
       <div className="relative w-full aspect-[16/9]">
@@ -202,7 +202,7 @@ const SvgImageContainer = ({ imagePath, title }: SvgImageContainerProps) => {
           fill
           className="object-cover rounded-lg"
           sizes="(max-width: 640px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 50vw, 33vw"
-          priority={false}
+          priority={isFirst}
           quality={80}
         />
       </div>

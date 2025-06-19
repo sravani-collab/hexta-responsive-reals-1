@@ -8,7 +8,7 @@ const services = [
     title: "IT Services",
     description:
       "Comprehensive IT solutions tailored to your business needs, including software development, cloud services, and cybersecurity.",
-    image: getServiceImageUrl("it-serv-riyal.jpg"),
+    image: getServiceImageUrl("it-serv-riyal-min.jpg"),
     link: "/services",
   },
   {
@@ -16,7 +16,7 @@ const services = [
     title: "Engineering Services",
     description:
       "Innovative engineering solutions for complex challenges, including system design, automation, and industrial IoT applications.",
-    image: getServiceImageUrl("engg-serv-riyal.jpg"),
+    image: getServiceImageUrl("engg-serv-riyal-min.jpg"),
 
     link: "/services",
   },
@@ -45,6 +45,8 @@ export default function ServicesSection() {
                   alt={service.title}
                   fill
                   className="object-cover rounded-lg"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+                  priority={service.id === "it-services"}
                 />
               </div>
 
