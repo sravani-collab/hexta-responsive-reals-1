@@ -59,6 +59,8 @@ export default function CareersPage() {
                   alt="HextaSphere Workspace"
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 50vw, 25vw"
+                  priority
                 />
               </div>
               <div className="relative h-64 rounded-md overflow-hidden">
@@ -67,6 +69,7 @@ export default function CareersPage() {
                   alt="HextaSphere Team"
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 50vw, 25vw"
                 />
               </div>
               <div className="relative h-64 rounded-md overflow-hidden">
@@ -75,6 +78,7 @@ export default function CareersPage() {
                   alt="HextaSphere Team Event"
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 50vw, 25vw"
                 />
               </div>
               <div className="relative h-64 rounded-md overflow-hidden">
@@ -83,6 +87,7 @@ export default function CareersPage() {
                   alt="HextaSphere brochure inauguration"
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 50vw, 25vw"
                 />
               </div>
             </div>
