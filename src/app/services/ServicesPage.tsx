@@ -6,7 +6,7 @@ import {
   Shield, 
   BarChart4, 
   Users, 
-  Cpu, 
+  Cpu,
   Cog, 
   Microchip, 
   GitMerge, 
@@ -200,7 +200,7 @@ const SvgImageContainer = ({ imagePath, title }: SvgImageContainerProps) => {
           src={imagePath}
           alt={title}
           fill
-          className="object-contain"
+          className="object-cover rounded-lg"
           sizes="(max-width: 640px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 50vw, 33vw"
           priority={false}
           quality={80}
