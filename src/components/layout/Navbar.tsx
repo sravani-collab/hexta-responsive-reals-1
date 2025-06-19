@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils"
 import { ModeToggle } from "@/components/mode-toggle"
 import Logo from "@/components/layout/Logo"
 import { buttonVariants } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet"
+import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetTitle } from "@/components/ui/sheet"
 
 // Icons
 import { RiArrowRightUpLine } from "@remixicon/react"
@@ -129,6 +129,7 @@ export function Navbar() {
                   side="left" 
                   className="w-[300px] sm:w-[400px] bg-white/80 dark:bg-black/80 backdrop-blur-sm"
                 >
+                  <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
                   <div className="flex flex-col h-full">
                     <div className="flex items-center mb-6">
                       <Link
