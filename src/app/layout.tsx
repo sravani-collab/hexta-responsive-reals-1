@@ -7,7 +7,7 @@ import Footer from "@/components/layout/Footer";
 import { HeroUIProvider } from "@heroui/react";
 import { ThemeProvider } from "@/components/theme-provider";
 import NextTopLoader from "nextjs-toploader";
-import { PostHogProvider } from "@/components/PostHogProvider";
+import { Analytics } from "@vercel/analytics/next"
 import LenisProvider from "@/components/LenisProvider";
 import ScrollToTop from "@/components/ScrollToTop";
 
@@ -89,7 +89,6 @@ export default function RootLayout({
       <body
         className={`${jakartaSans.variable} ${cabinetGrotesk.variable} font-sans`}
       >
-        <PostHogProvider>
           <HeroUIProvider>
             <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
               <LenisProvider>
@@ -105,7 +104,7 @@ export default function RootLayout({
               </LenisProvider>
             </ThemeProvider>
           </HeroUIProvider>
-        </PostHogProvider>
+          <Analytics />
       </body>
     </html>
   );
