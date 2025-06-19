@@ -29,8 +29,8 @@ const clientCategories = [
   },
   {
     name: "Continental Coffee",
-    logoLight: getClientImageUrl("coffee.svg"),
-    logoDark: getClientImageUrl("coffee.svg"),
+    logoLight: getClientImageUrl("Gail_light.svg"),
+    logoDark: getClientImageUrl("Gail_dark.svg"),
   },
   {
     name: "Vizag Care Ingredients",
@@ -64,8 +64,8 @@ const clientCategories = [
   },
   {
     name: "Continental Coffee",
-    logoLight: getClientImageUrl("coffee.svg"),
-    logoDark: getClientImageUrl("coffee.svg"),
+    logoLight: getClientImageUrl("Gail_light.svg"),
+    logoDark: getClientImageUrl("Gail_dark.svg"),
   },
   {
     name: "Vizag Care Ingredients",

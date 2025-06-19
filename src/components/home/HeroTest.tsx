@@ -9,7 +9,7 @@ export function HeroSectionOne() {
     <div className="relative w-full min-h-screen">
       {/* Position the Aurora absolutely with a fixed height from the top */}
       <div className="absolute inset-x-0 top-0 h-full z-0 overflow-hidden">
-        <Ripple numCircles={48} mainCircleOpacity={0.6} />
+        <Ripple numCircles={14} mainCircleOpacity={0.6}  />
       </div>
       <div className="relative mx-auto flex max-w-7xl flex-col items-center justify-center min-h-screen">
         <div className="px-4">

@@ -34,8 +34,8 @@ const logos = [
   },
   {
     name: "Continental Coffee",
-    url: getClientImageUrl("coffee.svg"),
-    logoDark: getClientImageUrl("coffee.svg"),
+    url: getClientImageUrl("Gail_light.svg"),
+    logoDark: getClientImageUrl("Gail_dark.svg"),
   },
   {
     name: "Vizag Care Ingredients",
@@ -69,8 +69,8 @@ const logos = [
   },
   {
     name: "Continental Coffee",
-    url: getClientImageUrl("coffee.svg"),
-    logoDark: getClientImageUrl("coffee.svg"),
+    url: getClientImageUrl("Gail_light.svg"),
+    logoDark: getClientImageUrl("Gail_dark.svg"),
   }
 ];
   
