@@ -27,12 +27,12 @@ export default function HextaLogo() {
     : '/images/hexta-light.svg';
 
   return (
-    <div className="h-52 w-52 relative">
+    <div className="h-[10vh] w-44 relative">
       <Image
         src={logoSrc}
         alt="HextaSphere Logo"
         fill
-        className="object-contain transition-opacity duration-300 bg-clip-inherit"
+        className="object-fill transition-opacity duration-300 bg-clip-inherit"
         priority
       />
     </div>
