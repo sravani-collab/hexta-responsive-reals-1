@@ -7,9 +7,13 @@ import { Ripple } from "../magicui/ripple";
 export function HeroSectionOne() {
   return (
     <div className="relative w-full min-h-screen">
-      {/* Position the Aurora absolutely with a fixed height from the top */}
-      <div className="absolute inset-x-0 top-0 h-full z-0 overflow-hidden">
-        <Ripple numCircles={14} mainCircleOpacity={0.6}  />
+      {/* Mobile RFipples */}
+      <div className="absolute block md:hidden inset-x-0 top-0 h-full z-0 overflow-hidden">
+        <Ripple numCircles={12} mainCircleOpacity={0.4}  />
+      </div>
+      {/* Desktop Ripples */}
+      <div className="absolute hidden md:block inset-x-0 top-0 h-full z-0 overflow-hidden">
+        <Ripple numCircles={20} mainCircleOpacity={0.5}  />
       </div>
       <div className="relative mx-auto flex max-w-7xl flex-col items-center justify-center min-h-screen">
         <div className="px-4">
