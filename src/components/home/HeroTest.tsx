@@ -31,7 +31,7 @@ export function HeroSectionOne() {
             <ShinyText />
           </motion.div>
           <h1 className="hero-title relative z-10 mx-auto max-w-5xl text-center text-2xl font-bold text-[#1C1917] md:text-4xl lg:text-7xl dark:text-slate-300">
-            {"Innovating Across Industries with Sustainable Solutions"
+            {"Empowering Innovation, Delivering Tomorrow’s Technology Today."
               .split(" ")
               .map((word, index) => (
                 <motion.span
@@ -62,7 +62,7 @@ export function HeroSectionOne() {
             }}
             className="relative z-10 mx-auto max-w-4xl py-4 text-center text-lg font-normal text-[#1C1917] dark:text-neutral-400"
           >
-            Delivering precision in engineering and excellence in IT solutions for a sustainable future.
+            Transforming ideas into smart solutions that drive your business forward
           </motion.p>
           <motion.div
             initial={{

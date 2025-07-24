@@ -36,6 +36,8 @@ export default function Footer() {
                 <li><Link href="/" className="text-dark hover:text-primary text-sm">Home</Link></li>
                 <li><Link href="/about" className="text-dark hover:text-primary text-sm">About</Link></li>
                 <li><Link href="/projects" className="text-dark hover:text-primary text-sm">Projects</Link></li>
+                <li><Link href="/team" className="text-dark hover:text-primary text-sm">Team</Link></li>
+                <li><Link href="/services" className="text-dark hover:text-primary text-sm">Services</Link></li>
                 <li><Link href="/clients" className="text-dark hover:text-primary text-sm">Clients</Link></li>
                 <li><Link href="/careers" className="text-dark hover:text-primary text-sm">Careers</Link></li>
                 <li><Link href="/contact" className="text-dark hover:text-primary text-sm">Contact us</Link></li>
@@ -61,9 +63,6 @@ export default function Footer() {
             <h3 className="font-bold text-dark text-base mb-4">Follow Us</h3>
             <div className="h-px w-20 bg-dark mb-4"></div>
             <div className="flex space-x-1">
-              <a href="https://x.com" target="_blank" rel="noopener noreferrer" className="text-dark hover:text-primary" aria-label="Twitter">
-                <TwitterIcon size={16} />
-              </a>
               <a href="https://linkedin.com/company/hextasphere-technologies/" target="_blank" rel="noopener noreferrer" className="text-dark hover:text-primary" aria-label="LinkedIn">
                 <LinkedinIcon size={16} />
               </a>

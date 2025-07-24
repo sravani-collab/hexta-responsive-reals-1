@@ -255,14 +255,13 @@ export default function ContactPage() {
       </section>
       
       {/* Map Section */}
-      <section className="mb-16">
+      {/* <section className="mb-16">
         <div className="container mx-auto px-4">
           <div className="rounded-lg overflow-hidden h-96">
-            {/* Replaced Suspense with HeroUI Skeleton loader */}
             <GoogleMapComponent />
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   )
 }

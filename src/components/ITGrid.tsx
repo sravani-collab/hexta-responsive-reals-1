@@ -83,7 +83,7 @@ function ITGrid() {
     </motion.div>
   );
   return (
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="w-fit mx-auto max-w-2xl">
       {itDivisionTeam.map((member, index) =>
         renderTeamMember(member, index, false)
       )}

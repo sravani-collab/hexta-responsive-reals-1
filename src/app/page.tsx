@@ -15,7 +15,7 @@ export default function Home() {
       {/* <HeroSection /> */}
       <Workflow />
       <WorkProcess />
-      <DroneSection />
+      {/* <DroneSection /> */}
       <ServicesSection />
       <ProjectsSection />
       {/* <ClientsSection /> */}

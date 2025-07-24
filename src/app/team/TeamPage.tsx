@@ -82,7 +82,7 @@ export default function TeamPage() {
               <h2 className="text-2xl md:text-3xl font-semibold text-dark mb-6">Our Culture</h2>
               <p className="text-dark mb-4">
                 At HextaSphere, we believe that great technology and engineering solutions come from great teams. We&apos;ve built a culture that fosters innovation, collaboration, and continuous learning across both our IT and Engineering divisions.
-              </p>
+   d          </p>
               <p className="text-dark mb-4">
                 Our team members are encouraged to experiment, share ideas, and pursue professional growth. We promote work-life balance, diversity of thought, and inclusive practices that make HextaSphere a rewarding place to work.
               </p>
@@ -130,7 +130,7 @@ export default function TeamPage() {
                   </div>
                   <div className="relative h-64 rounded-lg overflow-hidden">
                     <BlurImage
-                      src={ getCareerImageUrl("holi-sheet.jpeg")}
+                      src={ getCareerImageUrl("hexta-wall-logo.jpg")}
                       alt="Office environment"
                       fill
                       className="object-cover"

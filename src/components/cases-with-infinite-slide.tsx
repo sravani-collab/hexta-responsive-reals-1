@@ -28,21 +28,6 @@ const clientCategories = [
     logoDark: getClientImageUrl("miningmart_dark.svg"),
   },
   {
-    name: "Continental Coffee",
-    logoLight: getClientImageUrl("Gail_light.svg"),
-    logoDark: getClientImageUrl("Gail_dark.svg"),
-  },
-  {
-    name: "Vizag Care Ingredients",
-    logoLight: getClientImageUrl("vizag-care-ld.png"),
-    logoDark: getClientImageUrl("vizag-care-ld.png"),
-  },
-  {
-    name: "ONGC",
-    logoLight: getClientImageUrl("ONGC_Logo.png"),
-    logoDark: getClientImageUrl("ONGC_Logo.png"),
-  },
-  {
     name: "NACL",
     logoLight: getClientImageUrl("nacl-light.png"),
     logoDark: getClientImageUrl("nacl-dark.png"),
@@ -61,21 +46,6 @@ const clientCategories = [
     name: "Mining Mart",
     logoLight: getClientImageUrl("miningmart_light.svg"),
     logoDark: getClientImageUrl("miningmart_dark.svg"),
-  },
-  {
-    name: "Continental Coffee",
-    logoLight: getClientImageUrl("Gail_light.svg"),
-    logoDark: getClientImageUrl("Gail_dark.svg"),
-  },
-  {
-    name: "Vizag Care Ingredients",
-    logoLight: getClientImageUrl("vizag-care-ld.png"),
-    logoDark: getClientImageUrl("vizag-care-ld.png"),
-  },
-  {
-    name: "ONGC",
-    logoLight: getClientImageUrl("ONGC_Logo.png"),
-    logoDark: getClientImageUrl("ONGC_Logo.png"),
   },
   {
     name: "NACL",

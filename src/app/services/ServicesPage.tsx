@@ -29,8 +29,8 @@ const services = [
     slug: 'it',
     offerings: [
       {
-        title: 'Custom ERP Solutions',
-        description: 'Transforming business operations with tailored ERP solutions for enhanced efficiency and productivity.',
+        title: 'IT Consulting',
+        description: 'IT Consulting services to help businesses optimize their IT infrastructure and processes, ensuring seamless operations and improved efficiency.',
         icon: 'code'
       },
       {
@@ -44,7 +44,7 @@ const services = [
         icon: 'cloud'
       },
       {
-        title: 'Data Analytics & AI',
+        title: 'Data Analytics',
         description: 'Advanced data analysis, business intelligence solutions, and AI implementations to derive actionable insights from your data.',
         icon: 'chart'
       }
@@ -60,24 +60,14 @@ const services = [
     slug: 'engineering',
     offerings: [
       {
-        title: "3D Engineering Solutions for Oil and Gas",
+        title: "3D Engineering Solutions",
         description: "Advanced 3D modelling of complex pipeline systems, analysis of steel structures, ensuring accuracy and efficiency in design and installation.",
         icon: "microchip"
-      },
-      {
-        title: 'Marine and Offshore Projects',
-        description: 'Comprehensive engineering services for marine and offshore projects, including design, analysis, and project management.',
-        icon: 'merge'
       },
       {
         title: 'Process Simulation, Sustainability and Quantitative Risk Analysis',
         description: 'Designing energy efficient systems that meet regulatory standards, and providing QRA services for LPG terminals and refineries.',
         icon: 'merge'
-      },
-      {
-        title: 'Project Management',
-        description: 'End-to-end project management solutions ensuring timely delivery, cost control, and quality assurance for engineering projects.',
-        icon: 'microchip'
       },
       {
         title: 'Environmental Solutions for Oil and Gas',

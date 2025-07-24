@@ -10,7 +10,7 @@ export default function TopLoader({ children }: TopLoader) {
   return (
     <ProgressProvider 
       color="#007BFF"
-      height="2px"
+      height="4px"
       options={{ showSpinner: false }}
       startPosition={0.2}
       shallowRouting
