@@ -5,7 +5,7 @@ import WorkProcess from '@/components/home/WorkProcess'
 import ProjectsSection from '@/components/home/ProjectsSection'
 // import ClientsSection from '@/components/home/ClientsSection'
 import { HeroSectionOne } from '@/components/home/HeroTest'
-import DroneSection from '@/components/home/DroneComponentTest'
+// import DroneSection from '@/components/home/DroneComponentTest'
 import AnimatedLogoCloud from '@/components/home/AnimatedIconCloud'
 
 export default function Home() {

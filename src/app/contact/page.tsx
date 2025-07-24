@@ -2,18 +2,18 @@
 
 import { useState } from 'react'
 import { MapPin, Phone, Mail } from 'lucide-react'
-import dynamic from 'next/dynamic'
-import { Button, Skeleton } from '@heroui/react'
+// import dynamic from 'next/dynamic'
+import { Button } from '@heroui/react'
 
-// Dynamically import the GoogleMap component to prevent SSR issues
-const GoogleMapComponent = dynamic(() => import('@/components/GoogleMapComponent'), {
-  ssr: false,
-  loading: () => (
-    <div className="w-full h-full p-4">
-      <Skeleton className="w-full h-full rounded-lg" />
-    </div>
-  ),
-})
+// // Dynamically import the GoogleMap component to prevent SSR issues
+// const GoogleMapComponent = dynamic(() => import('@/components/GoogleMapComponent'), {
+//   ssr: false,
+//   loading: () => (
+//     <div className="w-full h-full p-4">
+//       <Skeleton className="w-full h-full rounded-lg" />
+//     </div>
+//   ),
+// })
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({

@@ -1,7 +1,7 @@
 import { Suspense } from 'react'
 import Link from 'next/link'
 import HextaLogo from './Logo'
-import { TwitterIcon } from '@/components/ui/twitter'
+// import { TwitterIcon } from '@/components/ui/twitter'
 import { LinkedinIcon } from '@/components/ui/linkedin'
 import { InstagramIcon } from '@/components/ui/instagram'
 import ThemeSwitch from '@/components/ThemeSwitch'
