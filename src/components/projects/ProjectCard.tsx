@@ -22,12 +22,13 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 key={project.id}
                 className="group bg-transparent dark:bg-secondary rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
               >
-                <div className="relative overflow-hidden">
+                <div className="relative overflow-hidden aspect-video">
                   <BlurImage
                     src={project.image}
                     alt={project.title}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    sizes="(max-width: 768px) 100vw, 50vw"
                   />
                   <div className="absolute top-4 left-4">
                   </div>

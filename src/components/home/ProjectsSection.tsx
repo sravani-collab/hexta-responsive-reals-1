@@ -12,7 +12,7 @@ const projects = [
     description:
       "Transforming business operations with tailored ERP solutions for enhanced efficiency and productivity.",
     category: "Enterprise Solutions",
-    image: getProjectImageUrl("custom-erp.png"),
+    image: getProjectImageUrl("ERP-updated.svg"),
     tags: ["ERP", "Business Solutions", "Automation", "Integration"],
     date: "2024-01-15",
     readTime: "5 min",

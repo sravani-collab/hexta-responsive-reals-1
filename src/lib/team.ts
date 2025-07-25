@@ -28,7 +28,10 @@ export const engineeringDivisionTeam = [
     image: getTeamImageUrl("srinivasa-rao-kantubukta.jpeg"),
     bio: "Dr. Kantubukta Srinivasa Rao, a Chemical Engineering graduate from Andhra University and a certified Energy Auditor accredited by the Bureau of Energy Efficiency, New Delhi, brings over 24 years of experience—including 12 years internationally—in process engineering, feasibility studies, HAZOP/HAZID analysis, detailed engineering, plant operations, and technology development. He has played key roles in the pre-commissioning, commissioning, and start-up of major petrochemical and oil & gas projects, working with renowned organizations such as IPCL, ONGC Petro Additions Ltd. (OPaL), Petro Rabigh, Borough, and Turkmen Bashi Refinery. His multidisciplinary expertise and leadership have been instrumental in the execution of both greenfield and brownfield projects across India and abroad.",
   },
+<<<<<<< HEAD
 
+=======
+>>>>>>> bc20d68f95113ddef8e8f6a2a28119396a6adce9
 ];
 
 // Legacy export for backward compatibility

@@ -7,8 +7,6 @@ function page() {
     <>
     {/* <NotFound /> */}
     <TeamPage />
-    
-    <div className="text-center">RDP se pange nakko lo masalabokadosa</div>
     </>
   )
 }
