@@ -2,7 +2,7 @@
 import ServicesSection from '@/components/home/ServicesSection'
 import Workflow from '@/components/home/Workflow'
 import WorkProcess from '@/components/home/WorkProcess'
-import ProjectsSection from '@/components/home/ProjectsSection'
+// import ProjectsSection from '@/components/home/ProjectsSection'
 // import ClientsSection from '@/components/home/ClientsSection'
 import { HeroSectionOne } from '@/components/home/HeroTest'
 // import DroneSection from '@/components/home/DroneComponentTest'
@@ -17,7 +17,7 @@ export default function Home() {
       <WorkProcess />
       {/* <DroneSection /> */}
       <ServicesSection />
-      <ProjectsSection />
+      {/* <ProjectsSection /> */}
       {/* <ClientsSection /> */}
       <AnimatedLogoCloud />
     </>

@@ -16,7 +16,7 @@ import { RiArrowRightUpLine } from "@remixicon/react"
 const menuItems = [
   { name: 'Home', path: '/' },
   { name: 'About', path: '/about' },
-  { name: 'Projects', path: '/projects' },
+  // { name: 'Projects', path: '/projects' },
   { name: 'Team', path: '/team' },
   { name: 'Services', path: '/services' },
   // { name: 'Team', path: '/team' },

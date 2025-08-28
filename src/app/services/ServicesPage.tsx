@@ -29,25 +29,29 @@ const services = [
     slug: 'it',
     offerings: [
       {
+        title: 'IT Staffing',
+        description: 'IT Staffing services to help businesses find and retain top IT talent, ensuring they have the right skills to meet their needs.',
+        icon: 'chart',
+        slug: 'it-staffing'
+      },
+      {
         title: 'IT Consulting',
         description: 'IT Consulting services to help businesses optimize their IT infrastructure and processes, ensuring seamless operations and improved efficiency.',
-        icon: 'code'
+        icon: 'code',
+        slug: 'it-consulting'
       },
       {
         title: 'Web & Mobile App Development',
         description: 'Responsive web applications and native mobile apps for iOS and Android, built with modern frameworks and best practices.',
-        icon: 'smartphone'
+        icon: 'smartphone',
+        slug: 'web-and-mobile-app-development'
       },
       {
         title: 'DevSecOps',
         description: 'Implementing DevSecOps practices to integrate security into the software development lifecycle, ensuring robust and secure applications.',
-        icon: 'cloud'
+        icon: 'cloud',
+        slug: 'devsecops'
       },
-      {
-        title: 'Data Analytics',
-        description: 'Advanced data analysis, business intelligence solutions, and AI implementations to derive actionable insights from your data.',
-        icon: 'chart'
-      }
     ]
   },
   {
@@ -62,27 +66,26 @@ const services = [
       {
         title: "3D Engineering Solutions",
         description: "Advanced 3D modelling of complex pipeline systems, analysis of steel structures, ensuring accuracy and efficiency in design and installation.",
-        icon: "microchip"
+        icon: "microchip",
+        slug: "3d-engineering-solutions"
       },
       {
         title: 'Process Simulation, Sustainability and Quantitative Risk Analysis',
         description: 'Designing energy efficient systems that meet regulatory standards, and providing QRA services for LPG terminals and refineries.',
-        icon: 'merge'
+        icon: 'merge',
+        slug: "process-simulation-sustainability-and-quantitative-risk-analysis"
       },
       {
         title: 'Environmental Solutions for Oil and Gas',
         description: 'Innovative technologies and strategies to minimize environmental impact and enhance sustainability in oil and gas operations.',
-        icon: 'shield'
+        icon: 'shield',
+        slug: "environmental-solutions-for-oil-and-gas"
       },
       {
         title: 'Reverse Engineering through FARO Scanning',
         description: 'High-precision 3D scanning services for accurate measurements and modeling in construction, manufacturing, and engineering projects.',
-        icon: 'microchip'
-      },
-      {
-        title: 'Asset Health Monitoring',
-        description: 'Utilizing Drone technologies to predict equipment failures and optimize maintenance schedules, reducing downtime and costs.',
-        icon: 'cog'
+        icon: 'microchip',
+        slug: "reverse-engineering-through-faro-scanning"
       },
     ]
   }
@@ -142,15 +145,17 @@ export default function ServicesPage() {
                   <h3 className="text-xl font-semibold text-dark mb-4">What We Offer</h3>
                   <div className="space-y-6">
                     {service.offerings.map((offering, index) => (
-                      <div key={index} className="flex gap-4">
-                        <div className="w-10 h-10 flex-shrink-0 bg-purple-500 rounded-full flex items-center justify-center">
-                          {getIcon(offering.icon, "w-5 h-5 text-white")}
+                      <Link href={offering.slug ? `/services/${offering.slug}` : '#'} key={index}>
+                        <div className="flex gap-4 py-4">
+                          <div className="w-10 h-10 flex-shrink-0 bg-purple-500 rounded-full flex items-center justify-center">
+                            {getIcon(offering.icon, "w-5 h-5 text-white")}
+                          </div>
+                          <div>
+                            <h4 className="font-semibold text-dark">{offering.title}</h4>
+                            <p className="text-sm text-gray-600">{offering.description}</p>
+                          </div>
                         </div>
-                        <div>
-                          <h4 className="font-semibold text-dark">{offering.title}</h4>
-                          <p className="text-sm text-gray-600">{offering.description}</p>
-                        </div>
-                      </div>
+                      </Link>
                     ))}
                   </div>
                 </div>
