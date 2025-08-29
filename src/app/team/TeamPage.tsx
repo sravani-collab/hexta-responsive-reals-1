@@ -42,37 +42,39 @@ export default function TeamPage() {
       </section>
       
       {/* IT Division Section */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-3xl font-semibold text-dark mb-4">IT Division</h2>
-            <p className="text-dark max-w-3xl mx-auto">
-              Our IT specialists lead digital transformation, cybersecurity, cloud solutions, and cutting-edge technology implementations.
-            </p>
+      <div className="grid grid-cols-2">
+        <section className="py-16">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-2xl md:text-3xl font-semibold text-dark mb-4">IT Division</h2>
+              <p className="text-dark max-w-3xl mx-auto">
+                Our IT specialists lead digital transformation, cybersecurity, cloud solutions, and cutting-edge technology implementations.
+              </p>
+            </div>
+        
+            <div>
+              {/* {itDivisionTeam.map((member, index) => renderTeamMember(member, index, false))} */}
+              <ITGrid />
+            </div>
           </div>
-          
-          <div>
-            {/* {itDivisionTeam.map((member, index) => renderTeamMember(member, index, false))} */}
-            <ITGrid />
+        </section>
+        
+        {/* Engineering Division Section */}
+        <section className="py-16">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-2xl md:text-3xl font-semibold text-dark mb-4">Engineering Division</h2>
+              <p className="text-dark max-w-3xl mx-auto">
+                Our engineering experts handle structural design, process engineering, QA/QC, piping systems, and project management across various industries.
+              </p>
+            </div>
+        
+            <div>
+              <EnggGrid />
+            </div>
           </div>
-        </div>
-      </section>
-      
-      {/* Engineering Division Section */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-3xl font-semibold text-dark mb-4">Engineering Division</h2>
-            <p className="text-dark max-w-3xl mx-auto">
-              Our engineering experts handle structural design, process engineering, QA/QC, piping systems, and project management across various industries.
-            </p>
-          </div>
-          
-          <div>
-            <EnggGrid />
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
       
       {/* Company Culture Section */}
       <section className="py-16 bg-gray-50 dark:bg-[#252525]">

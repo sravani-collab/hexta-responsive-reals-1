@@ -83,7 +83,7 @@ function EnggGrid() {
     </motion.div>
   );
   return (
-    <div className="grid md:grid-cols-2 gap-8">
+    <div className="w-fit mx-auto max-w-2xl">
       {engineeringDivisionTeam.map((member, index) =>
         renderTeamMember(member, index, false)
       )}
