@@ -49,13 +49,23 @@ export default function Footer() {
           <div className="mb-8 md:mb-0">
             <h3 className="font-bold text-dark text-base mb-4">Contact Us</h3>
             <div className="h-px w-20 bg-dark mb-4"></div>
-            <address className="not-italic">
-              <p className="text-dark text-sm mb-2">TF2, VUDA Complex,</p>
-              <p className="text-dark text-sm mb-2">Seethammadara,</p>
-              <p className="text-dark text-sm mb-2">Visakhapatnam</p>
-              <p className="text-dark text-sm mb-2">Phone: <a href='tel:8977783448'>+91 8977783448</a></p>
-              <p className="text-dark text-sm mb-2">Email: <a href='mailto:info@hextasphere.com'>info@hextasphere.com</a></p>
-            </address>
+            <div className="flex flex-col md:flex-row gap-8">
+              <address className="not-italic">
+                <p className="text-dark text-sm mb-2 font-bold">India</p>
+                <p className="text-dark text-sm mb-2">TF2, VUDA Complex,</p>
+                <p className="text-dark text-sm mb-2">Seethammadara,</p>
+                <p className="text-dark text-sm mb-2">Visakhapatnam</p>
+                <p className="text-dark text-sm mb-2">Phone: <a href='tel:8977783448'>+91 8977783448</a></p>
+                <p className="text-dark text-sm mb-2">Email: <a href='mailto:info@hextasphere.com'>info@hextasphere.com</a></p>
+              </address>
+              <address className="not-italic">
+                <p className="text-dark text-sm mb-2 font-bold">USA</p>
+                <p className="text-dark text-sm mb-2">1560 E Southlake Blvd Ste:100</p>
+                <p className="text-dark text-sm mb-2">Southlake TX-76092</p>
+                {/* <p className="text-dark text-sm mb-2">Tx 76092</p> */}
+                <p className="text-dark text-sm mb-2">Phone: <a href='tel:4088829641'>+1 4088829641</a></p>
+              </address>
+            </div>
           </div>
           
           {/* Social Media */}
