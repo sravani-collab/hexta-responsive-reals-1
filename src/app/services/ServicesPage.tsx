@@ -64,28 +64,28 @@ const services = [
     slug: 'engineering',
     offerings: [
       {
-        title: "3D Engineering Solutions",
-        description: "Advanced 3D modelling of complex pipeline systems, analysis of steel structures, ensuring accuracy and efficiency in design and installation.",
+        title: "Pre-Bid Engineering",
+        description: "Our Pre-bid services include comprehensive coverage of all client requirements",
         icon: "microchip",
-        slug: "3d-engineering-solutions"
+        slug: "pre-bid-engineering"
       },
       {
-        title: 'Process Simulation, Sustainability and Quantitative Risk Analysis',
-        description: 'Designing energy efficient systems that meet regulatory standards, and providing QRA services for LPG terminals and refineries.',
+        title: 'FEED, Detailed & Design Engineering',
+        description: 'We adopt combination of in-built automation tools and checklists for Pre-bid engineering activities including documents, drawings and intelligent models in S3D, E3D, PDMS, CalWORKs, and AutoCAD Plant3D.',
         icon: 'merge',
-        slug: "process-simulation-sustainability-and-quantitative-risk-analysis"
+        slug: "feed-detailed-design-engineering"
       },
       {
-        title: 'Environmental Solutions for Oil and Gas',
+        title: 'As-Built Engineering',
         description: 'Innovative technologies and strategies to minimize environmental impact and enhance sustainability in oil and gas operations.',
         icon: 'shield',
-        slug: "environmental-solutions-for-oil-and-gas"
+        slug: "as-built-engineering"
       },
       {
-        title: 'Reverse Engineering through FARO Scanning',
+        title: 'Fabrication and Construction Support Engineering Services',
         description: 'High-precision 3D scanning services for accurate measurements and modeling in construction, manufacturing, and engineering projects.',
         icon: 'microchip',
-        slug: "reverse-engineering-through-faro-scanning"
+        slug: "fabrication-and-construction-support"
       },
     ]
   }

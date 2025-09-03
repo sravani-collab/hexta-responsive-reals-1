@@ -107,7 +107,7 @@ export default function ServiceLayout({
       
       {/* Content */}
       <main className="relative">
-        <div className="container mx-auto px-4 py-16">
+        <div className="container mx-auto px-4 pt-4 pb-16">
           <div className="max-w-4xl mx-auto">
             <article className="prose prose-lg dark:prose-invert max-w-none">
               {children}
@@ -121,7 +121,7 @@ export default function ServiceLayout({
         <div className="container mx-auto px-4 py-8">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <Link 
-              href="/projects" 
+              href="/services" 
               className="inline-flex items-center text-primary hover:text-primary/80 transition-colors"
             >
               <ArrowLeftIcon className="w-5 h-5 mr-2" />
