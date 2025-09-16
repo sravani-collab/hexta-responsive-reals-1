@@ -140,7 +140,7 @@ export default function TeamPage() {
                   </div>
                   <div className="relative h-64 rounded-lg overflow-hidden">
                     <BlurImage
-                      src={ getCareerImageUrl("new-year.jpeg")}
+                      src={ getCareerImageUrl("indipindipi.jpeg")}
                       alt="Team event"
                       fill
                       className="object-cover"
