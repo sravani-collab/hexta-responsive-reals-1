@@ -5,12 +5,10 @@ import BlurImage from '@/components/blur-image'
 // import { itDivisionTeam, engineeringDivisionTeam } from '@/lib/team'
 import { Skeleton } from "@heroui/react"
 import { getCareerImageUrl } from '@/lib/s3'
-// import { TeamMember } from '@/types/team'
-import ITGrid from '@/components/ITGrid'
-import EnggGrid from '@/components/EnggGrid'
 import Link from 'next/link'
 import { Button } from '@heroui/react'
 import { Briefcase } from 'lucide-react'
+import DirectorGrid from '@/components/DirectorGrid'
 
 export const metadata = {
   title: 'Our Team | HextaSphere',
@@ -42,35 +40,19 @@ export default function TeamPage() {
       </section>
       
       {/* IT Division Section */}
-      <div className="grid grid-cols-2">
+      <div className="">
         <section className="py-16">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-2xl md:text-3xl font-semibold text-dark mb-4">IT Division</h2>
+              <h2 className="text-2xl md:text-3xl font-semibold text-dark mb-4">Directors</h2>
               <p className="text-dark max-w-3xl mx-auto">
-                Our IT specialists lead digital transformation, cybersecurity, cloud solutions, and cutting-edge technology implementations.
+                Our Directors lead digital transformation, cybersecurity, cloud solutions, and cutting-edge technology implementations.
               </p>
             </div>
         
             <div>
               {/* {itDivisionTeam.map((member, index) => renderTeamMember(member, index, false))} */}
-              <ITGrid />
-            </div>
-          </div>
-        </section>
-        
-        {/* Engineering Division Section */}
-        <section className="py-16">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-2xl md:text-3xl font-semibold text-dark mb-4">Engineering Division</h2>
-              <p className="text-dark max-w-3xl mx-auto">
-                Our engineering experts handle structural design, process engineering, QA/QC, piping systems, and project management across various industries.
-              </p>
-            </div>
-        
-            <div>
-              <EnggGrid />
+             <DirectorGrid />
             </div>
           </div>
         </section>

@@ -4,10 +4,10 @@ import { TeamMember } from "@/types/team";
 import { Skeleton } from "@heroui/react";
 import BlurImage from "./blur-image";
 import React, { useEffect, useState } from "react";
-import { itDivisionTeam } from "@/lib/team";
+import { DirectorTeam } from "@/lib/team";
 import { motion } from "framer-motion";
 
-function ITGrid() {
+function DirectorGrid() {
   const [isLoading, setIsLoading] = useState(true);
   const [hovered, setHovered] = useState<unknown>(null);
 
@@ -74,21 +74,21 @@ function ITGrid() {
               {member.name}
             </h3>
             <p className="text-primary font-medium mb-3">{member.role}</p>
-            <p className={`hidden md:block text-dark ${isLarge ? "text-base" : "text-sm"}`}>
+            {/* <p className={`hidden md:block text-dark ${isLarge ? "text-base" : "text-sm"}`}>
               {member.bio}
-            </p>
+            </p> */}
           </>
         )}
       </div>
     </motion.div>
   );
   return (
-    <div className="w-fit mx-auto max-w-2xl">
-      {itDivisionTeam.map((member, index) =>
+    <div className="w-fit mx-auto grid grid-cols-4 max-w-7xl gap-8 md:gap-12 lg:gap-16">
+      {DirectorTeam.map((member, index) =>
         renderTeamMember(member, index, false)
       )}
     </div>
   );
 }
 
-export default ITGrid;
+export default DirectorGrid;
