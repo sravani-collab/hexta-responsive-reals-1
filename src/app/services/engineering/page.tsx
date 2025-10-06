@@ -56,6 +56,43 @@ const FabricationContent = () => {
   );
 };
 
+const ProcessSimulationContent = () => {
+  return (
+    <div>
+      <p className="font-bold md:text-4xl text-xl text-white">
+        Process Simulation, Sustainability and Quality Risk Analysis
+      </p>
+      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+        Our Process Simulation services help in optimizing operations and enhancing productivity through advanced modeling techniques.
+      </p>
+    </div>
+  );
+};
+const OG3DContent = () => {
+  return (
+    <div>
+      <p className="font-bold md:text-4xl text-xl text-white">
+        3D Solutions for Oil & Gas Industry
+      </p>
+      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+        High-precision engineering support services for 3D modeling and visualization in the oil and gas sector.
+      </p>
+    </div>
+  );
+};
+const ReverseContent = () => {
+  return (
+    <div>
+      <p className="font-bold md:text-4xl text-xl text-white">
+        Reverse Engineering through FARO Scanners
+      </p>
+      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+        High-precision engineering support services for reverse engineering using FARO scanners.
+      </p>
+    </div>
+  );
+};
+
 const cards = [
   {
     id: 1,
@@ -77,6 +114,16 @@ const cards = [
     content: <FabricationContent />,
     className: "md:col-span-1",
   },
+  {
+    id: 5, content: <ProcessSimulationContent />,
+    className: "md:col-span-1",
+  },
+  { id: 6, content: <ReverseContent />,
+    className: "md:col-span-1",
+  },
+  { id: 7, content: <OG3DContent />,
+    className: "md:col-span-1",
+  }
 ];
 
 export default function EngineeringServicesPage() {
