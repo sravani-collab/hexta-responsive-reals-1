@@ -73,7 +73,7 @@ export function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav clsassName="hidden md:flex items-center space-x-6 mr-4">
+          <nav className="hidden md:flex items-center space-x-6 mr-4">
             {menuItems.map((item) => (
               <Link
                 key={item.name}
