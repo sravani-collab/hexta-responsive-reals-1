@@ -4,14 +4,14 @@ import React from "react";
 
 export default function MaximizingPotential() {
   return (
-    <div className="min-h-screen bg-white text-[#0B1E3F] p-8 md:p-16">
-      <h1 className="text-3xl md:text-4xl font-extrabold mb-6 text-center uppercase">
+    <div className="min-h-screen bg-white text-[#0B1E3F][#FFFF] p-8 md:p-16">
+      <h4 className="text-3xl md:text-4xl font-extrabold mb-6 text-center uppercase">
         Reverse Engineering & Restoration Using FARO 3D Scanning
-      </h1>
+      </h4>
 
       <div className="flex flex-col items-center mb-10">
         <Image
-          src="/images/faro-3d-scanning.jpg" // place your image in /public/images/
+          src="/images/faro-3d-scanning.jpg" 
           alt="Reverse Engineering using FARO 3D Scanning"
           width={900}
           height={500}

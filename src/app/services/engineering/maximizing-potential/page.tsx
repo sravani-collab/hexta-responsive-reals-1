@@ -5,17 +5,17 @@ import React from "react"
 
 export default function LegalServicesPage() {
   return (
-    <div className="min-h-screen bg-white text-[#0B1E3F] px-6 md:px-16 py-12">
+    <div className="min-h-screen bg-white text-[#0B1E3F][#FFFF] px-8 md:px-16 py-20">
       {/* Title */}
-      <h1 className="text-3xl md:text-4xl font-extrabold text-center mb-8 uppercase tracking-wide">
+      <h1 className="text-2xl md:text-2xl font-extrabold text-center mb-8 uppercase tracking-wide">
      MAXIMIZING POTENTIAL IN OIL AND GAS, REFINERIES, PETRO CHEMICALS, CHEMICAL & FERTILIZERS, POWER PLANT
       </h1>
 
       {/* Image Section */}
       <div className="flex justify-center mb-10">
         <Image
-          src="/images/legal-services.jpg" // <-- Place your uploaded image here
-          alt="Legal Services"
+          src="/images/legal-services.jpg" 
+          alt="OIL&GAS"
           width={900}
           height={500}
           className="rounded-lg shadow-lg"

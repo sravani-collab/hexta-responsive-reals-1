@@ -4,14 +4,14 @@ import React from "react";
 
 export default function Innovative3DEngineering() {
   return (
-    <div className="min-h-screen bg-white text-[#0B1E3F] p-8 md:p-16">
+    <div className="min-h-screen bg-white text-[#0B1E3F][#FFFF] p-8 md:p-20">
       <h1 className="text-3xl md:text-4xl font-extrabold mb-6 text-center uppercase">
         Innovative 3D Engineering Solutions for the Oil and Gas Industry
       </h1>
 
       <div className="flex flex-col items-center mb-10">
         <Image
-          src="/images/faro-3d-scanning.jpg" // place your image in /public/images/
+          src="/images/faro-3d-scanning.jpg" 
           alt="Innovative 3D Engineering Solutions for the Oil and Gas Industry"
           width={900}
           height={500}

@@ -18,20 +18,22 @@ const servicesData = {
   },
   Engineering: {
     name: "Engineering Services",
-    href: "/services/engineering",
+    href: "/services/engineering/",
     subServices: [
       { name: "Maximizing Potential", href: "/services/engineering/maximizing-potential" },
-      { name: "Innovative 3D Engineering", href: "/services/engineering/innovative-3d-engineering" },
-      { name: "Reverse Engineering", href: "/services/engineering/reverse-engineering" },
+      { name: "Structural Analysis", href: "/services/engineering/structural" },
+      { name: "Civil Engineering", href: "/services/engineering/civil" },
+      { name: "InnovReverseative 3D Engineering", href: "/services/engineering/innovative-3d-engineering" },
+      { name: " Engineering", href: "/services/engineering/reverse-engineering" },
       { name: "Process Engineering", href: "/services/engineering/process-engineering" },
       { name: "Environmental Solutions", href: "/services/engineering/environmental-solutions" },
       { name: "Corporate Liasoning", href: "/services/engineering/corporate-liasoning" },
-      { name: "Legal Services", href: "/services/engineering/legal-service" },
+      { name: "Legal Services", href: "/services/engineering/legal-services" },
     ],
   },
 }
 
-// ✅ Other navigation items
+// ✅ Navigation items
 const menuItems = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
@@ -45,11 +47,11 @@ const menuItemsAfterServices = [
 ]
 
 export function Navbar() {
-  const [isScrolled, setIsScrolled] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(true)
   const [isOpen, setIsOpen] = useState(false)
   const [isServicesOpen, setIsServicesOpen] = useState(false)
   const [isEngineeringOpen, setIsEngineeringOpen] = useState(false)
-  const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false)
+  const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(true)
   const pathname = usePathname()
 
   useEffect(() => {
@@ -62,7 +64,7 @@ export function Navbar() {
     <header
       className={cn(
         "fixed top-0 z-40 w-full transition-all duration-200",
-        isScrolled ? "bg-background/60 backdrop-blur-md" : "bg-transparent"
+        isScrolled ? "bg-background/60 backdrop-blur-md" : "bg-opaque"
       )}
     >
       <div className="container mx-auto px-4">
@@ -72,8 +74,8 @@ export function Navbar() {
             <Logo />
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-6 mr-4">
+          {/* Desktop Navigation - Moved to Right with ml-auto */}
+          <nav className="hidden md:flex items-center space-x-6 ml-auto">
             {menuItems.map((item) => (
               <Link
                 key={item.name}
@@ -117,24 +119,31 @@ export function Navbar() {
 
               {/* Main Services Dropdown */}
               {isServicesOpen && (
-                <div className="absolute left-0 mt-2 w-[240px] rounded-lg shadow-lg bg-background border border-border z-50">
-                  <div className="p-2 space-y-1">
+                <div className="absolute left-0 mt-2 w-[260px] rounded-lg shadow-lg bg-background border border-border z-50">
+                  <div className="p-3 space-y-2">
                     {/* IT Services */}
                     <Link
                       href={servicesData.IT.href}
-                      className="block px-3 py-2 rounded-md text-sm font-semibold text-foreground hover:bg-accent hover:text-accent-foreground transition-colors"
+                      
+                      className="block px-4 py-2.5 rounded-md text-sm font-semibold text-foreground hover:bg-accent hover:text-accent-foreground transition-colors"
                     >
                       {servicesData.IT.name}
                     </Link>
 
-                    {/* Engineering Services */}
+                    {/* Engineering Services - WITH CLICK ACTION */}
                     <div
                       className="relative group"
                       onMouseEnter={() => setIsEngineeringOpen(true)}
-                      onMouseLeave={() => setIsEngineeringOpen(false)}
+                      onMouseLeave={() => setIsEngineeringOpen(true)}
                     >
-                      <button
-                        className="w-full flex justify-between items-center px-3 py-2 rounded-md text-sm font-semibold text-foreground hover:bg-accent hover:text-accent-foreground transition-colors"
+                      <Link
+                        href={servicesData.Engineering.href}
+                        onClick={() => {
+                          // Close dropdowns on click
+                          setIsServicesOpen(false)
+                          setIsEngineeringOpen(false)
+                        }}
+                        className="w-full flex justify-between items-center px-4 py-2.5 rounded-md text-sm font-semibold text-foreground hover:bg-accent hover:text-accent-foreground transition-colors"
                       >
                         {servicesData.Engineering.name}
                         <RiArrowRightSLine
@@ -143,17 +152,21 @@ export function Navbar() {
                             isEngineeringOpen && "translate-x-0.5"
                           )}
                         />
-                      </button>
+                      </Link>
 
                       {/* Engineering Submenu */}
                       {isEngineeringOpen && (
-                        <div className="absolute top-0 left-full ml-1 w-[250px] rounded-lg shadow-lg bg-background border border-border z-50">
-                          <div className="p-2 space-y-1">
+                        <div className="absolute top-0 left-full ml-2 w-[280px] rounded-lg shadow-lg bg-background border z-50">
+                          <div className="p-3 space-y-1">
                             {servicesData.Engineering.subServices.map((service) => (
                               <Link
                                 key={service.name}
                                 href={service.href}
-                                className="block px-3 py-1.5 text-sm rounded-md text-muted-foreground hover:bg-accent hover:text-accent-foreground transition-colors"
+                                onClick={() => {
+                                  setIsServicesOpen(false)
+                                  setIsEngineeringOpen(false)
+                                }}
+                                className="block px-4 py-2 text-sm rounded-md text-muted-foreground hover:bg-accent hover:text-accent-foreground transition-colors"
                               >
                                 {service.name}
                               </Link>
@@ -176,21 +189,19 @@ export function Navbar() {
                   "text-sm font-medium transition-colors",
                   pathname === item.path
                     ? "text-primary border-b-2 border-primary"
-                    : "text-gray-900 dark:text-gray-100 hover:text-primary"
+                    : "text-black-900 dark:text-black-100 hover:text-primary"
                 )}
               >
                 {item.name}
               </Link>
             ))}
+
+            {/* Theme Toggle - Now at the end */}
+            <ModeToggle />
           </nav>
 
-          {/* Theme Toggle */}
-          <div className="hidden md:block">
-            <ModeToggle />
-          </div>
-
           {/* Mobile Menu */}
-          <div className="flex md:hidden items-center gap-2">
+          <div className="flex md:hidden items-center gap-2 ml-auto">
             <ModeToggle />
 
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -277,6 +288,7 @@ export function Navbar() {
                               </Link>
                             </SheetClose>
 
+                            {/* Mobile Engineering Services Link - WITH CLICK ACTION */}
                             <SheetClose asChild>
                               <Link
                                 href={servicesData.Engineering.href}
@@ -303,6 +315,17 @@ export function Navbar() {
                           </div>
                         )}
                       </div>
+
+                      {menuItemsAfterServices.map((item) => (
+                        <MobileNavLink
+                          key={item.path}
+                          href={item.path}
+                          active={pathname === item.path}
+                          onOpenChange={() => setIsOpen(false)}
+                        >
+                          {item.name}
+                        </MobileNavLink>
+                      ))}
                     </div>
                   </nav>
                 </div>
@@ -326,14 +349,7 @@ export function Navbar() {
 }
 
 // ✅ Mobile Navigation Link Component
-interface MobileNavLinkProps {
-  href: string
-  children: React.ReactNode
-  active?: boolean
-  onOpenChange?: () => void
-}
-
-function MobileNavLink({ href, children, active, onOpenChange }: MobileNavLinkProps) {
+function MobileNavLink({ href, children, active, onOpenChange }) {
   return (
     <SheetClose asChild>
       <Link

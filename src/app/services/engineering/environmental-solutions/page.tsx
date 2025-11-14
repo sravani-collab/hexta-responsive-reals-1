@@ -4,14 +4,14 @@ import React from "react";
 
 export default function MaximizingPotential() {
   return (
-    <div className="min-h-screen bg-white text-[#0B1E3F] p-8 md:p-16">
+    <div className="min-h-screen bg-white text-[#0B1E3F][#FFFF] p-8 md:p-16">
       <h1 className="text-3xl md:text-4xl font-extrabold mb-6 text-center uppercase">
         Environmental Sloutions for all Industries
       </h1>
 
       <div className="flex flex-col items-center mb-10">
         <Image
-          src="/images/faro-3d-scanning.jpg" // place your image in /public/images/
+          src="/images/faro-3d-scanning.jpg" 
           alt="Environmental Sloutions for all Industries"
           width={900}
           height={500}
