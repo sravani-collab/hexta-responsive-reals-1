@@ -2,15 +2,14 @@
 
 import Image from "next/image"
 import React from "react"
-
 export default function LegalServicesPage() {
   return (
     <div className="min-h-screen bg-white text-[#0B1E3F][#FFFF] px-8 md:px-16 py-20">
       {/* Title */}
-      <h1 className="text-2xl md:text-2xl font-extrabold text-center mb-8 uppercase tracking-wide">
-     MAXIMIZING POTENTIAL IN OIL AND GAS, REFINERIES, PETRO CHEMICALS, CHEMICAL & FERTILIZERS, POWER PLANT
+      <h1 className="text-3xl md:text-4xl font-extrabold mb-6 text-center ">
+     Maximising Potential in Oil & Gas , Refineries
       </h1>
-
+ <h1 className="text-3xl md:text-4xl font-extrabold mb-6 text-center "> Petro Chemicals, Chemical & Fertilizers, Power Plant</h1>
       {/* Image Section */}
       <div className="flex justify-center mb-10">
         <Image
@@ -23,10 +22,11 @@ export default function LegalServicesPage() {
       </div>
 
       {/* Content */}
-      <div className="max-w-4xl mx-auto leading-relaxed text-justify space-y-6">
-        <p className="text-lg">
-         HEXTASPHERE TECHNOLOGIES DELIVERS INNOVATIVE, RELIABLE, AND SUSTAINABLE ENGINEERING SOLUTIONS ACROSS THE INDUSTRIES VALUE CHAIN-SUPPORTING BASIC DESIGN, FEASIBILTY, PROJECT IMPLEMENTATION, & OPERATIONS. OUR FOCUS IS ON ENHANCING OPERATIONAL PERFORMANCE, SAFETY, AND EFFICIENCY THROUGH ADVANCED TECHNOLOGY AND DOMAIN EXPERTISE.
-WE SPECIALIZE IN 3D ENGINEERING AND DESIGN SERVICES TAILORED SPECIFICALLY TO THE COMPLEX DEMANDS OF DIFFERENT INDUSTRIES. OUR MULTI-DISCIPLINARY CAPABILITIES ENSURE ACCURATE, EFFICIENT, AND STREAMLINED PROJECT EXECUTION-REDUCING RISKS, OPTIMIZING WORKFLOWS, AND IMPROVING PROJECT OUTCOMES.
+      <div className="max-w-3xl mx-auto leading-relaxed text-justify space-y-6">
+       <p className="text-bold-foreground mb-4 leading-relaxed">
+        Hextasphere technologies delivers innovative, reliable and sustainable engineering solutions across the industries value chain-supporting basic design, feasibility, project implementation, & operations. Our focus is on enhancing operational performance, safety, and efficiency through advanced technology and somain expertise.
+
+        We specialize in 3d engineering and design services tailored specifically to the complex demands of diferent industries. Our multi-disciplinary capabilities ensure accurate, efficient , and streamlined project execution-reducing risks, optimizing workflows, and improving project outcomes.
         </p>
 
       

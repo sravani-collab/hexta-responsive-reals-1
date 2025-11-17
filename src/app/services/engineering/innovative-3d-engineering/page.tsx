@@ -5,8 +5,11 @@ import React from "react";
 export default function Innovative3DEngineering() {
   return (
     <div className="min-h-screen bg-white text-[#0B1E3F][#FFFF] p-8 md:p-20">
-      <h1 className="text-3xl md:text-4xl font-extrabold mb-6 text-center uppercase">
-        Innovative 3D Engineering Solutions for the Oil and Gas Industry
+      <h1 className="text-3xl md:text-4xl font-extrabold mb-6 text-center ">
+        Innovative 3D Engineering Solutions 
+      </h1>
+      <h1 className="text-3xl md:text-4xl font-extrabold mb-6 text-center ">
+         For the Oil and Gas Industry
       </h1>
 
       <div className="flex flex-col items-center mb-10">
@@ -21,37 +24,37 @@ export default function Innovative3DEngineering() {
 
       <div className="max-w-4xl mx-auto space-y-8 leading-relaxed text-justify">
         <section>
-          <h2 className="text-xl font-bold uppercase mb-2">STEEL STRUCTURE DESIGN</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-6 flex items-center">Steel Structure Design</h2>
           <p>
-           ADVANCED ANALYSIS AND 3D MODELING OF STEEL STRUCTURE INTEGRITY, SAFETY, AND FULL COMPLIANCE WITH INDUSTRY AN
+          Advanced analysis and 3d modeling of steel structures to ensure structural integrity, safety, and full compliance with industry and regulatory standards.
           </p>
         </section>
 
         <section>
-          <h2 className="text-xl font-bold uppercase mb-2">PIPING ENGINEERING</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-6 flex items-center">Piping Engineering</h2>
           <p>
-           END-TO-END 3D DESIGN AND MODELING OF COMPLEX PIPING PRECISION, CONSTRUCTABILITY, AND OPTIMIZED INSTALLATΙΟΙ
+          End-to-end 3d design and modeling of complex piping networks, ensuring precision, constructability, and optimized installation workflows.
           </p>
         </section>
 
         <section>
-          <h2 className="text-xl font-bold uppercase mb-2">MECHANICAL VESSEL ENGINEERINGt</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-6 flex items-center">Mechanical Vessel Engineering</h2>
           <p>
-           .SPECIALIZED DESIGN AND PERFORMANCE ANALYSIS OF MECHA SIMULATION TOOLS TO ENSURE DURABILITY, EFFICIENCY, AND
+          Specialized design and performance analysis of mechanical vessels using advanced simulation tools to ensure surability, efficiency, and operational reliability.
           </p>
         </section>
 
         <section>
-          <h2 className="text-xl font-bold uppercase mb-2">INSTRUMENTATION DESIGN</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-6 flex items-center">Instrumentation Design</h2>
           <p>
-           ACCURATE 3D MODELING AND LAYOUT PLANNING FOR INSTRUMENTATION SYSTEMS, SUPPORTING ENHANCED CONTROL, MONITORING ACCURACY, AND STREAMLINED PLANT OPERATIONS.
+          Accuarte 3d modeling and layout planning for instrumentation systems, supporting enhanced control, monitoring accuracy, and streamlined plant operations.
           </p>
         </section>
 
         <section>
-          <h2 className="text-xl font-bold uppercase mb-2">ELECTRICAL SYSTEMS ENGINEERING</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-6 flex items-center">Electrical System Engineering</h2>
           <p>
-           COMPREHENSIVE 3D MODELING AND COORDINATION OF ELECTRICAL SYSTEMS FOR SEAMLESS INTEGRATION, OPERATIONAL CONTINUITY, AND SAFETY ASSURANCE.
+           Comprehensive 3d modeling and coordination of electrical systems for seamless integration, operational continuity, and safety assurance.
           </p>
         </section>
       </div>

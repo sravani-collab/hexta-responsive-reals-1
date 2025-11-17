@@ -4,9 +4,12 @@ import React from "react";
 
 export default function MaximizingPotential() {
   return (
-    <div className="min-h-screen bg-white text-[#0B1E3F][#FFFF] p-8 md:p-16">
-      <h1 className="text-3xl md:text-4xl font-extrabold mb-6 text-center uppercase">
-        Environmental Sloutions for all Industries
+    <div className="min-h-screen bg-white text-[#0B1E3F][#FFFF] p-8 md:p-20">
+      <h1 className="text-3xl md:text-4xl font-extrabold mb-6 text-center ">
+        Environmental Sloutions
+      </h1>
+      <h1 className="text-3xl md:text-4xl font-extrabold mb-6 text-center ">
+        For all Industries
       </h1>
 
       <div className="flex flex-col items-center mb-10">
@@ -21,42 +24,37 @@ export default function MaximizingPotential() {
 
       <div className="max-w-4xl mx-auto space-y-8 leading-relaxed text-justify">
         <section>
-          <h2 className="text-xl font-bold uppercase mb-2">As-Built Modeling</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-6 flex items-center">Environmental Impact Assessments (EIA)</h2>
           <p>
-            Development of highly accurate 3D models of existing facilities for
-            design validation, maintenance planning, and operational visualization.
+          Through evaluation of environmental risks associated with new and ongoing projects
           </p>
         </section>
 
         <section>
-          <h2 className="text-xl font-bold uppercase mb-2">Construction Quality Control</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-6 flex items-center">Waste Management</h2>
           <p>
-            Verification of construction work against design specifications to
-            identify deviations early and ensure compliance.
+          Development and implementation of safe, complaint systems for hazardous and non-hazardous waste handling.
           </p>
         </section>
 
         <section>
-          <h2 className="text-xl font-bold uppercase mb-2">Facility Management</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-6 flex items-center">Pollution Control</h2>
           <p>
-            Comprehensive digital asset documentation to support layout optimization,
-            inventory planning, and safety improvements.
+          Deployment of advanced technologies to reduce and monitor emissions affecting air, water, and soil quality.
           </p>
         </section>
 
         <section>
-          <h2 className="text-xl font-bold uppercase mb-2">Maintenance & Repair Support</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-6 flex items-center">Spill Response & Remediation</h2>
           <p>
-            Precise dimensional data to enable efficient component replacement,
-            retrofitting, and repair with reduced downtime and cost.
+          Rapid containment and recovery solutions for ol spills and environmental incidents.
           </p>
         </section>
 
         <section>
-          <h2 className="text-xl font-bold uppercase mb-2">Safety & Training Simulations</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-6 flex items-center">Sustainable Operations</h2>
           <p>
-            Creation of immersive digital environments for operator training and remote
-            walk-throughs to enhance safety preparedness.
+          Adoption of renewable energy practices and carbon-reduction strategies to support long-term sustainability goals.
           </p>
         </section>
       </div>

@@ -1,21 +1,18 @@
-"use client"
+"use client";
+import Image from "next/image";
+import React from "react";
 
-import Image from "next/image"
-import React from "react"
-
-export default function LegalServicesPage() {
+export default function LegalServicessPage() {
   return (
-    <div className="min-h-screen bg-white text-[#0B1E3F][#FFFF] px-6 md:px-16 py-12">
-      {/* Title */}
-      <h1 className="text-3xl md:text-4xl font-extrabold text-center mb-8 uppercase tracking-wide">
+    <div className="min-h-screen bg-white text-[#0B1E3F][#FFFF] p-8 md:p-20">
+      <h1 className="text-3xl md:text-4xl font-extrabold mb-6 text-center ">
         Legal Services
       </h1>
-
-      {/* Image Section */}
-      <div className="flex justify-center mb-10">
+     
+     <div className="flex flex-col items-center mb-10">
         <Image
-          src="/images/legal-services.jpg" 
-          alt="Legal Services"
+          src="/images/faro-3d-scanning.jpg" 
+          alt="Innovative 3D Engineering Solutions for the Oil and Gas Industry"
           width={900}
           height={500}
           className="rounded-lg shadow-lg"
@@ -25,11 +22,8 @@ export default function LegalServicesPage() {
       {/* Content */}
       <div className="max-w-4xl mx-auto leading-relaxed text-justify space-y-6">
         <p className="text-lg">
-          We provide expert legal support across project lifecycles, offering
-          contract management, compliance advisory, and risk mitigation to
-          safeguard your business interests.
-        </p>
-
+        We provide expert legal support across project lifecycles, offering contract management, compliance advisory, and risk mitigation to safeguard your business interests.
+       </p>
         <p className="text-lg font-semibold">
           <span className="font-bold">Key Focus:</span> Contract drafting, due
           diligence, and regulatory advisory.

@@ -5,7 +5,7 @@ import React from "react"
 
 export default function LegalServicesPage() {
   return (
-    <div className="min-h-screen bg-white text-[#0B1E3F][#FFFF] px-6 md:px-16 py-20">
+    <div className="min-h-screen bg-white text-[#0B1E3F][#FFFF] px-8 md:px-16 py-20">
       {/* Title */}
       <h1 className="text-3xl md:text-4xl font-extrabold text-center mb-8 uppercase tracking-wide">
         Corporate Liasoning Services
@@ -25,11 +25,10 @@ export default function LegalServicesPage() {
       {/* Content */}
       <div className="max-w-4xl mx-auto leading-relaxed text-justify space-y-6">
         <p className="text-lg">
-HEXTASPHERE TECHNOLOGIES STREAMLINES INTERACTIONS WITH GOVERNMENT AND REGULATORY BODIES, ENSURING SMOOTH APPROVALS AND COMPLIANCE FOR INDUSTRIAL, MARINE, AND OIL & GAS PROJECTS
+Hextasphere technologies streamlines interactions with government and regulatory bodies, ensuring smooth approvals and compliance for industrial , marine and oil & gas projects.
 </p>
         <p className="text-lg font-semibold">
-          <span className="font-bold">Key Focus:</span> Contract drafting, due
-          diligence, and regulatory advisory.
+          <span className="font-bold">Key Focus:</span> Regulatory coordination, clearance facilitation, and compliance management.
         </p>
       </div>
     </div>

@@ -7,8 +7,8 @@ export default function LegalServicesPage() {
   return (
     <div className="min-h-screen bg-white text-[#0B1E3F][#FFFF] px-6 md:px-16 py-20">
       {/* Title */}
-      <h1 className="text-3xl md:text-4xl font-extrabold text-center mb-8 uppercase tracking-wide">
-       PROCESS ENGINEERING 
+      <h1 className="text-3xl md:text-4xl font-extrabold text-center mb-8  tracking-wide">
+      Process Engineering
       </h1>
 
       {/* Image Section */}
@@ -25,8 +25,10 @@ export default function LegalServicesPage() {
       {/* Content */}
       <div className="max-w-4xl mx-auto leading-relaxed text-justify space-y-6">
         <p className="text-lg">
-         AT HEXTASPHERE TECHNOLOGIES, WE DESIGN ENERGY-EFFICIENT, SAFE, AND COST-EFFECTIVE PROCESS SYSTEMS USING ADVANCED SIMULATION AND ENGINEERING METHODOLOGIES. OUR PROCESS ENGINEERING SOLUTIONS FOCUS ON SUSTAINABILITY, OPERATIONAL RELIABILITY, AND REGULATORY COMPLIANCE-ENSURING THAT EVERY DESIGN IS PRACTICAL, SCALABLE, AND OPTIMIZED FOR LONG-TERM PERFORMANCE.
-WE ALSO SPECIALIZE IN QUANTITATIVE RISK ANALYSIS (QRA) FOR HIGH-RISK INDUSTRIAL ENVIRONMENTS, INCLUDING LPG TERMINALS AND REFINERY OPERATIONS. OUR QRA SERVICES INVOLVE IDENTIFYING POTENTIAL HAZARDS, EVALUATING RISK LEVELS, AND IMPLEMENTING TARGETED MITIGATION STRATEGIES TO SAFEGUARD ASSETS, PERSONNEL, AND THE ENVIRONMENT. BY INTEGRATING ANALYTICAL RIGOR WITH INDUSTRY BEST PRACTICES, WE ENABLE ORGANIZATIONS TO OPERATE WITH ENHANCED SAFETY ASSURANCE AND REDUCED RISK EXPOSURE.
+          At Hextasphere Technologies, we design energy efficient, safe, and cost-effective process systems using advanced simulation and engineering methodologies. Our process engineering solutions focus on sustainability, operational reliability, and regulatory compliance-ensuring that every design is practical, scalable, and optimized for long-term performance.
+          <div className="max-w-4xl mx-auto leading-relaxed text-justify space-y-6"></div>
+          <p className="text-lg"></p>
+          We also specialize in quantitative risk analysis(QRA) for high-risk industrial environments, including LPG terminals and refinery operations. Our QRA services involve identifying potential hazards, evaluating risk levels, and implementing targeted mitigation strategies to safeguard assets, personnel, and the environment. By integrating analytical rigor with industry best practices, we enable organizations to operate with enhanced saety assurance and reduced risk exposure.
         </p>
       </div>
     </div>

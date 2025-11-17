@@ -3,16 +3,20 @@ import { WobbleCard } from "@/components/ui/wobble-card";
 // import { siteConfig } from "@/config/site";
 import Link from "next/link";
 
+
 // Service content components
 const PreBidContent = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-        Pre-Bid Engineering
+        Process Engineering
       </p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        Our Pre-bid services include comprehensive coverage of all client requirements with enhanced cost estimation support.
+        Our Process Engineering services include comprehensive coverage of all client requirements with enhanced cost estimation support.
       </p>
+      <Link href="/services/engineering/maximizingpotential" className=" hover:text-primary-200 font-medium">
+            Learn More →
+          </Link>
     </div>
   );
 };
@@ -21,11 +25,14 @@ const FEEDContent = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-        FEED & Detailed Engineering
+        Maximizing Potential in Oil & Gas, Refineries, Petro Chemicals, Chemical & Fertilizers, Power Plant
       </p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
         We adopt combination of in-built automation tools and checklists for engineering activities including documents, drawings and intelligent models.
       </p>
+      <Link href="/services/engineering/maximizingpotential" className=" hover:text-primary-200 font-medium">
+            Learn More →
+          </Link>
     </div>
   );
 };
@@ -34,11 +41,14 @@ const AsBuiltContent = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-        As-Built Engineering
+        Innovative 3d Engineering Solutions for the Oil & Gas Industry
       </p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
         Comprehensive As-Built Engineering services including site surveys, laser scanning, 3D modeling, and updating of drawings and documents.
       </p>
+      <Link href="/services/engineering/innovative3dengineering" className=" hover:text-primary-200 font-medium">
+            Learn More →
+          </Link>
     </div>
   );
 };
@@ -47,11 +57,14 @@ const FabricationContent = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-        Fabrication & Construction Support
+        Reverse Engineering & Restoration using Faro 3d Scanning
       </p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
         High-precision engineering support services for fabrication and construction projects with advanced methodologies.
       </p>
+      <Link href="/services/engineering/maximizingpotential" className=" hover:text-primary-200 font-medium">
+            Learn More →
+          </Link>
     </div>
   );
 };
@@ -60,11 +73,13 @@ const ProcessSimulationContent = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-        Process Simulation, Sustainability and Quality Risk Analysis
-      </p>
+Environmental Solutions for all Industries      </p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
         Our Process Simulation services help in optimizing operations and enhancing productivity through advanced modeling techniques.
       </p>
+      <Link href="/services/engineering/maximizingpotential" className=" hover:text-primary-200 font-medium">
+            Learn More →
+          </Link>
     </div>
   );
 };
@@ -72,11 +87,13 @@ const OG3DContent = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-        3D Solutions for Oil & Gas Industry
-      </p>
+Corporate Liasioning      </p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
         High-precision engineering support services for 3D modeling and visualization in the oil and gas sector.
       </p>
+      <Link href="/services/engineering/maximizingpotential" className=" hover:text-primary-200 font-medium">
+            Learn More →
+          </Link>
     </div>
   );
 };
@@ -84,11 +101,13 @@ const ReverseContent = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-        Reverse Engineering through FARO Scanners
-      </p>
+Legal Services      </p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
         High-precision engineering support services for reverse engineering using FARO scanners.
       </p>
+      <Link href="/services/engineering/maximizingpotential" className=" hover:text-primary-200 font-medium">
+            Learn More →
+          </Link>
     </div>
   );
 };

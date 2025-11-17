@@ -10,7 +10,6 @@ import { buttonVariants } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetTitle } from "@/components/ui/sheet"
 import { RiArrowDownSLine, RiArrowRightSLine } from "@remixicon/react"
 
-// ✅ Services Data
 const servicesData = {
   IT: {
     name: "IT Services",
@@ -18,13 +17,12 @@ const servicesData = {
   },
   Engineering: {
     name: "Engineering Services",
-    href: "/services/engineering/",
+    href: "/services/engineering",
     subServices: [
-      { name: "Maximizing Potential", href: "/services/engineering/maximizing-potential" },
+      { name: "Maximizing Potential in oil & gas", href: "/services/engineering/maximizing-potential" },
       { name: "Structural Analysis", href: "/services/engineering/structural" },
-      { name: "Civil Engineering", href: "/services/engineering/civil" },
-      { name: "InnovReverseative 3D Engineering", href: "/services/engineering/innovative-3d-engineering" },
-      { name: " Engineering", href: "/services/engineering/reverse-engineering" },
+      { name: "Innovative 3D Engineering", href: "/services/engineering/innovative-3d-engineering" },
+      { name: "Reverse Engineering", href: "/services/engineering/reverse-engineering" },
       { name: "Process Engineering", href: "/services/engineering/process-engineering" },
       { name: "Environmental Solutions", href: "/services/engineering/environmental-solutions" },
       { name: "Corporate Liasoning", href: "/services/engineering/corporate-liasoning" },
@@ -33,7 +31,6 @@ const servicesData = {
   },
 }
 
-// ✅ Navigation items
 const menuItems = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
@@ -47,11 +44,11 @@ const menuItemsAfterServices = [
 ]
 
 export function Navbar() {
-  const [isScrolled, setIsScrolled] = useState(true)
+  const [isScrolled, setIsScrolled] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
   const [isServicesOpen, setIsServicesOpen] = useState(false)
   const [isEngineeringOpen, setIsEngineeringOpen] = useState(false)
-  const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(true)
+  const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false)
   const pathname = usePathname()
 
   useEffect(() => {
@@ -64,7 +61,7 @@ export function Navbar() {
     <header
       className={cn(
         "fixed top-0 z-40 w-full transition-all duration-200",
-        isScrolled ? "bg-background/60 backdrop-blur-md" : "bg-opaque"
+        isScrolled ? "bg-background/60 backdrop-blur-md" : "bg-solid"
       )}
     >
       <div className="container mx-auto px-4">
@@ -84,7 +81,7 @@ export function Navbar() {
                   "text-sm font-medium transition-colors",
                   pathname === item.path
                     ? "text-primary border-b-2 border-primary"
-                    : "text-gray-900 dark:text-gray-100 hover:text-primary"
+                    : "text-black-900 dark:text-black-100 hover:text-primary"
                 )}
               >
                 {item.name}
@@ -105,7 +102,7 @@ export function Navbar() {
                   "text-sm font-medium flex items-center gap-1 transition-colors",
                   pathname.startsWith("/services")
                     ? "text-primary border-b-2 border-primary"
-                    : "text-gray-900 dark:text-gray-100 hover:text-primary"
+                    : "text-black-900 dark:text-black-100 hover:text-primary"
                 )}
               >
                 Services
@@ -120,12 +117,11 @@ export function Navbar() {
               {/* Main Services Dropdown */}
               {isServicesOpen && (
                 <div className="absolute left-0 mt-2 w-[260px] rounded-lg shadow-lg bg-background border border-border z-50">
-                  <div className="p-3 space-y-2">
+                  <div className="p-3 space-y-3">
                     {/* IT Services */}
                     <Link
                       href={servicesData.IT.href}
-                      
-                      className="block px-4 py-2.5 rounded-md text-sm font-semibold text-foreground hover:bg-accent hover:text-accent-foreground transition-colors"
+                      className="block px-3.5 py-2.5 rounded-md text-sm font-semibold text-foreground hover:bg-accent hover:text-accent-foreground transition-colors"
                     >
                       {servicesData.IT.name}
                     </Link>
@@ -134,7 +130,7 @@ export function Navbar() {
                     <div
                       className="relative group"
                       onMouseEnter={() => setIsEngineeringOpen(true)}
-                      onMouseLeave={() => setIsEngineeringOpen(true)}
+                      onMouseLeave={() => setIsEngineeringOpen(false)}
                     >
                       <Link
                         href={servicesData.Engineering.href}
@@ -143,7 +139,7 @@ export function Navbar() {
                           setIsServicesOpen(false)
                           setIsEngineeringOpen(false)
                         }}
-                        className="w-full flex justify-between items-center px-4 py-2.5 rounded-md text-sm font-semibold text-foreground hover:bg-accent hover:text-accent-foreground transition-colors"
+                        className="w-full flex justify-between items-center px-3.5 py-2.5 rounded-md text-sm font-semibold text-foreground hover:bg-accent hover:text-accent-foreground transition-colors"
                       >
                         {servicesData.Engineering.name}
                         <RiArrowRightSLine
@@ -156,7 +152,7 @@ export function Navbar() {
 
                       {/* Engineering Submenu */}
                       {isEngineeringOpen && (
-                        <div className="absolute top-0 left-full ml-2 w-[280px] rounded-lg shadow-lg bg-background border z-50">
+                         <div className="absolute top-0 left-full ml-2 w-[280px] rounded-lg shadow-xl bg-white dark:bg-gray-950 border border-border z-50">
                           <div className="p-3 space-y-1">
                             {servicesData.Engineering.subServices.map((service) => (
                               <Link
@@ -348,8 +344,14 @@ export function Navbar() {
   )
 }
 
-// ✅ Mobile Navigation Link Component
-function MobileNavLink({ href, children, active, onOpenChange }) {
+interface MobileNavLinkProps {
+  href: string
+  children: React.ReactNode
+  active: boolean
+  onOpenChange: () => void
+}
+
+function MobileNavLink({ href, children, active, onOpenChange }: MobileNavLinkProps) {
   return (
     <SheetClose asChild>
       <Link

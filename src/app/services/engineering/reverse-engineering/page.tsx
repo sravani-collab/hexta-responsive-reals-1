@@ -4,10 +4,14 @@ import React from "react";
 
 export default function MaximizingPotential() {
   return (
-    <div className="min-h-screen bg-white text-[#0B1E3F][#FFFF] p-8 md:p-16">
-      <h4 className="text-3xl md:text-4xl font-extrabold mb-6 text-center uppercase">
-        Reverse Engineering & Restoration Using FARO 3D Scanning
+    <div className="min-h-screen bg-white text-[#0B1E3F][#FFFF] p-8 md:p-20">
+      <h4 className="text-3xl md:text-4xl font-extrabold mb-6 text-center ">
+        Reverse Engineering & Restoration
       </h4>
+       <h4 className="text-3xl md:text-4xl font-extrabold mb-6 text-center ">
+        Using FARO 3D Scanning
+      </h4>
+
 
       <div className="flex flex-col items-center mb-10">
         <Image
@@ -21,7 +25,7 @@ export default function MaximizingPotential() {
 
       <div className="max-w-4xl mx-auto space-y-8 leading-relaxed text-justify">
         <section>
-          <h2 className="text-xl font-bold uppercase mb-2">As-Built Modeling</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-6 flex items-center">As-Built Modeling</h2>
           <p>
             Development of highly accurate 3D models of existing facilities for
             design validation, maintenance planning, and operational visualization.
@@ -29,7 +33,7 @@ export default function MaximizingPotential() {
         </section>
 
         <section>
-          <h2 className="text-xl font-bold uppercase mb-2">Construction Quality Control</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-6 flex items-center">Construction Quality Control</h2>
           <p>
             Verification of construction work against design specifications to
             identify deviations early and ensure compliance.
@@ -37,7 +41,7 @@ export default function MaximizingPotential() {
         </section>
 
         <section>
-          <h2 className="text-xl font-bold uppercase mb-2">Facility Management</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-6 flex items-center">Facility Management</h2>
           <p>
             Comprehensive digital asset documentation to support layout optimization,
             inventory planning, and safety improvements.
@@ -45,7 +49,7 @@ export default function MaximizingPotential() {
         </section>
 
         <section>
-          <h2 className="text-xl font-bold uppercase mb-2">Maintenance & Repair Support</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-6 flex items-center">Maintenance & Repair Support</h2>
           <p>
             Precise dimensional data to enable efficient component replacement,
             retrofitting, and repair with reduced downtime and cost.
@@ -53,7 +57,7 @@ export default function MaximizingPotential() {
         </section>
 
         <section>
-          <h2 className="text-xl font-bold uppercase mb-2">Safety & Training Simulations</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-6 flex items-center">Safety & Training Simulations</h2>
           <p>
             Creation of immersive digital environments for operator training and remote
             walk-throughs to enhance safety preparedness.
