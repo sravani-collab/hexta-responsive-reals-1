@@ -20,7 +20,6 @@ const servicesData = {
     href: "/services/engineering",
     subServices: [
       { name: "Maximizing Potential in oil & gas", href: "/services/engineering/maximizing-potential" },
-      { name: "Structural Analysis", href: "/services/engineering/structural" },
       { name: "Innovative 3D Engineering", href: "/services/engineering/innovative-3d-engineering" },
       { name: "Reverse Engineering", href: "/services/engineering/reverse-engineering" },
       { name: "Process Engineering", href: "/services/engineering/process-engineering" },
@@ -152,7 +151,7 @@ export function Navbar() {
 
                       {/* Engineering Submenu */}
                       {isEngineeringOpen && (
-                         <div className="absolute top-0 left-full ml-2 w-[280px] rounded-lg shadow-xl bg-white dark:bg-gray-950 border border-border z-50">
+                         <div className="absolute top-0 left-full ml-2 w-[280px] rounded-lg shadow-xl bg-white dark:bg-black-950 border border-border z-50">
                           <div className="p-3 space-y-1">
                             {servicesData.Engineering.subServices.map((service) => (
                               <Link
@@ -160,7 +159,7 @@ export function Navbar() {
                                 href={service.href}
                                 onClick={() => {
                                   setIsServicesOpen(false)
-                                  setIsEngineeringOpen(false)
+                                  setIsEngineeringOpen(true)
                                 }}
                                 className="block px-4 py-2 text-sm rounded-md text-muted-foreground hover:bg-accent hover:text-accent-foreground transition-colors"
                               >

@@ -2,10 +2,8 @@ import React from "react";
 import { WobbleCard } from "@/components/ui/wobble-card";
 // import { siteConfig } from "@/config/site";
 import Link from "next/link";
-
-
 // Service content components
-const PreBidContent = () => {
+const ProcessEngineering = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
@@ -14,14 +12,14 @@ const PreBidContent = () => {
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
         Our Process Engineering services include comprehensive coverage of all client requirements with enhanced cost estimation support.
       </p>
-      <Link href="/services/engineering/maximizingpotential" className=" hover:text-primary-200 font-medium">
+      <Link href="/services/engineering/process-engineering" className=" font-medium md:text-xl text-xl text-white">
             Learn More →
           </Link>
     </div>
   );
 };
 
-const FEEDContent = () => {
+const MaximizingPotential = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
@@ -30,14 +28,14 @@ const FEEDContent = () => {
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
         We adopt combination of in-built automation tools and checklists for engineering activities including documents, drawings and intelligent models.
       </p>
-      <Link href="/services/engineering/maximizingpotential" className=" hover:text-primary-200 font-medium">
+      <Link href="/services/engineering/maximizing-potential" className=" font-medium md:text-xl text-xl text-white">
             Learn More →
           </Link>
     </div>
   );
 };
 
-const AsBuiltContent = () => {
+const Innovative3DEngineering = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
@@ -46,14 +44,14 @@ const AsBuiltContent = () => {
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
         Comprehensive As-Built Engineering services including site surveys, laser scanning, 3D modeling, and updating of drawings and documents.
       </p>
-      <Link href="/services/engineering/innovative3dengineering" className=" hover:text-primary-200 font-medium">
+      <Link href="/services/engineering/innovative-3d-engineering" className="font-medium md:text-xl text-xl text-white">
             Learn More →
           </Link>
     </div>
   );
 };
 
-const FabricationContent = () => {
+const  ReverseEngineering= () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
@@ -62,50 +60,50 @@ const FabricationContent = () => {
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
         High-precision engineering support services for fabrication and construction projects with advanced methodologies.
       </p>
-      <Link href="/services/engineering/maximizingpotential" className=" hover:text-primary-200 font-medium">
+      <Link href="/services/engineering/reverse-engineering" className="font-medium md:text-xl text-xl text-white">
             Learn More →
           </Link>
     </div>
   );
 };
 
-const ProcessSimulationContent = () => {
+const EnvironmentalSolutions = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-Environmental Solutions for all Industries      </p>
+       Environmental Solutions for all Industries      </p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
         Our Process Simulation services help in optimizing operations and enhancing productivity through advanced modeling techniques.
       </p>
-      <Link href="/services/engineering/maximizingpotential" className=" hover:text-primary-200 font-medium">
+      <Link href="/services/engineering/environmental-solutions" className="font-medium md:text-xl text-xl text-white">
             Learn More →
           </Link>
     </div>
   );
 };
-const OG3DContent = () => {
+const CorporateLiasoningPage = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-Corporate Liasioning      </p>
+      Corporate Liasioning      </p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
         High-precision engineering support services for 3D modeling and visualization in the oil and gas sector.
       </p>
-      <Link href="/services/engineering/maximizingpotential" className=" hover:text-primary-200 font-medium">
+      <Link href="/services/engineering/corporate-liasoning" className="font-medium md:text-xl text-xl text-white">
             Learn More →
           </Link>
     </div>
   );
 };
-const ReverseContent = () => {
+const LegalServices = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-Legal Services      </p>
+          Legal Services      </p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
         High-precision engineering support services for reverse engineering using FARO scanners.
       </p>
-      <Link href="/services/engineering/maximizingpotential" className=" hover:text-primary-200 font-medium">
+      <Link href="/services/engineering/legal-service" className="font-medium md:text-xl text-xl text-white">
             Learn More →
           </Link>
     </div>
@@ -115,32 +113,32 @@ Legal Services      </p>
 const cards = [
   {
     id: 1,
-    content: <PreBidContent />,
+    content: <ProcessEngineering />,
     className: "md:col-span-1",
   },
   {
     id: 2,
-    content: <FEEDContent />,
+    content: <MaximizingPotential />,
     className: "md:col-span-2",
   },
   {
     id: 3,
-    content: <AsBuiltContent />,
+    content: <Innovative3DEngineering />,
     className: "md:col-span-2",
   },
   {
     id: 4,
-    content: <FabricationContent />,
+    content: <ReverseEngineering />,
     className: "md:col-span-1",
   },
   {
-    id: 5, content: <ProcessSimulationContent />,
+    id: 5, content: <EnvironmentalSolutions />,
     className: "md:col-span-1",
   },
-  { id: 6, content: <ReverseContent />,
+  { id: 6, content: <LegalServices />,
     className: "md:col-span-1",
   },
-  { id: 7, content: <OG3DContent />,
+  { id: 7, content: <CorporateLiasoningPage />,
     className: "md:col-span-1",
   }
 ];

@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React from "react";
 
-export default function MaximizingPotential() {
+export default function ReverseEngineering() {
   return (
     <div className="min-h-screen bg-white text-[#0B1E3F][#FFFF] p-8 md:p-20">
       <h4 className="text-3xl md:text-4xl font-extrabold mb-6 text-center ">

@@ -3,7 +3,7 @@
 import Image from "next/image"
 import React from "react"
 
-export default function LegalServicesPage() {
+export default function ProcessEngineering() {
   return (
     <div className="min-h-screen bg-white text-[#0B1E3F][#FFFF] px-6 md:px-16 py-20">
       {/* Title */}
