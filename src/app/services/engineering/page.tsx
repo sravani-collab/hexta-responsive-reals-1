@@ -1,111 +1,117 @@
+"use client";
 import React from "react";
 import { WobbleCard } from "@/components/ui/wobble-card";
-// import { siteConfig } from "@/config/site";
 import Link from "next/link";
+
 // Service content components
-const ProcessEngineering = () => {
+const MaximizingContent = () => {
+  return (
+    <div>
+      <p className="font-bold md:text-4xl text-xl text-white">
+        Maximizing Potential
+      </p>
+      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+        We specialize in 3D engineering and design services in the oil and gas sector.
+      </p>
+      <Link href="/services/engineering/maximizing-potential" className="hover:text-primary-200 font-medium">
+        Learn More →
+      </Link>
+    </div>
+  );
+};
+
+const InnovativeContent = () => {
+  return (
+    <div>
+      <p className="font-bold md:text-4xl text-xl text-white">
+        Innovative 3D Engineering Solutions
+      </p>
+      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+        This document details a company's 3D engineering and design services tailored for various industries, specifically focusing on the oil and gas sector.
+      </p>
+      <Link href="/services/engineering/3d-engineering-solutions" className="hover:text-primary-200 font-medium">
+        Learn More →
+      </Link>
+    </div>
+  );
+};
+
+const ReverseContent = () => {
+  return (
+    <div>
+      <p className="font-bold md:text-4xl text-xl text-white">
+        Reverse Engineering
+      </p>
+      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+        Specialized engineering services that leverage FARO 3D scanning technology. These services focus on capturing precise digital data of physical objects and environments for industrial and architectural use cases.
+      </p>
+      <Link href="/services/engineering/reverse-engineering" className="hover:text-primary-200 font-medium">
+        Learn More →
+      </Link>
+    </div>
+  );
+};
+
+const ProcessContent = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
         Process Engineering
       </p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        Our Process Engineering services include comprehensive coverage of all client requirements with enhanced cost estimation support.
+        We design energy-efficient, safe, and cost-effective process systems using advanced simulation and engineering methodologies.
       </p>
-      <Link href="/services/engineering/process-engineering" className=" font-medium md:text-xl text-xl text-white">
-            Learn More →
-          </Link>
+      <Link href="/services/engineering/process-engineering" className="hover:text-primary-200 font-medium">
+        Learn More →
+      </Link>
     </div>
   );
 };
 
-const MaximizingPotential = () => {
+const EnvironmentalContent = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-        Maximizing Potential in Oil & Gas, Refineries, Petro Chemicals, Chemical & Fertilizers, Power Plant
+        Environmental Solutions For All Industries
       </p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        We adopt combination of in-built automation tools and checklists for engineering activities including documents, drawings and intelligent models.
+        A comprehensive approach focused on mitigating ecological harm and promoting sustainability through systemic changes in technology, policy, and operations.
       </p>
-      <Link href="/services/engineering/maximizing-potential" className=" font-medium md:text-xl text-xl text-white">
-            Learn More →
-          </Link>
+      <Link href="/services/engineering/environmental-solutions" className="hover:text-primary-200 font-medium">
+        Learn More →
+      </Link>
     </div>
   );
 };
 
-const Innovative3DEngineering = () => {
+const CorporateContent = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-        Innovative 3d Engineering Solutions for the Oil & Gas Industry
+        Corporate Liasioning
       </p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        Comprehensive As-Built Engineering services including site surveys, laser scanning, 3D modeling, and updating of drawings and documents.
+        Facilitate understanding, bridge gaps, and ensure smooth coordination to resolve conflicts or achieve shared objectives.
       </p>
-      <Link href="/services/engineering/innovative-3d-engineering" className="font-medium md:text-xl text-xl text-white">
-            Learn More →
-          </Link>
+      <Link href="/services/engineering/corporate-liasioning" className="hover:text-primary-200 font-medium">
+        Learn More →
+      </Link>
     </div>
   );
 };
 
-const  ReverseEngineering= () => {
+const LegalContent = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-        Reverse Engineering & Restoration using Faro 3d Scanning
+        Legal Services
       </p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        High-precision engineering support services for fabrication and construction projects with advanced methodologies.
+        We provide expert legal support across project lifecycles, offering contract management, compliance advisory, and risk mitigation to safeguard your business interests.
       </p>
-      <Link href="/services/engineering/reverse-engineering" className="font-medium md:text-xl text-xl text-white">
-            Learn More →
-          </Link>
-    </div>
-  );
-};
-
-const EnvironmentalSolutions = () => {
-  return (
-    <div>
-      <p className="font-bold md:text-4xl text-xl text-white">
-       Environmental Solutions for all Industries      </p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        Our Process Simulation services help in optimizing operations and enhancing productivity through advanced modeling techniques.
-      </p>
-      <Link href="/services/engineering/environmental-solutions" className="font-medium md:text-xl text-xl text-white">
-            Learn More →
-          </Link>
-    </div>
-  );
-};
-const CorporateLiasoningPage = () => {
-  return (
-    <div>
-      <p className="font-bold md:text-4xl text-xl text-white">
-      Corporate Liasioning      </p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        High-precision engineering support services for 3D modeling and visualization in the oil and gas sector.
-      </p>
-      <Link href="/services/engineering/corporate-liasoning" className="font-medium md:text-xl text-xl text-white">
-            Learn More →
-          </Link>
-    </div>
-  );
-};
-const LegalServices = () => {
-  return (
-    <div>
-      <p className="font-bold md:text-4xl text-xl text-white">
-          Legal Services      </p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        High-precision engineering support services for reverse engineering using FARO scanners.
-      </p>
-      <Link href="/services/engineering/legal-service" className="font-medium md:text-xl text-xl text-white">
-            Learn More →
-          </Link>
+      <Link href="/services/engineering/legal-services" className="hover:text-primary-200 font-medium">
+        Learn More →
+      </Link>
     </div>
   );
 };
@@ -113,33 +119,45 @@ const LegalServices = () => {
 const cards = [
   {
     id: 1,
-    content: <ProcessEngineering />,
+    content: <MaximizingContent />,
     className: "md:col-span-1",
+    href: "/services/engineering/maximizing-potential"
   },
   {
     id: 2,
-    content: <MaximizingPotential />,
+    content: <InnovativeContent />,
     className: "md:col-span-2",
+    href: "/services/engineering/innovative-3d-engineering"
   },
   {
     id: 3,
-    content: <Innovative3DEngineering />,
+    content: <ReverseContent />,
     className: "md:col-span-2",
+    href: "/services/engineering/reverse-engineering"
   },
   {
     id: 4,
-    content: <ReverseEngineering />,
+    content: <ProcessContent />,
     className: "md:col-span-1",
+    href: "/services/engineering/process-engineering"
   },
   {
-    id: 5, content: <EnvironmentalSolutions />,
+    id: 5,
+    content: <EnvironmentalContent />,
     className: "md:col-span-1",
+    href: "/services/engineering/environmental-solutions"
   },
-  { id: 6, content: <LegalServices />,
+  {
+    id: 6,
+    content: <LegalContent />,
     className: "md:col-span-1",
+    href: "/services/engineering/legal-services"
   },
-  { id: 7, content: <CorporateLiasoningPage />,
+  {
+    id: 7,
+    content: <CorporateContent />,
     className: "md:col-span-1",
+    href: "/services/engineering/corporate-liasoning"
   }
 ];
 
@@ -163,13 +181,16 @@ export default function EngineeringServicesPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {cards.map((card) => (
-              <WobbleCard
-                key={card.id}
-                containerClassName={card.className}
-                className=""
-              >
-                {card.content}
-              </WobbleCard>
+              <div key={card.id} className={card.className}>
+                <Link href={card.href || "#"} className="block h-full">
+                  <WobbleCard
+                    containerClassName="h-full"
+                    className="cursor-pointer"
+                  >
+                    {card.content}
+                  </WobbleCard>
+                </Link>
+              </div>
             ))}
           </div>
         </div>
