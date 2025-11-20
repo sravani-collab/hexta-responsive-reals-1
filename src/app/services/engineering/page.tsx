@@ -8,7 +8,7 @@ const MaximizingContent = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-        Maximizing Potential
+        Maximizing Potential in Oil & Gas
       </p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
         We specialize in 3D engineering and design services in the oil and gas sector.
@@ -104,7 +104,7 @@ const LegalContent = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-        Legal Services
+        Legal Service
       </p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
         We provide expert legal support across project lifecycles, offering contract management, compliance advisory, and risk mitigation to safeguard your business interests.
@@ -151,7 +151,7 @@ const cards = [
     id: 6,
     content: <LegalContent />,
     className: "md:col-span-1",
-    href: "/services/engineering/legal-services"
+    href: "/services/engineering/legal-service"
   },
   {
     id: 7,

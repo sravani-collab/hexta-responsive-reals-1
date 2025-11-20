@@ -8,7 +8,7 @@ import { Badge } from '@/components/ui/badge'
 import { ArrowRight } from "lucide-react"
 
 interface FeatureCardProps {
-  icon: React.ReactNode
+  icon?: React.ReactNode
   title: string
   description: string
   delay?: number
@@ -24,6 +24,11 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description, del
     >
       <Card className="p-6 h-full bg-card border-border hover:shadow-lg transition-shadow duration-300">
         <div className="flex items-center gap-4 mb-4">
+          {icon && (
+            <div className="w-10 h-10 flex items-center justify-center rounded bg-muted/10">
+              {icon}
+            </div>
+          )}
           <h3 className="text-xl font-semibold text-foreground">{title}</h3>
         </div>
         <p className="text-muted-foreground leading-relaxed">{description}</p>
@@ -32,7 +37,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description, del
   )
 }
 
-const WebMobileDevPage: React.FC = () => {
+const Innovative3DEngineeringPage: React.FC = () => {
   const features: { title: string; description: string }[] = [
     {
       title: "Steel Structure Design",
@@ -147,4 +152,4 @@ const WebMobileDevPage: React.FC = () => {
   )
 }
 
-export default WebMobileDevPage
+export default Innovative3DEngineeringPage

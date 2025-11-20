@@ -37,7 +37,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description, del
   )
 }
 
-const WebMobileDevPage: React.FC = () => {
+const ReverseEngineeringPage: React.FC = () => {
   const features = [
     {
       title: "As-Built Modeling",
@@ -109,7 +109,7 @@ const WebMobileDevPage: React.FC = () => {
               className="order-2 lg:order-2 flex justify-center"
             >
               <img
-                src="/images/services/engg/reverse.png" 
+                src="/images/services/engg/reverse.png"
                 alt="reverse"
                 className="rounded-lg shadow-lg max-w-full h-auto"
               />
@@ -150,4 +150,4 @@ const WebMobileDevPage: React.FC = () => {
   )
 }
 
-export default WebMobileDevPage
+export default ReverseEngineeringPage

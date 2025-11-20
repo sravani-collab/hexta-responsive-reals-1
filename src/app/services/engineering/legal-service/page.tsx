@@ -5,9 +5,7 @@ import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import  StackIcon  from 'tech-stack-icons'
-import { Smartphone, Globe, Zap, Shield, Code,  CheckCircle, ArrowRight } from 'lucide-react'
-import { Skeleton } from '@heroui/react'
+import { ArrowRight } from 'lucide-react'
 
 interface FeatureCardProps {
   icon: React.ReactNode
@@ -57,12 +55,10 @@ const TechBadge: React.FC<TechBadgeProps> = ({ name, delay = 0 }) => {
   )
 }
 
-const WebMobileDevPage: React.FC = () => {
-  
- 
+const LegalServicePage: React.FC = () => {
+
   return (
     <div className="min-h-screen bg-background">
-      {/* Hero Section - Z Pattern Start (Top Left) */}
       <section className="relative overflow-hidden py-20 lg:py-32">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -90,29 +86,14 @@ const WebMobileDevPage: React.FC = () => {
         </p>
       </div>
               </div>
-              <div className="flex  flex-col sm:flex-row gap-4">
-                <Button size="lg" className="group text-white">
-                  Start Your Project
-                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </Button>
-                <Button variant="outline" size="lg">
-                  View Portfolio
-                </Button>
-              </div>
             </motion.div>
-            
 
-            {/* Hero Image - Z Pattern (Top Right) */}
-           
+         <div className="relative h-68  rounded-lg overflow-hidden">
+                <img src="/images/services/engg/legal.png"alt="corporate"className="object-cover"/>
+                </div>
           </div>
         </div>
       </section>
-
-      {/* Technologies Section - Z Pattern Middle (Left) */}
-     
-
-      {/* Features Section - Z Pattern End (Bottom Right) */}
-      
 
       {/* CTA Section */}
       <section className="py-20 bg-primary">
@@ -146,4 +127,4 @@ const WebMobileDevPage: React.FC = () => {
   )
 }
 
-export default WebMobileDevPage
+export default LegalServicePage

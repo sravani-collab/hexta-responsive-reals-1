@@ -25,7 +25,7 @@ const servicesData = {
       { name: "Process Engineering", href: "/services/engineering/process-engineering" },
       { name: "Environmental Solutions", href: "/services/engineering/environmental-solutions" },
       { name: "Corporate Liasoning", href: "/services/engineering/corporate-liasoning" },
-      { name: "Legal Services", href: "/services/engineering/legal-services" },
+      { name: "Legal Service", href: "/services/engineering/legal-service" },
     ],
   },
 }

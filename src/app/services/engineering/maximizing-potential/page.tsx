@@ -55,10 +55,9 @@ const TechBadge: React.FC<TechBadgeProps> = ({ name, delay = 0 }) => {
   )
 }
 
-const WebMobileDevPage: React.FC = () => {
+const MaximizingPage: React.FC = () => {
  return (
     <div className="min-h-screen bg-background">
-      {/* Hero Section - Z Pattern Start (Top Left) */}
       <section className="relative overflow-hidden py-20 lg:py-32">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -122,4 +121,4 @@ const WebMobileDevPage: React.FC = () => {
   )
 }
 
-export default WebMobileDevPage
+export default MaximizingPage

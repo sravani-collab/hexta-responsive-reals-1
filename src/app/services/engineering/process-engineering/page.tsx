@@ -55,7 +55,7 @@ const TechBadge: React.FC<TechBadgeProps> = ({ name, delay = 0 }) => {
   )
 }
 
-const WebMobileDevPage: React.FC = () => {
+const ProcessEngineeringPage: React.FC = () => {
   
  
   return (
@@ -126,4 +126,4 @@ Process Engineering
   )
 }
 
-export default WebMobileDevPage
+export default ProcessEngineeringPage

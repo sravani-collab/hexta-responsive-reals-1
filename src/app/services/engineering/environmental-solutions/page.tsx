@@ -8,7 +8,7 @@ import { ArrowRight } from "lucide-react"
 import { Badge } from '@/components/ui/badge'
 
 interface FeatureCardProps {
-  icon: React.ReactNode
+  icon?: React.ReactNode
   title: string
   description: string
   delay?: number
@@ -32,7 +32,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description, del
   )
 }
 
-const WebMobileDevPage: React.FC = () => {
+const EnvironmentalSolutionsPage: React.FC = () => {
   const features = [
     {
       title: "Environmental Impact Assessments (EIA)",
@@ -147,4 +147,4 @@ const WebMobileDevPage: React.FC = () => {
   )
 }
 
-export default WebMobileDevPage
+export default EnvironmentalSolutionsPage
